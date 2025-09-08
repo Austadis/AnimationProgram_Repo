@@ -1,6 +1,6 @@
 //Maya ASCII 2025ff03 scene
 //Name: ModularArches.ma
-//Last modified: Sun, Sep 07, 2025 06:43:13 PM
+//Last modified: Sun, Sep 07, 2025 06:44:08 PM
 //Codeset: UTF-8
 requires maya "2025ff03";
 currentUnit -l centimeter -a degree -t film;
@@ -9,12 +9,12 @@ fileInfo "product" "Maya 2025";
 fileInfo "version" "2025";
 fileInfo "cutIdentifier" "202407121012-8ed02f4c99";
 fileInfo "osv" "Mac OS X 12.7.6";
-fileInfo "UUID" "FB6DDEED-5A46-43E1-1ED8-03B469EAB8C5";
+fileInfo "UUID" "FE7CB214-114E-C1B5-6CA3-97BFBB786D94";
 createNode transform -s -n "persp";
 	rename -uid "192DBE26-B741-5984-B563-DE87764A6CA7";
 	setAttr ".v" no;
-	setAttr ".t" -type "double3" 24.417648910230017 44.790400976987158 -97.536250946918699 ;
-	setAttr ".r" -type "double3" -11.999999999999304 -192.79999999954347 0 ;
+	setAttr ".t" -type "double3" 60.414310202499337 20.794466516089923 71.812381390961747 ;
+	setAttr ".r" -type "double3" -2.3999999999998529 -315.19999999954166 -4.2022167211263848e-16 ;
 	setAttr ".rpt" -type "double3" -2.5654039158104602e-16 1.0801352338224431e-16 -1.053556804739094e-15 ;
 createNode camera -s -n "perspShape" -p "persp";
 	rename -uid "4E86D0B2-D545-90A6-E31D-35A335BE9644";

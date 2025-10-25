@@ -1,6 +1,6 @@
 //Maya ASCII 2025ff03 scene
 //Name: spaceProps.ma
-//Last modified: Sat, Oct 25, 2025 04:55:49 PM
+//Last modified: Sat, Oct 25, 2025 04:58:49 PM
 //Codeset: UTF-8
 requires maya "2025ff03";
 currentUnit -l centimeter -a degree -t film;
@@ -9,7 +9,7 @@ fileInfo "product" "Maya 2025";
 fileInfo "version" "2025";
 fileInfo "cutIdentifier" "202407121012-8ed02f4c99";
 fileInfo "osv" "Mac OS X 12.7.6";
-fileInfo "UUID" "ED9FBEFC-E949-34DE-4632-B2A39CE554D2";
+fileInfo "UUID" "F0DD72AF-8242-293F-F0E8-49B23D8E27A2";
 createNode transform -s -n "persp";
 	rename -uid "029F6D8D-6F44-A4BE-2663-26BF538AA905";
 	setAttr ".t" -type "double3" -223.8632161369473 288.41669977685001 280.68817399091813 ;
@@ -6362,8 +6362,8 @@ createNode mesh -n "pCylinderShape3" -p "pCylinder3";
 	setAttr ".hfd" -type "dataPolyComponent" Index_Data Face 0 ;
 createNode transform -n "pCylinder4" -p "metalBracket";
 	rename -uid "FAE2F5F3-B14F-2EA5-B917-8EA244CFA5EB";
-	setAttr ".rp" -type "double3" -2.5465364456176744 78.193277608383909 5.140187384437624 ;
-	setAttr ".sp" -type "double3" -2.5465364456176744 78.193277608383909 5.140187384437624 ;
+	setAttr ".rp" -type "double3" -2.546536445617674 78.193277608383909 5.140187384437624 ;
+	setAttr ".sp" -type "double3" -2.546536445617674 78.193277608383909 5.140187384437624 ;
 createNode mesh -n "pCylinder4Shape" -p "pCylinder4";
 	rename -uid "7870F98D-BD48-0213-4020-FD93D943D9B5";
 	setAttr -k off ".v";

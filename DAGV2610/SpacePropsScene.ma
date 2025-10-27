@@ -1,6 +1,6 @@
 //Maya ASCII 2025ff03 scene
 //Name: SpacePropsScene.ma
-//Last modified: Mon, Oct 27, 2025 01:16:43 PM
+//Last modified: Mon, Oct 27, 2025 01:25:52 PM
 //Codeset: UTF-8
 requires maya "2025ff03";
 requires -nodeType "aiOptions" -nodeType "aiAOVDriver" -nodeType "aiAOVFilter" -nodeType "aiAreaLight"
@@ -11,7 +11,7 @@ fileInfo "product" "Maya 2025";
 fileInfo "version" "2025";
 fileInfo "cutIdentifier" "202407121012-8ed02f4c99";
 fileInfo "osv" "Mac OS X 12.7.6";
-fileInfo "UUID" "4837AAC1-5D48-1B01-0363-458BFB8E3761";
+fileInfo "UUID" "9DC7FD7E-DB48-3FD2-7FA7-6FB3248C0114";
 createNode transform -s -n "persp";
 	rename -uid "8AE99A73-C041-F343-55F7-B384957745A0";
 	setAttr ".v" no;
@@ -16260,15 +16260,15 @@ createNode aiAreaLight -n "aiAreaLightShape2" -p "aiAreaLight2";
 	setAttr ".aal" -type "attributeAlias" 4 "exposure" "aiExposure" "normalize" "aiNormalize" ;
 createNode transform -n "camera2";
 	rename -uid "AA5ACE78-E444-C25F-DC27-33BEB5D19635";
-	setAttr ".t" -type "double3" -44.251432578954635 156.39825364699385 188.43115453749436 ;
-	setAttr ".r" -type "double3" -12.000000000000053 -20.000000000000036 4.2308444951970993e-16 ;
+	setAttr ".t" -type "double3" -317.2396382563756 125.29441109057838 262.36064990840487 ;
+	setAttr ".r" -type "double3" -5.9999999999965681 -49.599999999997976 0 ;
 createNode camera -n "cameraShape2" -p "camera2";
 	rename -uid "48EC8853-8B48-2FB6-2FD6-1AB2CE70899B";
 	setAttr -k off ".v";
 	setAttr ".rnd" no;
 	setAttr ".cap" -type "double2" 1.41732 0.94488 ;
 	setAttr ".ff" 0;
-	setAttr ".coi" 225.64471887818877;
+	setAttr ".coi" 445.51629842157286;
 	setAttr ".ow" 30;
 	setAttr ".imn" -type "string" "camera2";
 	setAttr ".den" -type "string" "camera2_depth";
@@ -16424,7 +16424,7 @@ createNode aiOptions -s -n "defaultArnoldRenderOptions";
 	rename -uid "0712A943-9242-0B89-F5A4-98BA8C89FFDB";
 	addAttr -ci true -sn "ARV_options" -ln "ARV_options" -dt "string";
 	setAttr ".version" -type "string" "5.4.2.1";
-	setAttr ".ARV_options" -type "string" "Test Resolution=150%;Camera=cameraShape2;Snapshots Folder=/Users/isaac/Desktop/UVU/AnimationProgram/AnimationProgram_Repo/images/snapshots/SpacePropsScene;Color Management.Gamma=1;Color Management.Exposure=0;Background.BG=BG Color;Background.Color=0 0 0;Background.Image=;Background.Scale=1 1;Background.Offset=0 0;Background.Apply Color Management=1;Foreground.Enable FG=0;Foreground.Image=;Foreground.Scale=1 1;Foreground.Offset=0 0;Foreground.Apply Color Management=1;";
+	setAttr ".ARV_options" -type "string" "Test Resolution=150%;Camera=cameraShape2;Snapshots Folder=/Users/isaac/Desktop/UVU/AnimationProgram/DAGV2610/Unit 9/RenderImages;Color Management.Gamma=1;Color Management.Exposure=0;Background.BG=BG Color;Background.Color=0 0 0;Background.Image=;Background.Scale=1 1;Background.Offset=0 0;Background.Apply Color Management=1;Foreground.Enable FG=0;Foreground.Image=;Foreground.Scale=1 1;Foreground.Offset=0 0;Foreground.Apply Color Management=1;";
 createNode aiAOVFilter -s -n "defaultArnoldFilter";
 	rename -uid "ECCA059C-2D4F-7C52-891D-D3925600E855";
 	setAttr ".ai_translator" -type "string" "gaussian";

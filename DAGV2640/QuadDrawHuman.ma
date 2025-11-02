@@ -1,6 +1,6 @@
 //Maya ASCII 2025ff03 scene
 //Name: QuadDrawHuman.ma
-//Last modified: Sun, Nov 02, 2025 03:51:29 PM
+//Last modified: Sun, Nov 02, 2025 04:10:04 PM
 //Codeset: UTF-8
 requires maya "2025ff03";
 requires -nodeType "aiOptions" -nodeType "aiAOVDriver" -nodeType "aiAOVFilter" "mtoa" "5.4.2.1";
@@ -12,21 +12,23 @@ fileInfo "product" "Maya 2025";
 fileInfo "version" "2025";
 fileInfo "cutIdentifier" "202407121012-8ed02f4c99";
 fileInfo "osv" "Mac OS X 12.7.6";
-fileInfo "UUID" "D460E408-4C4C-FF89-E378-F19B304C392F";
+fileInfo "UUID" "D23D52DD-294F-C843-407C-328DBABC65DC";
 createNode transform -s -n "persp";
 	rename -uid "50A247D5-C042-AED7-01B4-DCB89E9990C4";
 	setAttr ".v" no;
-	setAttr ".t" -type "double3" -75.765219706717403 278.99495432077305 228.97420019415733 ;
-	setAttr ".r" -type "double3" 328.46164725000375 4662.9999999976044 0 ;
+	setAttr ".t" -type "double3" 298.91958570752234 194.79411631897131 329.7589253340231 ;
+	setAttr ".r" -type "double3" -13.199999999999992 42.799999999999656 -1.0836940253271615e-15 ;
+	setAttr ".rp" -type "double3" 8.8817841970012523e-16 1.4210854715202004e-14 0 ;
+	setAttr ".rpt" -type "double3" -5.43026235091518e-15 -4.2081102811080321e-15 -3.1035446159233908e-15 ;
 createNode camera -s -n "perspShape" -p "persp";
 	rename -uid "3E7BF761-AD4B-B431-9D2F-639FCB2FAE79";
 	setAttr -k off ".v" no;
-	setAttr ".fl" 34.999999999999986;
-	setAttr ".coi" 337.23282472012579;
+	setAttr ".fl" 34.999999999999979;
+	setAttr ".coi" 451.88848271444311;
 	setAttr ".imn" -type "string" "persp";
 	setAttr ".den" -type "string" "persp_depth";
 	setAttr ".man" -type "string" "persp_mask";
-	setAttr ".tp" -type "double3" 0 91.704306684434414 6.7409396171569824 ;
+	setAttr ".tp" -type "double3" -1.1368683772161603e-13 91.604988098144531 6.9551367759703586 ;
 	setAttr ".hc" -type "string" "viewSet -p %camera";
 createNode transform -s -n "top";
 	rename -uid "4DED9A5C-044C-4968-DB5C-CC9C3E21AA10";
@@ -78,6 +80,7 @@ createNode camera -s -n "sideShape" -p "side";
 	setAttr ".o" yes;
 createNode transform -n "HumanMesh";
 	rename -uid "CA288777-564D-71D4-7283-4FB980A2D259";
+	setAttr ".t" -type "double3" -246.03822588050392 0 0 ;
 createNode mesh -n "HumanMeshShape" -p "HumanMesh";
 	rename -uid "27D8D89D-1646-CC34-9C75-FEA06CF879A2";
 	addAttr -ci true -sn "mso" -ln "miShadingSamplesOverride" -min 0 -max 1 -at "bool";

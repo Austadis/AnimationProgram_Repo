@@ -1,6 +1,6 @@
 //Maya ASCII 2025ff03 scene
 //Name: QuadDrawHuman.ma
-//Last modified: Mon, Nov 10, 2025 10:08:06 AM
+//Last modified: Mon, Nov 10, 2025 10:16:44 AM
 //Codeset: UTF-8
 requires maya "2025ff03";
 requires -nodeType "aiOptions" -nodeType "aiAOVDriver" -nodeType "aiAOVFilter" -nodeType "aiAreaLight"
@@ -13,7 +13,7 @@ fileInfo "product" "Maya 2025";
 fileInfo "version" "2025";
 fileInfo "cutIdentifier" "202407121012-8ed02f4c99";
 fileInfo "osv" "Mac OS X 12.7.6";
-fileInfo "UUID" "5AA45D7B-244E-D011-2CEB-D2A9E076063C";
+fileInfo "UUID" "E6A9F11A-644F-A47A-972F-15A9352B6F58";
 createNode transform -s -n "persp";
 	rename -uid "50A247D5-C042-AED7-01B4-DCB89E9990C4";
 	setAttr ".v" no;
@@ -155,15 +155,15 @@ createNode camera -n "persp1Shape" -p "persp1";
 	setAttr ".hc" -type "string" "viewSet -p %camera";
 createNode transform -n "persp2";
 	rename -uid "F02E3CCE-4D44-5E0A-BC5B-B288EAC13ACB";
-	setAttr ".t" -type "double3" 506.66560370320838 90.372628180281467 -665.23486205089273 ;
-	setAttr ".r" -type "double3" 0 141.59999999999977 0 ;
+	setAttr ".t" -type "double3" -540.48762494627658 185.24848502776246 590.49387941150542 ;
+	setAttr ".r" -type "double3" -9.6000000000000938 -32.8 0 ;
 	setAttr ".rp" -type "double3" 0 -4.4408920985006262e-16 5.6843418860808015e-14 ;
 	setAttr ".rpt" -type "double3" -9.5363435973021951e-15 5.9311509936369351e-14 -5.7727826788287458e-14 ;
 createNode camera -n "persp2Shape" -p "persp2";
 	rename -uid "46CC2639-3D4D-5002-DABA-EBB0859EB7AD";
 	setAttr -k off ".v";
 	setAttr ".fl" 34.999999999999979;
-	setAttr ".coi" 706.56497925388044;
+	setAttr ".coi" 837.47117295086332;
 	setAttr ".imn" -type "string" "persp";
 	setAttr ".den" -type "string" "persp_depth";
 	setAttr ".man" -type "string" "persp_mask";

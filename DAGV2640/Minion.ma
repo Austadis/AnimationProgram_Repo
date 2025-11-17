@@ -1,6 +1,6 @@
 //Maya ASCII 2025ff03 scene
 //Name: Minion.ma
-//Last modified: Mon, Nov 17, 2025 09:50:34 AM
+//Last modified: Mon, Nov 17, 2025 10:10:15 AM
 //Codeset: UTF-8
 requires maya "2025ff03";
 requires -nodeType "aiOptions" -nodeType "aiAOVDriver" -nodeType "aiAOVFilter" -nodeType "aiImagerDenoiserOidn"
@@ -11,19 +11,19 @@ fileInfo "product" "Maya 2025";
 fileInfo "version" "2025";
 fileInfo "cutIdentifier" "202407121012-8ed02f4c99";
 fileInfo "osv" "Mac OS X 12.7.6";
-fileInfo "UUID" "35E19C2C-7F4F-284A-EDAC-B88B91BBDBAD";
+fileInfo "UUID" "65294A5B-7C4F-0EB4-6D20-E3AE86CF5315";
 createNode transform -s -n "persp";
 	rename -uid "5C3B12D3-5148-C4D8-5735-13A16F7D5661";
 	setAttr ".v" no;
-	setAttr ".t" -type "double3" -10.185013842968461 1.4856842316119869 0.28050474359407529 ;
-	setAttr ".r" -type "double3" 0 -89.999999999999986 0 ;
+	setAttr ".t" -type "double3" 2.106048068186527 3.2534776622799932 9.3403490123064046 ;
+	setAttr ".r" -type "double3" -9.5999999999964576 11.599999999986961 0 ;
 	setAttr ".rp" -type "double3" 0 0 4.4408920985006262e-16 ;
 	setAttr ".rpt" -type "double3" -3.2816574503725153e-16 -1.8532057629924382e-17 -5.7556177594424432e-16 ;
 createNode camera -s -n "perspShape" -p "persp";
 	rename -uid "2251B3AD-F948-0684-68D8-7C8925BFB5E4";
 	setAttr -k off ".v" no;
 	setAttr ".fl" 34.999999999999979;
-	setAttr ".coi" 10.185013842968486;
+	setAttr ".coi" 9.3175212900063009;
 	setAttr ".imn" -type "string" "persp";
 	setAttr ".den" -type "string" "persp_depth";
 	setAttr ".man" -type "string" "persp_mask";
@@ -11241,7 +11241,7 @@ createNode groupParts -n "groupParts11";
 	setAttr ".ihi" 0;
 	setAttr ".ic" -type "componentList" 27 "f[978:983]" "f[986:997]" "f[1002:1011]" "f[1014:1017]" "f[1020:1023]" "f[1032:1035]" "f[1038:1039]" "f[1042:1055]" "f[1088:1119]" "f[1122:1123]" "f[1126:1129]" "f[1134:1135]" "f[1138:1139]" "f[1142:1143]" "f[1146:1147]" "f[1149:1150]" "f[1384:1439]" "f[1720:1735]" "f[1768:1783]" "f[1864:1927]" "f[1929]" "f[1931:1933]" "f[1935]" "f[1937:1939]" "f[1948:2031]" "f[2033:2034]" "f[2036:2037]";
 createNode nodeGraphEditorInfo -n "hyperShadePrimaryNodeEditorSavedTabsInfo";
-	rename -uid "3C6FC64D-4E4A-18D6-6518-A6B1EB4BCD43";
+	rename -uid "D19DD7DB-164A-BA85-F1EB-ADAED82B44FC";
 	setAttr ".tgi[0].tn" -type "string" "Untitled_1";
 	setAttr ".tgi[0].vl" -type "double2" -130.30461667089924 -1114.1572853258733 ;
 	setAttr ".tgi[0].vh" -type "double2" 189.8284238294452 44.04761729732401 ;

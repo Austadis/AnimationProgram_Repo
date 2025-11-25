@@ -1,6 +1,6 @@
 //Maya ASCII 2025ff03 scene
 //Name: ModularSpaceProps.ma
-//Last modified: Tue, Nov 25, 2025 12:11:35 PM
+//Last modified: Tue, Nov 25, 2025 12:13:22 PM
 //Codeset: UTF-8
 requires maya "2025ff03";
 requires -nodeType "aiOptions" -nodeType "aiAOVDriver" -nodeType "aiAOVFilter" -nodeType "aiAreaLight"
@@ -11,7 +11,7 @@ fileInfo "product" "Maya 2025";
 fileInfo "version" "2025";
 fileInfo "cutIdentifier" "202407121012-8ed02f4c99";
 fileInfo "osv" "Mac OS X 12.7.6";
-fileInfo "UUID" "EAF89FF3-0E46-8035-3331-9EB194165FEE";
+fileInfo "UUID" "FCE99854-2847-A863-A3B1-3E82F60AEA29";
 createNode transform -s -n "persp";
 	rename -uid "F037BD18-E543-1281-AC91-02BE1D362494";
 	setAttr ".v" no;
@@ -22,7 +22,7 @@ createNode camera -s -n "perspShape" -p "persp";
 	rename -uid "70F71BB3-944A-D463-E6BF-BE987C942C0B";
 	setAttr -k off ".v" no;
 	setAttr ".fl" 34.999999999999979;
-	setAttr ".coi" 256.05393078043056;
+	setAttr ".coi" 256.05393078043062;
 	setAttr ".imn" -type "string" "persp";
 	setAttr ".den" -type "string" "persp_depth";
 	setAttr ".man" -type "string" "persp_mask";
@@ -7323,7 +7323,7 @@ createNode lambert -n "wallPanel";
 createNode shadingEngine -n "lambert2SG";
 	rename -uid "79BDD3DA-5A4E-F9B3-F557-DEB76760FA65";
 	setAttr ".ihi" 0;
-	setAttr -s 2 ".dsm";
+	setAttr -s 3 ".dsm";
 	setAttr ".ro" yes;
 	setAttr -s 2 ".gn";
 createNode materialInfo -n "materialInfo1";
@@ -8437,7 +8437,7 @@ select -ne :initialShadingGroup;
 	setAttr -cb on ".ihi";
 	setAttr -av -k on ".nds";
 	setAttr -cb on ".bnm";
-	setAttr -s 5 ".dsm";
+	setAttr -s 4 ".dsm";
 	setAttr -k on ".mwc";
 	setAttr -cb on ".an";
 	setAttr -cb on ".il";
@@ -8719,6 +8719,7 @@ connectAttr "file2.oc" "wallPanel.c";
 connectAttr "wallPanel.oc" "lambert2SG.ss";
 connectAttr "pPlaneShape4.iog.og[0]" "lambert2SG.dsm" -na;
 connectAttr "pPlaneShape1.iog.og[0]" "lambert2SG.dsm" -na;
+connectAttr "pPlaneShape6.iog" "lambert2SG.dsm" -na;
 connectAttr "groupId15.msg" "lambert2SG.gn" -na;
 connectAttr "groupId27.msg" "lambert2SG.gn" -na;
 connectAttr "lambert2SG.msg" "materialInfo1.sg";
@@ -8911,7 +8912,6 @@ connectAttr "pPlaneShape1.ciog.cog[0]" ":initialShadingGroup.dsm" -na;
 connectAttr "pPlaneShape3.ciog.cog[0]" ":initialShadingGroup.dsm" -na;
 connectAttr "pPlaneShape4.ciog.cog[1]" ":initialShadingGroup.dsm" -na;
 connectAttr "pPlaneShape5.ciog.cog[1]" ":initialShadingGroup.dsm" -na;
-connectAttr "pPlaneShape6.iog" ":initialShadingGroup.dsm" -na;
 connectAttr "groupId9.msg" ":initialShadingGroup.gn" -na;
 connectAttr "groupId11.msg" ":initialShadingGroup.gn" -na;
 connectAttr "groupId17.msg" ":initialShadingGroup.gn" -na;

@@ -1,6 +1,6 @@
 //Maya ASCII 2025ff03 scene
 //Name: Ultimate_Pendulum_v1.0.0.ma
-//Last modified: Sun, Nov 30, 2025 03:12:41 PM
+//Last modified: Sun, Nov 30, 2025 03:16:03 PM
 //Codeset: UTF-8
 requires maya "2025ff03";
 requires -nodeType "aiOptions" -nodeType "aiAOVDriver" -nodeType "aiAOVFilter" -nodeType "aiImagerDenoiserOidn"
@@ -12,7 +12,7 @@ fileInfo "product" "Maya 2025";
 fileInfo "version" "2025";
 fileInfo "cutIdentifier" "202407121012-8ed02f4c99";
 fileInfo "osv" "Mac OS X 12.7.6";
-fileInfo "UUID" "549CCF6A-A54F-19B9-3121-05B4ECCA450A";
+fileInfo "UUID" "8F31B408-7F44-9BC5-9BBD-EEB179F97454";
 createNode transform -n "AniM_pendulum_Main";
 	rename -uid "81A9762D-F646-F921-BA39-A18DD3F67C3D";
 	setAttr -l on -k off ".v";
@@ -124435,15 +124435,15 @@ createNode parentConstraint -n "CTRL_Pend_01_Grp_parentConstraint1" -p "CTRL_Pen
 createNode transform -s -n "persp";
 	rename -uid "FC0469B6-CB4F-EF26-2F55-2B99E0DD1C79";
 	setAttr ".v" no;
-	setAttr ".t" -type "double3" 23.850009465511647 3.7437267676304025 -0.66619108573162278 ;
-	setAttr ".r" -type "double3" -2.4000000000000035 91.599999999995532 0 ;
+	setAttr ".t" -type "double3" 37.213628456813446 2.7437253151091348 4.6698238024897976e-12 ;
+	setAttr ".r" -type "double3" 0 89.999999999994117 0 ;
 	setAttr ".rp" -type "double3" 0 4.4408920985006262e-16 -1.7763568394002505e-15 ;
 	setAttr ".rpt" -type "double3" -1.7720313120953391e-15 -3.0666548311724652e-17 1.7384050185913897e-15 ;
 createNode camera -s -n "perspShape" -p "persp";
 	rename -uid "08A6C277-B04D-6B65-AF4F-3B838AF4FDEA";
 	setAttr -k off ".v" no;
 	setAttr ".fl" 34.999999999999979;
-	setAttr ".coi" 23.88025889668603;
+	setAttr ".coi" 37.213628456813773;
 	setAttr ".imn" -type "string" "persp";
 	setAttr ".den" -type "string" "persp_depth";
 	setAttr ".man" -type "string" "persp_mask";
@@ -124726,7 +124726,7 @@ createNode script -n "uiConfigurationScriptNode";
 	setAttr ".st" 3;
 createNode script -n "sceneConfigurationScriptNode";
 	rename -uid "AB0A962C-BE40-0052-DCC9-4AA33532DDE3";
-	setAttr ".b" -type "string" "playbackOptions -min 0 -max 100 -ast 0 -aet 300 ";
+	setAttr ".b" -type "string" "playbackOptions -min 0 -max 32 -ast 0 -aet 32 ";
 	setAttr ".st" 6;
 createNode polyCylinder -n "polyCylinder1";
 	rename -uid "488BF963-D245-56D4-DE69-7797E2BF907E";
@@ -125002,8 +125002,8 @@ select -ne :time1;
 	setAttr -cb on ".ihi";
 	setAttr -k on ".nds";
 	setAttr -cb on ".bnm";
-	setAttr ".o" 68;
-	setAttr ".unw" 68;
+	setAttr ".o" 3;
+	setAttr ".unw" 3;
 select -ne :hardwareRenderingGlobals;
 	setAttr ".vac" 2;
 	setAttr ".etmr" no;

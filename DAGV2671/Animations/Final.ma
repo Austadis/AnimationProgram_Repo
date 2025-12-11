@@ -1,6 +1,6 @@
 //Maya ASCII 2025ff03 scene
 //Name: Final.ma
-//Last modified: Wed, Dec 10, 2025 05:07:09 PM
+//Last modified: Wed, Dec 10, 2025 05:21:06 PM
 //Codeset: UTF-8
 requires maya "2025ff03";
 requires -nodeType "aiOptions" -nodeType "aiAOVDriver" -nodeType "aiAOVFilter" "mtoa" "5.4.2.1";
@@ -10,12 +10,12 @@ fileInfo "product" "Maya 2025";
 fileInfo "version" "2025";
 fileInfo "cutIdentifier" "202407121012-8ed02f4c99";
 fileInfo "osv" "Mac OS X 12.7.6";
-fileInfo "UUID" "A7D27B02-B64D-E77E-0243-66AE900B900F";
+fileInfo "UUID" "85F1B852-A447-3A0B-1E9E-85867F1FE09D";
 createNode transform -s -n "persp";
 	rename -uid "2158BFD4-4CC2-0C4D-F302-F4B84EC02336";
 	setAttr ".v" no;
-	setAttr ".t" -type "double3" -32.415571988837755 17.278010929106831 -14.641219129918646 ;
-	setAttr ".r" -type "double3" -21.600000000016774 1324.7999999994913 0 ;
+	setAttr ".t" -type "double3" -35.661391597334308 16.501747721559969 -5.3859225289372823 ;
+	setAttr ".r" -type "double3" -20.400000000000258 1339.9999999990987 0 ;
 	setAttr ".rpt" -type "double3" 0.0075831239217723336 0.029479031201159946 -0.010361024931524519 ;
 createNode camera -s -n "perspShape" -p "persp";
 	rename -uid "C5CD4AF4-4421-00F7-6023-DB8E645A26D7";
@@ -164,7 +164,7 @@ createNode parentConstraint -n "Bony_NeckBtmClstrG_parentConstraint1" -p "Bony_N
 	setAttr -k off ".sz";
 	setAttr ".erp" yes;
 	setAttr ".tg[0].tor" -type "double3" 81.426234228844379 90 0 ;
-	setAttr ".lr" -type "double3" 35.000551138413414 172.90184332613859 -35.99873894763985 ;
+	setAttr ".lr" -type "double3" 23.061788739713929 149.01192398176622 -4.8855503187593765 ;
 	setAttr ".rsrr" -type "double3" -6.3611093629270335e-15 1.2722218725854067e-14 -7.0622500768802538e-31 ;
 	setAttr ".int" 2;
 	setAttr -k on ".w0";
@@ -199,7 +199,7 @@ createNode parentConstraint -n "Bony_HeadClstrG_parentConstraint1" -p "Bony_Head
 	setAttr ".erp" yes;
 	setAttr ".tg[0].tot" -type "double3" -8.8817841970012523e-16 0 0 ;
 	setAttr ".tg[0].tor" -type "double3" 90 89.999999999999986 0 ;
-	setAttr ".lr" -type "double3" -145.44593367919163 17.955971274181415 138.98241398533457 ;
+	setAttr ".lr" -type "double3" 198.38102392573043 40.34526233741687 166.01885975990018 ;
 	setAttr ".rst" -type "double3" -1.9721522630525295e-31 -8.8817841970012523e-16 0 ;
 	setAttr ".rsrr" -type "double3" -6.361109362927032e-15 1.9083328088781101e-14 6.361109362927032e-15 ;
 	setAttr ".int" 2;
@@ -225,7 +225,7 @@ createNode transform -n "Bony_ROOTC" -p "Bony_ROOTCG";
 	setAttr -l on -k off ".sy";
 	setAttr -l on -k off ".sz";
 	setAttr ".rp" -type "double3" 0 4.7661149111754275 0.018608514219522476 ;
-	setAttr ".rpt" -type "double3" 6.1728400169158704e-14 -1.461053500406706e-13 -8.8817841970012523e-16 ;
+	setAttr ".rpt" -type "double3" 6.4170890823334048e-14 -1.7630341631047486e-13 -4.1522341120980855e-14 ;
 	setAttr ".sp" -type "double3" 0 4.7661149111754275 0.018608514219522476 ;
 createNode nurbsCurve -n "Bony_ROOTCShape" -p "Bony_ROOTC";
 	rename -uid "49541986-4863-EE55-F3F3-CCAC46690A9B";
@@ -413,7 +413,7 @@ createNode parentConstraint -n "Bony_MainHipCG_parentConstraint1" -p "Bony_MainH
 	setAttr -k off ".sy";
 	setAttr -k off ".sz";
 	setAttr ".erp" yes;
-	setAttr ".lr" -type "double3" -133.4896033912373 7.0981566738613981 144.00126105236018 ;
+	setAttr ".lr" -type "double3" -156.19842214564648 30.988076018233738 175.11444968124064 ;
 	setAttr ".int" 2;
 	setAttr -k on ".w0";
 createNode transform -n "Bony_Spine01FKCG" -p "Bony_Main_CNT";
@@ -442,7 +442,7 @@ createNode transform -n "Bony_Spine01FKC" -p "Bony_Spine01FKCG";
 	setAttr -l on -k off ".sy";
 	setAttr -l on -k off ".sz";
 	setAttr ".rp" -type "double3" -1.4791141972893971e-31 8.8817841970012523e-16 0 ;
-	setAttr ".rpt" -type "double3" 0 -3.8549413766854913e-30 -9.8607613152626476e-32 ;
+	setAttr ".rpt" -type "double3" 0 -4.2677163120162856e-30 -9.8607613152626476e-32 ;
 	setAttr ".sp" -type "double3" -1.4791141972893971e-31 8.8817841970012523e-16 0 ;
 createNode nurbsCurve -n "Bony_Spine01FKCShape" -p "Bony_Spine01FKC";
 	rename -uid "4DE07877-4A2C-676B-4D4B-13B5678AF70E";
@@ -482,7 +482,7 @@ createNode parentConstraint -n "Bony_Spine01FKCG_parentConstraint1" -p "Bony_Spi
 	setAttr ".erp" yes;
 	setAttr ".tg[0].tot" -type "double3" -2.7755575615628766e-17 0.54827328047273305 
 		0.0129986875978787 ;
-	setAttr ".lr" -type "double3" -133.4896033912373 7.0981566738613981 144.00126105236018 ;
+	setAttr ".lr" -type "double3" -156.19842214564648 30.988076018233738 175.11444968124064 ;
 	setAttr ".rst" -type "double3" -2.7755575615628766e-17 5.3143881916481597 0.031607201817401176 ;
 	setAttr ".int" 2;
 	setAttr -k on ".w0";
@@ -563,7 +563,7 @@ createNode parentConstraint -n "Bony_SpineMidIKCG_parentConstraint1" -p "Bony_Sp
 	setAttr -k off ".sy";
 	setAttr -k off ".sz";
 	setAttr ".erp" yes;
-	setAttr ".lr" -type "double3" 35.000551138413414 172.90184332613859 -35.99873894763985 ;
+	setAttr ".lr" -type "double3" 23.061788739713954 149.01192398176624 -4.8855503187593765 ;
 	setAttr ".rst" -type "double3" -1.7989777070942878e-16 5.8626614721208909 0.044605889415280084 ;
 	setAttr ".int" 2;
 	setAttr -k on ".w0";
@@ -651,7 +651,7 @@ createNode parentConstraint -n "Bony_SpineTopIKCG_parentConstraint1" -p "Bony_Sp
 	setAttr -k off ".sy";
 	setAttr -k off ".sz";
 	setAttr ".erp" yes;
-	setAttr ".lr" -type "double3" 35.000551138413414 172.90184332613859 -35.99873894763985 ;
+	setAttr ".lr" -type "double3" 23.061788739713954 149.01192398176622 -4.8855503187593765 ;
 	setAttr ".rst" -type "double3" -6.7469860147374595e-16 6.9592080330663535 2.3245294578089215e-16 ;
 	setAttr ".int" 2;
 	setAttr -k on ".w0";
@@ -720,7 +720,7 @@ createNode parentConstraint -n "Bony_Spine02FKCG_parentConstraint1" -p "Bony_Spi
 	setAttr ".erp" yes;
 	setAttr ".tg[0].tot" -type "double3" -1.5214219509379984e-16 0.54827328047273127 
 		0.012998687597878908 ;
-	setAttr ".lr" -type "double3" 35.000551138413414 172.90184332613859 -35.99873894763985 ;
+	setAttr ".lr" -type "double3" 23.061788739713954 149.01192398176627 -4.8855503187593765 ;
 	setAttr ".rst" -type "double3" 0 8.8817841970012523e-16 0 ;
 	setAttr ".int" 2;
 	setAttr -k on ".w0";
@@ -790,7 +790,7 @@ createNode parentConstraint -n "Bony_Spine03FKCG_parentConstraint1" -p "Bony_Spi
 	setAttr ".erp" yes;
 	setAttr ".tg[0].tot" -type "double3" -2.7832546730492905e-16 0.5482732804727295 
 		-0.026715648745829601 ;
-	setAttr ".lr" -type "double3" 35.000551138413414 172.90184332613859 -35.99873894763985 ;
+	setAttr ".lr" -type "double3" 23.061788739713954 149.01192398176624 -4.8855503187593765 ;
 	setAttr ".rst" -type "double3" -9.8607613152626476e-32 0 0 ;
 	setAttr ".int" 2;
 	setAttr -k on ".w0";
@@ -861,7 +861,7 @@ createNode parentConstraint -n "Bony_Spine04FKCG_parentConstraint1" -p "Bony_Spi
 	setAttr ".erp" yes;
 	setAttr ".tg[0].tot" -type "double3" -2.1647536345938814e-16 0.54827328047273216 
 		-0.01789024066945025 ;
-	setAttr ".lr" -type "double3" 35.000551138413414 172.90184332613859 -35.99873894763985 ;
+	setAttr ".lr" -type "double3" 23.061788739713954 149.01192398176622 -4.8855503187593765 ;
 	setAttr ".int" 2;
 	setAttr -k on ".w0";
 createNode transform -n "Bony_ribbonSpineG" -p "Bony_Main_CNT";
@@ -890,7 +890,7 @@ createNode parentConstraint -n "Bony_spineBtm01JIK_parentConstraint1" -p "Bony_s
 	setAttr -k off ".sy";
 	setAttr -k off ".sz";
 	setAttr ".erp" yes;
-	setAttr ".lr" -type "double3" 46.51039660876269 172.90184332613859 -35.99873894763985 ;
+	setAttr ".lr" -type "double3" 23.801577854353521 149.01192398176624 -4.8855503187593765 ;
 	setAttr ".rst" -type "double3" 0 8.69264200760683 0.033938995475012008 ;
 	setAttr ".int" 2;
 	setAttr -k on ".w0";
@@ -917,7 +917,7 @@ createNode parentConstraint -n "Bony_spineMidJIK_parentConstraint1" -p "Bony_spi
 	setAttr -k off ".sy";
 	setAttr -k off ".sz";
 	setAttr ".erp" yes;
-	setAttr ".lr" -type "double3" 35.000551138413414 172.90184332613859 -35.99873894763985 ;
+	setAttr ".lr" -type "double3" 23.061788739713954 149.01192398176622 -4.8855503187593765 ;
 	setAttr ".rst" -type "double3" -3.2810516487483056e-16 10.692570015347744 0.081354108187522201 ;
 	setAttr ".int" 2;
 	setAttr -k on ".w0";
@@ -944,7 +944,7 @@ createNode parentConstraint -n "Bony_SpineTopJIK_parentConstraint1" -p "Bony_Spi
 	setAttr -k off ".sy";
 	setAttr -k off ".sz";
 	setAttr ".erp" yes;
-	setAttr ".lr" -type "double3" 35.000551138413414 172.90184332613859 -35.99873894763985 ;
+	setAttr ".lr" -type "double3" 23.061788739713954 149.01192398176622 -4.8855503187593765 ;
 	setAttr ".rst" -type "double3" -1.2305438527913815e-15 12.692498023088657 4.2395751654015506e-16 ;
 	setAttr ".int" 2;
 	setAttr -k on ".w0";
@@ -1068,7 +1068,7 @@ createNode parentConstraint -n "Bony_HeadCG2_parentConstraint1" -p "Bony_HeadCG2
 	setAttr ".erp" yes;
 	setAttr ".tg[0].tot" -type "double3" -1.5438983434736666e-16 0.43805794049508684 
 		0.066044886112574225 ;
-	setAttr ".lr" -type "double3" 35.000551138413414 172.90184332613859 -35.99873894763985 ;
+	setAttr ".lr" -type "double3" 23.061788739713929 149.01192398176622 -4.8855503187593765 ;
 	setAttr ".int" 2;
 	setAttr -k on ".w0";
 createNode transform -n "Bony_Neck01CG" -p "Bony_Main_CNT";
@@ -1134,7 +1134,7 @@ createNode parentConstraint -n "Bony_Neck01CG_parentConstraint1" -p "Bony_Neck01
 	setAttr ".erp" yes;
 	setAttr ".tg[0].tot" -type "double3" -1.2192116984972437e-16 0.43514185875665312 
 		-5.2041704279304213e-18 ;
-	setAttr ".lr" -type "double3" 35.000551138413414 172.90184332613859 -35.99873894763985 ;
+	setAttr ".lr" -type "double3" 23.061788739713929 149.01192398176622 -4.8855503187593765 ;
 	setAttr ".int" 2;
 	setAttr -k on ".w0";
 createNode transform -n "Bony_NeckLengthAimLctr" -p "Bony_Main_CNT";
@@ -1229,7 +1229,7 @@ createNode parentConstraint -n "Bony_NeckUpLctr_parentConstraint1" -p "Bony_Neck
 	setAttr ".tg[0].tor" -type "double3" 81.426234228844379 90 0 ;
 	setAttr ".tg[1].tot" -type "double3" -0.21902897024754253 -0.40998623204208962 -9.0860857591810063e-16 ;
 	setAttr ".tg[1].tor" -type "double3" 90 89.999999999999986 0 ;
-	setAttr ".lr" -type "double3" -145.09844121195073 12.531797601192034 141.52912470096402 ;
+	setAttr ".lr" -type "double3" -158.98096856964182 35.741613832277586 170.81799658999284 ;
 	setAttr ".rst" -type "double3" -2.4651903288156619e-31 7.6133788620705509 0.47603111815466403 ;
 	setAttr ".rsrr" -type "double3" -6.3611093629270327e-15 1.5902773407317584e-14 3.180554681463516e-15 ;
 	setAttr ".int" 2;
@@ -1310,7 +1310,7 @@ createNode parentConstraint -n "Bony_lLegSwitchCG_parentConstraint1" -p "Bony_lL
 	setAttr ".tg[0].tot" -type "double3" -5.5511151231257827e-17 -5.5511151231257827e-17 
 		-5.5511151231257827e-17 ;
 	setAttr ".tg[0].tor" -type "double3" -47.007094817176231 89.999999999996419 0 ;
-	setAttr ".lr" -type "double3" 15.38583451276755 155.58630100676561 -94.811199061137529 ;
+	setAttr ".lr" -type "double3" -0.74039379783074943 144.58456176743377 -2.5404226204737359 ;
 	setAttr ".rst" -type "double3" 5.5511151231257827e-17 0 -8.3266726846886741e-17 ;
 	setAttr ".rsrr" -type "double3" 3.1805546814561733e-15 1.6538884343610304e-13 -5.0888874903416286e-12 ;
 	setAttr ".int" 2;
@@ -1381,7 +1381,7 @@ createNode transform -n "Bony_lFootIKC" -p "Bony_lFootIKCG";
 	setAttr -l on -k off ".sy";
 	setAttr -l on -k off ".sz";
 	setAttr ".rp" -type "double3" 0.459382534027099 0.58418124914169312 -0.094986259937286863 ;
-	setAttr ".rpt" -type "double3" 1.4710455076283324e-15 -1.0130785099704553e-14 -1.609823385706477e-15 ;
+	setAttr ".rpt" -type "double3" -9.4368957093138306e-15 -1.6087825516208909e-14 -1.0769163338864018e-14 ;
 	setAttr ".sp" -type "double3" 0.459382534027099 0.58418124914169312 -0.094986259937286863 ;
 	setAttr -k on ".Stretch";
 	setAttr -k on ".KneeLock";
@@ -1582,7 +1582,7 @@ createNode parentConstraint -n "Bony_lKneeFKAimLctr_parentConstraint1" -p "Bony_
 	setAttr ".tg[0].tor" -type "double3" 86.350276122869914 89.998227417457883 177.92130000468441 ;
 	setAttr ".tg[1].tot" -type "double3" 1.9699408105017333 2.0911659688814415 -0.0015555513916290524 ;
 	setAttr ".tg[1].tor" -type "double3" 4.1643222423011554 90.042715435028256 92.507138726224284 ;
-	setAttr ".lr" -type "double3" -126.96517873686349 -1.5917468181381245 105.61247102039241 ;
+	setAttr ".lr" -type "double3" -127.2468609831194 31.18220232885237 175.94472216995104 ;
 	setAttr ".rst" -type "double3" 1.1102230246251565e-16 4.4408920985006262e-16 0 ;
 	setAttr ".rsrr" -type "double3" 1.1449996853268662e-13 -1.59027734073177e-15 1.113194138512231e-14 ;
 	setAttr ".int" 2;
@@ -1678,7 +1678,7 @@ createNode parentConstraint -n "Bony_lBallFKCG_parentConstraint1" -p "Bony_lBall
 	setAttr ".erp" yes;
 	setAttr ".tg[0].tot" -type "double3" 0.58418124914172731 0.54462260157804454 5.5511151231257827e-16 ;
 	setAttr ".tg[0].tor" -type "double3" 0 2.6271381668888642e-12 89.999999999999972 ;
-	setAttr ".lr" -type "double3" -55.000366670336241 114.01068968951733 -28.492535601557485 ;
+	setAttr ".lr" -type "double3" -21.157572649920279 63.012136798893302 -16.555826795906331 ;
 	setAttr ".rst" -type "double3" 0.4593825340270985 -3.4083846855992306e-14 0.44963634164075789 ;
 	setAttr ".rsrr" -type "double3" 3.1485884964764615e-14 -90 2.2489917831974728e-14 ;
 	setAttr ".int" 2;
@@ -1746,7 +1746,7 @@ createNode parentConstraint -n "Bony_lAnkleFKCG_parentConstraint1" -p "Bony_lAnk
 	setAttr ".tg[0].tot" -type "double3" 2.0141322440132008 -1.4304454287739077e-09 
 		-2.2204460492503131e-15 ;
 	setAttr ".tg[0].tor" -type "double3" 0.17122130337424213 0.0064685184981346034 3.2307217631261604 ;
-	setAttr ".lr" -type "double3" -133.00344296467586 120.7189398977811 20.954238419537884 ;
+	setAttr ".lr" -type "double3" -119.41429934388348 108.44880310078604 -25.784548444966209 ;
 	setAttr ".rst" -type "double3" 0.45938253402709883 0.58418124914169312 -0.094986259937286863 ;
 	setAttr ".rsrr" -type "double3" 89.999999999999986 -89.999999999999986 -1.5902773407317584e-14 ;
 	setAttr ".int" 2;
@@ -1817,7 +1817,7 @@ createNode parentConstraint -n "Bony_lKneeFKCG_parentConstraint1" -p "Bony_lKnee
 	setAttr ".tg[0].tot" -type "double3" 1.9094404579790458 1.0061396160665481e-16 2.7755575615628914e-16 ;
 	setAttr ".tg[0].tor" -type "double3" -0.042633554277215234 -0.0036392973950438666 
 		-3.2282080951225889 ;
-	setAttr ".lr" -type "double3" -135.91967222421161 119.63206955705843 22.726396935782123 ;
+	setAttr ".lr" -type "double3" -122.7245234569269 109.85561040245449 -24.562715040383249 ;
 	setAttr ".rst" -type "double3" 0.45960956201457559 2.5951123985574123 0.018523903226722104 ;
 	setAttr ".rsrr" -type "double3" 93.230741042278069 -90.006458266727748 -0.17085675691656693 ;
 	setAttr ".int" 2;
@@ -1915,7 +1915,7 @@ createNode parentConstraint -n "Bony_lHipFKCG_parentConstraint2" -p "Bony_lHipFK
 	setAttr ".tg[0].tor" -type "double3" 90.002523666511934 -89.993193014897741 -0.12811082472977456 ;
 	setAttr ".tg[1].tot" -type "double3" 1.4789630667779803 14.502215904606855 0.059909318502827338 ;
 	setAttr ".tg[1].tor" -type "double3" 90.002523666511934 -89.993193014897741 -0.12811082472977456 ;
-	setAttr ".lr" -type "double3" -132.93563865251483 120.75005959603912 21.065648919880477 ;
+	setAttr ".lr" -type "double3" -119.37197721214619 108.43724395749749 -25.662216894184819 ;
 	setAttr ".rst" -type "double3" 5.5511151231257827e-17 0 0 ;
 	setAttr ".rsrr" -type "double3" 90.002523666511934 -89.993193014897741 -0.12811082472977456 ;
 	setAttr -k on ".w0";
@@ -1944,7 +1944,7 @@ createNode orientConstraint -n "Bony_lHipFKOrientLctr_orientConstraint1" -p "Bon
 	setAttr -k off ".sy";
 	setAttr -k off ".sz";
 	setAttr ".erp" yes;
-	setAttr ".lr" -type "double3" 4.8747543925915737 -8.9192925976001138 151.29861700932153 ;
+	setAttr ".lr" -type "double3" -8.1423826593570929 16.518875431351546 106.6323828664045 ;
 	setAttr ".o" -type "double3" -0.047609111012789675 0.0018151704479055959 -0.0010705988614251487 ;
 	setAttr ".rsrr" -type "double3" -6.2120179001110566e-18 -3.8825130388958945e-19 
 		-1.9431522777677205e-19 ;
@@ -2023,7 +2023,7 @@ createNode parentConstraint -n "Bony_lArmSwitchCG_parentConstraint1" -p "Bony_lA
 	setAttr ".erp" yes;
 	setAttr ".tg[0].tot" -type "double3" -1.3322676295501878e-15 -1.7763568394002505e-15 
 		0 ;
-	setAttr ".lr" -type "double3" -81.477766975394857 62.375029336005589 -75.69091198961884 ;
+	setAttr ".lr" -type "double3" -123.957116333027 36.934390214857793 -92.874785609456268 ;
 	setAttr ".rst" -type "double3" -1.3322676295501878e-15 -1.7763568394002505e-15 0 ;
 	setAttr ".int" 2;
 	setAttr -k on ".w0";
@@ -2170,7 +2170,7 @@ createNode parentConstraint -n "Bony_lElbowFKAimLctr_parentConstraint1" -p "Bony
 	setAttr ".tg[1].tot" -type "double3" 1.4821802466368603 7.3665905304921216e-26 -2.9998116750530373 ;
 	setAttr ".tg[1].tor" -type "double3" -3.8661666009591323e-09 -0.012012327393050692 
 		1.844064219161275e-05 ;
-	setAttr ".lr" -type "double3" -102.36059415228139 55.171678417276503 -103.61702979883991 ;
+	setAttr ".lr" -type "double3" 37.411285402977839 152.03318403950615 77.300454408962636 ;
 	setAttr ".rst" -type "double3" 4.4408920985006262e-16 1.7763568394002505e-15 0 ;
 	setAttr ".rsrr" -type "double3" 1.9330833026132628e-09 5.2098484696218101e-16 2.2586213325116863e-14 ;
 	setAttr ".int" 2;
@@ -2322,6 +2322,7 @@ createNode transform -n "Bony_lWristFKC" -p "Bony_lWristFKCG";
 	setAttr -k off ".sy";
 	setAttr -k off ".sz";
 	setAttr ".rp" -type "double3" 3.5609607696533203 7.1013436317443857 -0.013861402869224545 ;
+	setAttr ".rpt" -type "double3" -4.1910919179599659e-14 -6.1547988927657116e-14 -2.7533531010703882e-14 ;
 	setAttr ".sp" -type "double3" 3.5609607696533203 7.1013436317443857 -0.013861402869224545 ;
 	setAttr ".mnsl" -type "double3" 0.01 0.01 0.01 ;
 	setAttr ".msxe" yes;
@@ -2366,7 +2367,7 @@ createNode parentConstraint -n "Bony_lWristFKCG_parentConstraint1" -p "Bony_lWri
 	setAttr ".tg[0].tot" -type "double3" 1.3682604188616367 1.5099033134902129e-14 1.3704315460216776e-16 ;
 	setAttr ".tg[0].tor" -type "double3" -0.0034966660748884052 0.013006706039449716 
 		1.9173735532391556e-05 ;
-	setAttr ".lr" -type "double3" -81.477766978455392 62.375029337595514 -75.690911989104833 ;
+	setAttr ".lr" -type "double3" -123.95711596634179 36.934390548830358 -92.874784993937539 ;
 	setAttr ".rst" -type "double3" -1.7763568394002505e-15 -1.7763568394002505e-15 6.9388939039072284e-18 ;
 	setAttr ".rsrr" -type "double3" -7.7650334830977254e-19 -1.5530052155583578e-18 
 		2.8910314376544139e-21 ;
@@ -2394,7 +2395,7 @@ createNode orientConstraint -n "Bony_lWristIKLctr_orientConstraint1" -p "Bony_lW
 	setAttr -k off ".sy";
 	setAttr -k off ".sz";
 	setAttr ".erp" yes;
-	setAttr ".lr" -type "double3" 35.646320922058173 -57.420504980447788 -2.0497826357614319 ;
+	setAttr ".lr" -type "double3" -36.468593969385772 -135.47570876808399 87.421577713186466 ;
 	setAttr ".int" 2;
 	setAttr -k on ".w0";
 createNode transform -n "Bony_lElbowFKCG" -p "Bony_Main_CNT";
@@ -2424,7 +2425,7 @@ createNode transform -n "Bony_lElbowFKC" -p "Bony_lElbowFKCG";
 	setAttr -l on -k off ".sy";
 	setAttr -l on -k off ".sz";
 	setAttr ".rp" -type "double3" 2.1926946375524783 7.1013439642372331 -0.01510315880519093 ;
-	setAttr ".rpt" -type "double3" -9.7200025805932455e-14 0 -6.539213615042172e-14 ;
+	setAttr ".rpt" -type "double3" -1.0980105713542798e-13 0 -5.3734794391857577e-14 ;
 	setAttr ".sp" -type "double3" 2.1926946375524783 7.1013439642372331 -0.01510315880519093 ;
 	setAttr ".mnsl" -type "double3" 0.01 0.01 0.01 ;
 	setAttr ".msxe" yes;
@@ -2469,7 +2470,7 @@ createNode parentConstraint -n "Bony_lElbowFKCG_parentConstraint1" -p "Bony_lElb
 	setAttr ".tg[0].tot" -type "double3" 1.4815513221193384 8.8817841970012523e-16 -5.427533422697195e-13 ;
 	setAttr ".tg[0].tor" -type "double3" 0.0034966708377285084 -0.025019032238138159 
 		-1.5268719708249306e-06 ;
-	setAttr ".lr" -type "double3" -303.69201141611859 -236.55534439323213 416.08018688996515 ;
+	setAttr ".lr" -type "double3" -496.91457540736951 13.918578486559484 238.05795773271745 ;
 	setAttr ".rst" -type "double3" -1.7763568394002505e-15 2.6645352591003757e-15 0 ;
 	setAttr ".rsrr" -type "double3" 0.0034966705176126722 -0.013006704845086323 -1.9967513628345209e-05 ;
 	setAttr ".int" 2;
@@ -2584,7 +2585,7 @@ createNode orientConstraint -n "Bony_lShoulderFKOrientLctr_orientConstraint1" -p
 	setAttr -k off ".sy";
 	setAttr -k off ".sz";
 	setAttr ".erp" yes;
-	setAttr ".lr" -type "double3" 147.85159114924491 49.477376642220449 -4.5081702252528464 ;
+	setAttr ".lr" -type "double3" -108.46101465374207 21.668713643833616 164.91727905724932 ;
 	setAttr ".rsrr" -type "double3" -0.0034967158898882443 -0.011705343798521626 2.0714415945931168e-14 ;
 	setAttr -k on ".w0";
 createNode parentConstraint -n "Bony_lShoulderFKCG2_parentConstraint1" -p "Bony_lShoulderFKCG2";
@@ -2606,7 +2607,7 @@ createNode parentConstraint -n "Bony_lShoulderFKCG2_parentConstraint1" -p "Bony_
 	setAttr -s 2 ".tg";
 	setAttr ".tg[0].tot" -type "double3" 0.71114909648895264 0.14213655235234945 -0.013861397281289203 ;
 	setAttr ".tg[1].tot" -type "double3" 0.71114909648895197 7.1013445854187029 -0.013861397281288971 ;
-	setAttr ".lr" -type "double3" 35.000551138413414 172.90184332613859 -35.99873894763985 ;
+	setAttr ".lr" -type "double3" 23.061788739713929 149.01192398176622 -4.8855503187593765 ;
 	setAttr ".int" 2;
 	setAttr -k on ".w0";
 	setAttr -k on ".w1";
@@ -2672,7 +2673,7 @@ createNode parentConstraint -n "Bony_lClavicleCG_parentConstraint1" -p "Bony_lCl
 	setAttr -k off ".sz";
 	setAttr ".erp" yes;
 	setAttr ".tg[0].tot" -type "double3" 0.38826418586793199 0.14213655235234857 -0.013861397281289179 ;
-	setAttr ".lr" -type "double3" 35.000551138413414 172.90184332613859 -35.99873894763985 ;
+	setAttr ".lr" -type "double3" 23.061788739713929 149.01192398176622 -4.8855503187593765 ;
 	setAttr ".int" 2;
 	setAttr -k on ".w0";
 createNode transform -n "Bony_lArmIKFKG" -p "Bony_Main_CNT";
@@ -2706,7 +2707,7 @@ createNode parentConstraint -n "Bony_lArmIKFKG_parentConstraint1" -p "Bony_lArmI
 	setAttr ".tg[0].tot" -type "double3" 0 8.8817841970012523e-16 0 ;
 	setAttr ".tg[0].tor" -type "double3" -8.7465253740246672e-15 -1.0369786409538441e-14 
 		-3.1688285155968739e-14 ;
-	setAttr ".lr" -type "double3" 35.000551138413442 172.90184332613859 -35.99873894763985 ;
+	setAttr ".lr" -type "double3" 23.061788739713929 149.01192398176619 -4.8855503187593765 ;
 	setAttr ".rst" -type "double3" 0.38826418586793132 7.1013445854187029 -0.013861397281288946 ;
 	setAttr ".rsrr" -type "double3" -9.5416640443905471e-15 1.272221872585407e-14 2.2263882770244617e-14 ;
 	setAttr ".int" 2;
@@ -2736,7 +2737,7 @@ createNode parentConstraint -n "Bony_lShoulderJFK_parentConstraint1" -p "Bony_lS
 		3.4694469519536142e-18 ;
 	setAttr ".tg[0].tor" -type "double3" 1.7930598065189959e-17 1.0871036508908505e-17 
 		-1.516606624767571e-20 ;
-	setAttr ".lr" -type "double3" -416.0461149156892 -85.006625726182904 376.63733868043789 ;
+	setAttr ".lr" -type "double3" -356.19252715420612 -18.595382419763837 302.00862731373866 ;
 	setAttr ".rst" -type "double3" 0.3228849106210207 -3.5527136788005009e-15 -1.3877787807814457e-16 ;
 	setAttr ".rsrr" -type "double3" -2.2215917809844367e-24 -6.2120208622336061e-18 
 		9.0996398219162487e-21 ;
@@ -2746,7 +2747,7 @@ createNode joint -n "Bony_lShoulderJIK" -p "Bony_lArmIKFKG";
 	rename -uid "6154075C-4F53-E00A-31D5-CA9751700953";
 	setAttr ".v" no;
 	setAttr ".t" -type "double3" 0.32288491062102059 -1.7763568394002505e-15 -2.2551405187698492e-17 ;
-	setAttr ".r" -type "double3" -137.26897644072238 71.448921118683486 95.171764071327118 ;
+	setAttr ".r" -type "double3" -141.59807062002039 6.1701560672315869 167.95847270622721 ;
 	setAttr ".mnrl" -type "double3" -360 -360 -360 ;
 	setAttr ".mxrl" -type "double3" 360 360 360 ;
 	setAttr ".jo" -type "double3" 0 0.012012327393051908 -1.844064176374666e-05 ;
@@ -2784,7 +2785,7 @@ createNode parentConstraint -n "Bony_lWristJIK_parentConstraint1" -p "Bony_lWris
 		1.6221312487685324e-12 ;
 	setAttr ".tg[0].tor" -type "double3" -0.0034967153522018702 0.012674538276300164 
 		1.5065999697750393e-06 ;
-	setAttr ".lr" -type "double3" -72.881731554247793 53.730473725923353 -42.562946248945245 ;
+	setAttr ".lr" -type "double3" -13.49270871271364 31.498697365867763 -9.3118726876888882 ;
 	setAttr ".rst" -type "double3" 1.3682604188616376 0 -6.9388939039072284e-18 ;
 	setAttr ".rsrr" -type "double3" -4.9358607405470221e-08 1.2960088282168169e-15 -1.0920219238290855e-11 ;
 	setAttr ".int" 2;
@@ -2820,7 +2821,7 @@ createNode parentConstraint -n "Bony_lLegIKFKG_parentConstraint1" -p "Bony_lLegI
 	setAttr -k off ".sy";
 	setAttr -k off ".sz";
 	setAttr ".erp" yes;
-	setAttr ".lr" -type "double3" 46.51039660876269 172.90184332613859 -35.99873894763985 ;
+	setAttr ".lr" -type "double3" 23.801577854353521 149.01192398176624 -4.8855503187593765 ;
 	setAttr ".rst" -type "double3" 0 4.7661149111754275 0.018608514219522476 ;
 	setAttr ".int" 2;
 	setAttr -k on ".w0";
@@ -2848,7 +2849,7 @@ createNode parentConstraint -n "Bony_lHipJFK_parentConstraint1" -p "Bony_lHipJFK
 	setAttr ".tg[0].tot" -type "double3" 8.8817841970012523e-16 0 5.5511151231257827e-17 ;
 	setAttr ".tg[0].tor" -type "double3" 4.1322362775576783e-14 6.324876871616197e-15 
 		1.5916750454257608e-14 ;
-	setAttr ".lr" -type "double3" -8.9055531080978482e-14 -2.2246087742172805e-29 -2.8624992133171654e-14 ;
+	setAttr ".lr" -type "double3" -6.3611093629270335e-14 -7.0622500768802552e-30 -1.2722218725854067e-14 ;
 	setAttr ".rst" -type "double3" 0.45938271284103405 -0.26156206998890408 2.4286128663675299e-17 ;
 	setAttr ".rsrr" -type "double3" -3.4986101496098669e-14 -1.9083328088781104e-14 
 		-2.2263882770244605e-14 ;
@@ -2858,14 +2859,14 @@ createNode joint -n "Bony_lHipJIK" -p "Bony_lLegIKFKG";
 	rename -uid "7D5FBAB2-4DA2-4FB5-D648-93A9F6FC27E5";
 	setAttr ".v" no;
 	setAttr ".t" -type "double3" 0.45938271284103405 -0.26156206998890408 2.7755575615628914e-17 ;
-	setAttr ".r" -type "double3" 48.461074224415867 8.3861739052033766 132.71838538692401 ;
+	setAttr ".r" -type "double3" -8.748375577085131 15.252829700685247 64.746893688824258 ;
 	setAttr ".mnrl" -type "double3" -360 -360 -360 ;
 	setAttr ".mxrl" -type "double3" 360 360 360 ;
 	setAttr ".jo" -type "double3" 89.871889475996113 0.0025388865985208507 -89.993193031906827 ;
 createNode joint -n "Bony_lKneeJIK" -p "Bony_lHipJIK";
 	rename -uid "AFF0D922-4AA2-49F8-06F9-B9BCEB189A51";
 	setAttr ".t" -type "double3" 1.9094404579790436 -3.2612801348363973e-16 1.6653345369377348e-16 ;
-	setAttr ".r" -type "double3" 9.1200426721510849e-15 -0.002293414842657244 -111.29314463057096 ;
+	setAttr ".r" -type "double3" 3.5950545140540444e-15 -0.00090134872078185809 -44.476773375401137 ;
 	setAttr ".mnrl" -type "double3" -360 -360 -360 ;
 	setAttr ".mxrl" -type "double3" 360 360 360 ;
 	setAttr ".jo" -type "double3" -0.04238884823135812 -0.0060401218585147661 -3.2282045195860265 ;
@@ -2873,14 +2874,14 @@ createNode joint -n "Bony_lKneeJIK" -p "Bony_lHipJIK";
 createNode joint -n "Bony_lAnkleJIK" -p "Bony_lKneeJIK";
 	rename -uid "9ACAB444-461F-395A-EA47-42839678D5F1";
 	setAttr ".t" -type "double3" 2.0141322440132017 1.27675647831893e-15 1.6653345369377348e-16 ;
-	setAttr ".r" -type "double3" 24.291395071765159 -1.1876094417569927 6.8356987403736564 ;
+	setAttr ".r" -type "double3" 9.9412900285486998 -20.110735724835045 2.5559010341385595 ;
 	setAttr ".mnrl" -type "double3" -360 -360 -360 ;
 	setAttr ".mxrl" -type "double3" 360 360 360 ;
 	setAttr ".jo" -type "double3" 0.1227472871514126 -0.11877034672193919 46.223509382173368 ;
 createNode joint -n "Bony_lBallJIK" -p "Bony_lAnkleJIK";
 	rename -uid "300C5F01-447C-2114-61BC-D0BE96D891C0";
 	setAttr ".t" -type "double3" 0.798674846228693 3.8857805861880479e-16 1.1102230246251565e-16 ;
-	setAttr ".r" -type "double3" 6.5447673124534625e-09 -1.9127075820813817e-24 2.6942666543897535e-23 ;
+	setAttr ".r" -type "double3" -4.6417114254584619e-06 1.3565389173601987e-21 -1.9108407911048981e-20 ;
 	setAttr ".mnrl" -type "double3" -360 -360 -360 ;
 	setAttr ".mxrl" -type "double3" 360 360 360 ;
 	setAttr ".jo" -type "double3" 0 0 47.007094817176245 ;
@@ -2989,7 +2990,7 @@ createNode parentConstraint -n "Bony_lWristJFKG2_parentConstraint1" -p "Bony_lWr
 	setAttr ".erp" yes;
 	setAttr ".tg[0].tot" -type "double3" 1.3682604188616372 2.042810365310288e-14 1.2836953722228372e-16 ;
 	setAttr ".tg[0].tor" -type "double3" -0.00349666607487966 0.013006706039449709 1.9173735532393728e-05 ;
-	setAttr ".lr" -type "double3" -81.477766975394843 62.375029336005589 -75.69091198961884 ;
+	setAttr ".lr" -type "double3" -123.95711596223859 36.934390547006643 -92.87478499240126 ;
 	setAttr ".rst" -type "double3" 0 0 1.7347234759768071e-18 ;
 	setAttr ".rsrr" -type "double3" -7.765026077791789e-19 -1.5530050304257095e-18 -3.128001227626087e-21 ;
 	setAttr ".int" 2;
@@ -3045,7 +3046,7 @@ createNode parentConstraint -n "Bony_lElbowJFK_parentConstraint1" -p "Bony_lElbo
 	setAttr ".tg[0].tot" -type "double3" 0 -8.8817841970012523e-16 -1.7347234759768071e-18 ;
 	setAttr ".tg[0].tor" -type "double3" -8.7465253740246703e-15 6.2120208622334312e-18 
 		-1.8900710448140659e-19 ;
-	setAttr ".lr" -type "double3" -4.2510257517514667e-09 -24.572212481306018 1.7686356847409433e-09 ;
+	setAttr ".lr" -type "double3" -4.7001565739060923e-09 -34.659221296425187 2.6738340985023669e-09 ;
 	setAttr ".rst" -type "double3" 2.1927003860473628 7.101344108581543 -0.014172011423951305 ;
 	setAttr ".rsrr" -type "double3" 8.7453607552598354e-15 -6.2104912037259002e-18 1.9052371113722484e-19 ;
 	setAttr ".int" 2;
@@ -3085,7 +3086,7 @@ createNode parentConstraint -n "Bony_lElbowJFKG2_parentConstraint1" -p "Bony_lEl
 	setAttr ".tg[0].tot" -type "double3" 1.4815513221193395 1.7763568394002505e-15 -5.427533422697195e-13 ;
 	setAttr ".tg[0].tor" -type "double3" -3.866166613383175e-09 -0.012012327393051225 
 		1.8440642169026552e-05 ;
-	setAttr ".lr" -type "double3" -303.71190498986618 -236.54814360676403 416.06053537399657 ;
+	setAttr ".lr" -type "double3" -496.92027651966549 13.909092146124856 238.04879019730436 ;
 	setAttr ".rst" -type "double3" 0 1.7763568394002505e-15 0 ;
 	setAttr ".rsrr" -type "double3" 3.8661666065490444e-09 -4.0666209736930744e-18 3.1013830291995439e-21 ;
 	setAttr ".int" 2;
@@ -3131,7 +3132,7 @@ createNode parentConstraint -n "Bony_lWristJIKDummy_parentConstraint1" -p "Bony_
 	setAttr ".erp" yes;
 	setAttr ".tg[0].tot" -type "double3" -1.7763568394002505e-15 -2.1316282072803006e-14 
 		-1.3877787807814457e-16 ;
-	setAttr ".lr" -type "double3" -72.878923668805129 53.715899883598809 -42.565765850966514 ;
+	setAttr ".lr" -type "double3" -13.489687789340941 31.485533969491005 -9.3137002611343327 ;
 	setAttr ".rst" -type "double3" 3.5609607696533185 7.1013436317443643 -0.013861402869224672 ;
 	setAttr ".int" 2;
 	setAttr -k on ".w0";
@@ -3171,7 +3172,7 @@ createNode parentConstraint -n "Bony_lWristJIKDummyG2_parentConstraint1" -p "Bon
 		-5.2041704279304213e-18 ;
 	setAttr ".tg[0].tor" -type "double3" -0.0034966660748796956 0.013006706039449705 
 		1.9173735532393745e-05 ;
-	setAttr ".lr" -type "double3" 30.221706541749075 -36.419178458213864 57.204756974205267 ;
+	setAttr ".lr" -type "double3" 7.8290567903414203 -31.024064071405785 10.885992908406408 ;
 	setAttr ".rst" -type "double3" 4.4408920985006262e-16 0 -3.4694469519536142e-18 ;
 	setAttr ".rsrr" -type "double3" -3.6685865615663637e-17 7.7650319814633646e-18 8.1246834528539681e-22 ;
 	setAttr ".int" 2;
@@ -3664,7 +3665,7 @@ createNode parentConstraint -n "Bony_lPalmCG_parentConstraint1" -p "Bony_lPalmCG
 	setAttr ".erp" yes;
 	setAttr ".tg[0].tot" -type "double3" 0.21099049185001822 -9.7135166497218476e-16 
 		7.0846716911401451e-20 ;
-	setAttr ".lr" -type "double3" -81.477766975394857 62.375029336005589 -75.69091198961884 ;
+	setAttr ".lr" -type "double3" -123.957116333027 36.934390214857793 -92.874785609456268 ;
 	setAttr ".rst" -type "double3" 3.5609607696533185 7.1013436317443652 -0.013861402869224673 ;
 	setAttr ".int" 2;
 	setAttr -k on ".w0";
@@ -3793,7 +3794,7 @@ createNode parentConstraint -n "Bony_lBallJFK_parentConstraint1" -p "Bony_lBallJ
 		6.6613381477509392e-16 ;
 	setAttr ".tg[0].tor" -type "double3" -2.4697576068795359e-12 2.5244853509801937e-12 
 		9.5416640443905471e-15 ;
-	setAttr ".lr" -type "double3" 0 0 2.5698881826225217e-12 ;
+	setAttr ".lr" -type "double3" 0 0 2.5571659638966676e-12 ;
 	setAttr ".rst" -type "double3" 0.79867484622869311 3.8857805861880479e-16 1.6653345369377348e-16 ;
 	setAttr ".rsrr" -type "double3" 0 0 -6.3611093629270335e-15 ;
 	setAttr ".int" 2;
@@ -3816,7 +3817,7 @@ createNode parentConstraint -n "Bony_lAnkleJFK_parentConstraint1" -p "Bony_lAnkl
 	setAttr ".tg[0].tot" -type "double3" 0 2.3592239273284576e-16 -5.5511151231257827e-16 ;
 	setAttr ".tg[0].tor" -type "double3" -3.5619608786930908e-12 -9.0606654476660835e-14 
 		42.992905182823748 ;
-	setAttr ".lr" -type "double3" 3.4731657121581597e-12 1.0336802714756504e-13 -2.5444437451704994e-14 ;
+	setAttr ".lr" -type "double3" 3.5335962511059672e-12 2.5126381983561833e-13 -1.5902773407309834e-14 ;
 	setAttr ".rst" -type "double3" 0.45938253402709955 0.58418124914169312 -0.094986259937286627 ;
 	setAttr ".rsrr" -type "double3" 3.5558601338762116e-12 9.5416640443906481e-14 -3.1805546814632208e-14 ;
 	setAttr ".int" 2;
@@ -3855,7 +3856,7 @@ createNode parentConstraint -n "Bony_lAnkleJFKG2_parentConstraint1" -p "Bony_lAn
 	setAttr ".tg[0].tot" -type "double3" -4.4408920985006262e-16 -1.1102230246251565e-16 
 		2.2204460492503131e-16 ;
 	setAttr ".tg[0].tor" -type "double3" -1.0637843324010039 89.829198155211287 92.166947090531309 ;
-	setAttr ".lr" -type "double3" 46.51039660876534 172.90184332613856 -35.998738947639751 ;
+	setAttr ".lr" -type "double3" 23.801577854356218 149.01192398176622 -4.8855503187591731 ;
 	setAttr ".rst" -type "double3" 0 4.4408920985006262e-16 1.7347234759768071e-17 ;
 	setAttr ".rsrr" -type "double3" -3.1805546814635169e-13 3.531125038440127e-29 1.2722218725854067e-14 ;
 	setAttr ".int" 2;
@@ -3901,7 +3902,7 @@ createNode parentConstraint -n "Bony_lKneeJFK_parentConstraint1" -p "Bony_lKneeJ
 	setAttr ".tg[0].tot" -type "double3" 0 2.2204460492503131e-16 -4.4408920985006262e-16 ;
 	setAttr ".tg[0].tor" -type "double3" 0.0001770536772477574 3.5299808549641482e-14 
 		-1.9957140164608991e-08 ;
-	setAttr ".lr" -type "double3" -1.3040274192670814e-13 7.633331237783851e-14 1.99600511672812e-08 ;
+	setAttr ".lr" -type "double3" -1.4630551532626965e-13 1.2086107792109775e-13 1.99600511672812e-08 ;
 	setAttr ".rst" -type "double3" 0.45960956201457587 2.5951123985574132 0.018523903226722212 ;
 	setAttr ".rsrr" -type "double3" -6.3611093607113449e-15 1.2722218726961909e-14 1.9957147320857025e-08 ;
 	setAttr ".int" 2;
@@ -3939,7 +3940,7 @@ createNode parentConstraint -n "Bony_lKneeJFKG2_parentConstraint1" -p "Bony_lKne
 	setAttr ".erp" yes;
 	setAttr ".tg[0].tot" -type "double3" 8.8817841970012523e-16 0 0 ;
 	setAttr ".tg[0].tor" -type "double3" -3.0439953065704377 89.871708463327096 86.958535970000284 ;
-	setAttr ".lr" -type "double3" 46.510396608765646 172.90184332613859 -35.998738947639801 ;
+	setAttr ".lr" -type "double3" 23.801577854356498 149.01192398176624 -4.8855503187592744 ;
 	setAttr ".rst" -type "double3" 0 -8.8817841970012523e-16 0 ;
 	setAttr ".rsrr" -type "double3" 2.9483741897166803e-12 1.2722218725854231e-14 -6.3611093629267069e-15 ;
 	setAttr ".int" 2;
@@ -4041,7 +4042,7 @@ createNode parentConstraint -n "Bony_lWristFKLctr_parentConstraint1" -p "Bony_lW
 	setAttr -k off ".sy";
 	setAttr -k off ".sz";
 	setAttr ".erp" yes;
-	setAttr ".lr" -type "double3" -51.892684508428303 44.842895874284508 -40.628712418542918 ;
+	setAttr ".lr" -type "double3" 125.82875432454588 152.50781308848735 77.467852760379685 ;
 	setAttr ".int" 2;
 	setAttr -k on ".w0";
 createNode transform -n "Bony_lAnkleFKLctrG" -p "Bony_Main_CNT";
@@ -4071,7 +4072,7 @@ createNode parentConstraint -n "Bony_lAnkleFKLctr_parentConstraint1" -p "Bony_lA
 	setAttr ".erp" yes;
 	setAttr ".tg[0].tot" -type "double3" 0 0 -1.6653345369377348e-16 ;
 	setAttr ".tg[0].tor" -type "double3" 0 90.000000000000014 89.999999999999972 ;
-	setAttr ".lr" -type "double3" -74.766564516128753 -109.68654838673866 -36.369664410536139 ;
+	setAttr ".lr" -type "double3" -46.467823578530627 162.44121800981344 -26.375510143073367 ;
 	setAttr ".rsrr" -type "double3" 3.1805546814635168e-14 3.1805546814635247e-15 2.8624992133171654e-14 ;
 	setAttr ".int" 2;
 	setAttr -k on ".w0";
@@ -4272,7 +4273,7 @@ createNode parentConstraint -n "Bony_lToeIKCG_parentConstraint1" -p "Bony_lToeIK
 	setAttr ".erp" yes;
 	setAttr ".tg[0].tot" -type "double3" -0.0046707225968934396 -0.2574814345528898 
 		1.476735838170006 ;
-	setAttr ".lr" -type "double3" -164.61416139503814 24.413705062115469 85.188799613298968 ;
+	setAttr ".lr" -type "double3" 179.25959971969652 35.415443093908081 177.45958410535525 ;
 	setAttr ".rst" -type "double3" -5.5511151231257827e-17 0 0 ;
 	setAttr ".int" 2;
 	setAttr -k on ".w0";
@@ -4413,7 +4414,7 @@ createNode parentConstraint -n "Bony_lAnkleIKLockLctr_parentConstraint1" -p "Bon
 	setAttr ".tg[0].tot" -type "double3" 4.9960036108132044e-16 0.58418124914172675 
 		-0.54462260157804476 ;
 	setAttr ".tg[0].tor" -type "double3" 47.508723809904708 39.305962281324 -100.41479528023947 ;
-	setAttr ".lr" -type "double3" 51.901264072270756 0.0092762534694317087 16.1182214995303 ;
+	setAttr ".lr" -type "double3" -11.545245621902643 -2.7979338555331039 36.604795233706987 ;
 	setAttr ".rst" -type "double3" 2.8817334214390646 -0.12750535623913967 -0.58631478893769506 ;
 	setAttr ".rsrr" -type "double3" 1.4312496066585827e-14 -6.3611093629270304e-15 -3.2600685485001048e-14 ;
 	setAttr ".int" 2;
@@ -4513,7 +4514,7 @@ createNode orientConstraint -n "Bony_lAnkleIKLctr_orientConstraint1" -p "Bony_lA
 	setAttr -k off ".sy";
 	setAttr -k off ".sz";
 	setAttr ".erp" yes;
-	setAttr ".lr" -type "double3" -36.9817022833533 -21.560004821871992 27.002985551414678 ;
+	setAttr ".lr" -type "double3" -51.204447288801795 -364.37989566390206 -2.0669888282580215 ;
 	setAttr ".int" 2;
 	setAttr -k on ".w0";
 createNode parentConstraint -n "Bony_lAnkleIKLctrG_parentConstraint1" -p "Bony_lAnkleIKLctrG";
@@ -4534,7 +4535,7 @@ createNode parentConstraint -n "Bony_lAnkleIKLctrG_parentConstraint1" -p "Bony_l
 	setAttr ".tg[0].tot" -type "double3" -2.0023948676950454e-06 5.8024557006430832e-08 
 		6.722011836046704e-12 ;
 	setAttr ".tg[0].tor" -type "double3" 0 90.000000000000014 89.999999999999972 ;
-	setAttr ".lr" -type "double3" -55.000366670336248 204.01068968951731 -28.492535601557485 ;
+	setAttr ".lr" -type "double3" -21.157572649920276 153.01213679889329 -16.555826795906327 ;
 	setAttr ".rst" -type "double3" 0.45938253402037682 0.58418325153656081 -0.094986201912729856 ;
 	setAttr ".rsrr" -type "double3" 9.5416640443905487e-15 -3.1805546814635152e-15 1.2722218725854064e-14 ;
 	setAttr ".int" 2;
@@ -4614,7 +4615,7 @@ createNode parentConstraint -n "Bony_rLegSwitchCG_parentConstraint1" -p "Bony_rL
 	setAttr ".erp" yes;
 	setAttr ".tg[0].tot" -type "double3" 0 0 -5.5511151231257827e-17 ;
 	setAttr ".tg[0].tor" -type "double3" -132.992905182827 -89.999999999964942 0 ;
-	setAttr ".lr" -type "double3" -47.959095720202399 2.0264792318060287 -99.396884660592775 ;
+	setAttr ".lr" -type "double3" -11.914493732113005 -53.247243756314219 7.376876899864004 ;
 	setAttr ".rst" -type "double3" 5.5511151231257827e-17 0 0 ;
 	setAttr ".rsrr" -type "double3" 0 179.99999999995043 -1.7302217467161532e-12 ;
 	setAttr ".int" 2;
@@ -4686,7 +4687,7 @@ createNode transform -n "Bony_rFootIKC" -p "Bony_rFootIKCG";
 	setAttr -l on -k off ".sy";
 	setAttr -l on -k off ".sz";
 	setAttr ".rp" -type "double3" -0.45938253402709933 -0.58418124914169223 0.094986259937274123 ;
-	setAttr ".rpt" -type "double3" 7.6605388699135801e-15 2.1760371282653068e-14 -3.1641356201816961e-15 ;
+	setAttr ".rpt" -type "double3" 2.6756374893466273e-14 3.3771596630316481e-14 -7.382983113757291e-15 ;
 	setAttr ".sp" -type "double3" -0.45938253402709933 -0.58418124914169223 0.094986259937274123 ;
 	setAttr -k on ".Stretch";
 	setAttr -k on ".KneeLock";
@@ -4892,7 +4893,7 @@ createNode parentConstraint -n "Bony_rKneeFKAimLctr_parentConstraint1" -p "Bony_
 	setAttr ".tg[0].tor" -type "double3" -93.649723879683464 89.998227417457883 177.92130000225737 ;
 	setAttr ".tg[1].tot" -type "double3" -1.9699408105017309 -2.0911660652531978 0.0014200990957898285 ;
 	setAttr ".tg[1].tor" -type "double3" 4.4027775771466349 89.960991927045654 -87.254405999452544 ;
-	setAttr ".lr" -type "double3" -126.64350233690085 -1.4797524106675788 105.87734952585458 ;
+	setAttr ".lr" -type "double3" -127.05539423759541 31.047646608057388 176.27683426155008 ;
 	setAttr ".rst" -type "double3" -1.1102230246251565e-16 8.8817841970012523e-16 -4.4408920985006262e-16 ;
 	setAttr ".int" 2;
 	setAttr -k on ".w0";
@@ -4987,7 +4988,7 @@ createNode parentConstraint -n "Bony_rBallFKCG_parentConstraint1" -p "Bony_rBall
 	setAttr ".erp" yes;
 	setAttr ".tg[0].tot" -type "double3" -0.58418124914169633 -0.54462260157807751 1.1102230246251565e-16 ;
 	setAttr ".tg[0].tor" -type "double3" 0 2.5660715170047652e-11 89.999999999999986 ;
-	setAttr ".lr" -type "double3" 124.99963332966377 65.989310310482679 28.492535601557517 ;
+	setAttr ".lr" -type "double3" 158.8424273500797 116.98786320110671 16.555826795906299 ;
 	setAttr ".rst" -type "double3" -0.45938253402709961 -4.4408920985006262e-15 0.44963634164080341 ;
 	setAttr ".rsrr" -type "double3" -179.99999999999997 -89.999999999999986 1.349395069918483e-14 ;
 	setAttr ".int" 2;
@@ -5057,7 +5058,7 @@ createNode parentConstraint -n "Bony_rAnkleFKCG_parentConstraint1" -p "Bony_rAnk
 	setAttr ".tg[0].tot" -type "double3" -2.0141322440132026 -1.4304357143224422e-09 
 		-5.3290705182007514e-15 ;
 	setAttr ".tg[0].tor" -type "double3" 0.1712213033743224 0.0064685184981477699 3.2307217631259069 ;
-	setAttr ".lr" -type "double3" 46.996557035324145 59.281060102218902 -20.954238419537901 ;
+	setAttr ".lr" -type "double3" 60.585700656116515 71.55119689921402 25.784548444966212 ;
 	setAttr ".rst" -type "double3" -0.45938253402709939 0.58418124914169178 -0.094986259937274206 ;
 	setAttr ".rsrr" -type "double3" -90 -89.999999999999986 1.2722218725854067e-14 ;
 	setAttr ".int" 2;
@@ -5129,7 +5130,7 @@ createNode parentConstraint -n "Bony_rKneeFKCG_parentConstraint1" -p "Bony_rKnee
 		-3.8857805861880479e-16 ;
 	setAttr ".tg[0].tor" -type "double3" -0.038922301889430293 -0.0036392973950399761 
 		-3.2282080951223775 ;
-	setAttr ".lr" -type "double3" 43.897512341247165 60.425204038441542 -22.429288610553485 ;
+	setAttr ".lr" -type "double3" 57.147496026965733 70.07794654843471 24.884047011014346 ;
 	setAttr ".rst" -type "double3" -0.45960956201457503 2.5951123985574132 0.018523903226722302 ;
 	setAttr ".rsrr" -type "double3" -86.769258957722158 -90.006458266727748 -0.17085675691664007 ;
 	setAttr ".int" 2;
@@ -5227,7 +5228,7 @@ createNode parentConstraint -n "Bony_rHipFKCG_parentConstraint2" -p "Bony_rHipFK
 	setAttr ".tg[0].tor" -type "double3" -89.997476774402003 -89.99319301389761 -0.13182207709144869 ;
 	setAttr ".tg[1].tot" -type "double3" -1.4789630667779772 14.502215904606844 0.05990931850283019 ;
 	setAttr ".tg[1].tor" -type "double3" -89.997476774402003 -89.99319301389761 -0.13182207709144869 ;
-	setAttr ".lr" -type "double3" 46.922182861732225 59.314399932759009 -20.842185984347328 ;
+	setAttr ".lr" -type "double3" 60.536662298028183 71.536627801577055 25.908789049841104 ;
 	setAttr ".rst" -type "double3" 5.5511151231257827e-17 0 0 ;
 	setAttr ".rsrr" -type "double3" -89.997476774402003 -89.99319301389761 -0.13182207709144869 ;
 	setAttr -k on ".w0";
@@ -5256,7 +5257,7 @@ createNode orientConstraint -n "Bony_rHipFKOrientLctr_orientConstraint1" -p "Bon
 	setAttr -k off ".sy";
 	setAttr -k off ".sz";
 	setAttr ".erp" yes;
-	setAttr ".lr" -type "double3" -0.5899726109864919 -21.057848957218972 56.387278953006387 ;
+	setAttr ".lr" -type "double3" 7.2311482766572848 -6.0792623391386229 113.24312809648418 ;
 	setAttr ".o" -type "double3" -0.047609466453541506 0.0018171743652043955 -0.0010704905808514083 ;
 	setAttr ".rsrr" -type "double3" -1.2424038762344489e-17 3.8834609180557821e-19 -5.8237695583438427e-19 ;
 	setAttr -k on ".w0";
@@ -5338,7 +5339,7 @@ createNode parentConstraint -n "Bony_rArmSwitchCG_parentConstraint1" -p "Bony_rA
 		-1.7347234759768071e-18 ;
 	setAttr ".tg[0].tor" -type "double3" -2.8742757889010228e-18 -2.4848083448933725e-17 
 		3.0430125860683006e-33 ;
-	setAttr ".lr" -type "double3" 133.51088522235497 -23.108239937584717 8.3481073075840477 ;
+	setAttr ".lr" -type "double3" -11.156019369462774 -30.703144343017531 133.45884744326403 ;
 	setAttr ".rst" -type "double3" 1.3322676295501878e-15 -1.7763568394002505e-15 3.4694469519536142e-18 ;
 	setAttr ".rsrr" -type "double3" -180 0 0 ;
 	setAttr ".int" 2;
@@ -5486,7 +5487,7 @@ createNode parentConstraint -n "Bony_rElbowFKAimLctr_parentConstraint1" -p "Bony
 	setAttr ".tg[1].tot" -type "double3" -1.4821173502381679 2.8801425078683332e-15 
 		2.6998116816463007 ;
 	setAttr ".tg[1].tor" -type "double3" 179.99999999613379 -0.012012327393032514 1.8440642238465795e-05 ;
-	setAttr ".lr" -type "double3" -94.969894713156734 -32.802178922862431 9.0465099089347092 ;
+	setAttr ".lr" -type "double3" 177.28979905386947 8.838095600029007 113.26362060708645 ;
 	setAttr ".rst" -type "double3" 0 8.8817841970012523e-16 4.4408920985006262e-16 ;
 	setAttr ".rsrr" -type "double3" 6.6428094464148872e-15 4.309589473174457e-16 -2.2586207182805773e-14 ;
 	setAttr ".int" 2;
@@ -5691,7 +5692,7 @@ createNode parentConstraint -n "Bony_rWristFKCG_parentConstraint1" -p "Bony_rWri
 		1.7347234759768071e-16 ;
 	setAttr ".tg[0].tor" -type "double3" -0.0034966662387758535 0.013006706039441892 
 		1.9173735579247003e-05 ;
-	setAttr ".lr" -type "double3" 133.51088522235497 -23.108239937584724 8.3481073075840158 ;
+	setAttr ".lr" -type "double3" -11.15602056108929 -30.703144463604247 133.45884747092165 ;
 	setAttr ".rst" -type "double3" 8.8817841970012523e-16 1.7763568394002505e-15 0 ;
 	setAttr ".rsrr" -type "double3" 180 1.3160747662744731e-18 -8.0588135079003332e-35 ;
 	setAttr ".int" 2;
@@ -5718,7 +5719,7 @@ createNode orientConstraint -n "Bony_rWristIKLctr_orientConstraint1" -p "Bony_rW
 	setAttr -k off ".sy";
 	setAttr -k off ".sz";
 	setAttr ".erp" yes;
-	setAttr ".lr" -type "double3" 94.182555405525207 -6.3037199636910373 -33.362676072740477 ;
+	setAttr ".lr" -type "double3" -10.772198269545221 -178.17914580464495 66.244218844157984 ;
 	setAttr ".int" 2;
 	setAttr -k on ".w0";
 createNode transform -n "Bony_rElbowFKCG" -p "Bony_Main_CNT";
@@ -5748,7 +5749,7 @@ createNode transform -n "Bony_rElbowFKC" -p "Bony_rElbowFKCG";
 	setAttr -l on -k off ".sy";
 	setAttr -l on -k off ".sz";
 	setAttr ".rp" -type "double3" -2.1926946375524685 -7.1013439642371905 0.015103158825501766 ;
-	setAttr ".rpt" -type "double3" 5.9507954119908391e-14 0 3.4194869158454821e-14 ;
+	setAttr ".rpt" -type "double3" 6.2172489379008766e-14 0 2.7311486405778851e-14 ;
 	setAttr ".sp" -type "double3" -2.1926946375524685 -7.1013439642371905 0.015103158825501766 ;
 	setAttr ".mnsl" -type "double3" 0.01 0.01 0.01 ;
 	setAttr ".msxe" yes;
@@ -5794,7 +5795,7 @@ createNode parentConstraint -n "Bony_rElbowFKCG_parentConstraint1" -p "Bony_rElb
 		5.4294589657555292e-13 ;
 	setAttr ".tg[0].tor" -type "double3" 0.0034966710015510694 -0.025019032238111135 
 		-1.5268720080161701e-06 ;
-	setAttr ".lr" -type "double3" 419.30074637092952 -39.129070650984417 -240.85629466703338 ;
+	setAttr ".lr" -type "double3" 350.2721197604763 10.181349826830539 -234.02492569158866 ;
 	setAttr ".rst" -type "double3" 8.8817841970012523e-16 5.3290705182007514e-15 -8.6736173798840355e-18 ;
 	setAttr ".rsrr" -type "double3" -179.9965033293185 0.013006704845078435 1.9967513712402651e-05 ;
 	setAttr ".int" 2;
@@ -5842,7 +5843,7 @@ createNode transform -n "Bony_rShoulderFKC" -p "Bony_rShoulderFKCG";
 	setAttr -l on -k off ".sy";
 	setAttr -l on -k off ".sz";
 	setAttr ".rp" -type "double3" 0 -8.8817841970012523e-16 1.7347234759768071e-18 ;
-	setAttr ".rpt" -type "double3" 8.5295585377021901e-30 1.2067106659552665e-29 1.2449211160519093e-30 ;
+	setAttr ".rpt" -type "double3" 6.5081024680733474e-30 2.08555101817805e-29 1.1832913578315177e-30 ;
 	setAttr ".sp" -type "double3" 0 -8.8817841970012523e-16 1.7347234759768071e-18 ;
 	setAttr ".mnsl" -type "double3" 0.01 0.01 0.01 ;
 	setAttr ".msxe" yes;
@@ -5917,7 +5918,7 @@ createNode orientConstraint -n "Bony_rShoulderFKOrientLctr_orientConstraint1" -p
 	setAttr -k off ".sy";
 	setAttr -k off ".sz";
 	setAttr ".erp" yes;
-	setAttr ".lr" -type "double3" -109.96774817145972 3.2573725245553029 -148.20920633978483 ;
+	setAttr ".lr" -type "double3" 62.432188175781967 129.28019238352292 26.053617093511242 ;
 	setAttr ".rsrr" -type "double3" -0.0034962642919892815 -0.01170254559058522 2.0911486757117619e-14 ;
 	setAttr -k on ".w0";
 createNode parentConstraint -n "Bony_rShoulderFKCG2_parentConstraint1" -p "Bony_rShoulderFKCG2";
@@ -5939,7 +5940,7 @@ createNode parentConstraint -n "Bony_rShoulderFKCG2_parentConstraint1" -p "Bony_
 	setAttr -s 2 ".tg";
 	setAttr ".tg[0].tot" -type "double3" -0.71114909648895253 0.14213655235235034 -0.013861397281289017 ;
 	setAttr ".tg[1].tot" -type "double3" -0.71114909648895319 7.1013445854187038 -0.013861397281288785 ;
-	setAttr ".lr" -type "double3" 35.000551138413414 172.90184332613859 -35.99873894763985 ;
+	setAttr ".lr" -type "double3" 23.061788739713929 149.01192398176622 -4.8855503187593765 ;
 	setAttr ".rst" -type "double3" 1.1102230246251565e-16 0 1.7347234759768071e-18 ;
 	setAttr ".int" 2;
 	setAttr -k on ".w0";
@@ -6008,7 +6009,7 @@ createNode parentConstraint -n "Bony_rClavicleCG_parentConstraint1" -p "Bony_rCl
 	setAttr ".erp" yes;
 	setAttr ".tg[0].tot" -type "double3" -0.38826418586793204 0.14213655235234857 -0.013861397281289031 ;
 	setAttr ".tg[0].tor" -type "double3" -179.99999999999994 0 0 ;
-	setAttr ".lr" -type "double3" 35.000551138413478 7.0981566738614044 144.00126105236015 ;
+	setAttr ".lr" -type "double3" 23.061788739714004 30.988076018233791 175.11444968124061 ;
 	setAttr ".rst" -type "double3" 5.5511151231257827e-17 0 0 ;
 	setAttr ".rsrr" -type "double3" -179.99999999999994 0 0 ;
 	setAttr ".int" 2;
@@ -6045,7 +6046,7 @@ createNode parentConstraint -n "Bony_rArmIKFKG_parentConstraint1" -p "Bony_rArmI
 		1.7347234759768071e-18 ;
 	setAttr ".tg[0].tor" -type "double3" 1.0992402650364274e-14 8.7101579591139261e-15 
 		-1.9173519986417739e-14 ;
-	setAttr ".lr" -type "double3" 35.00055113841352 7.098156673861407 144.00126105236015 ;
+	setAttr ".lr" -type "double3" 23.061788739714014 30.988076018233809 175.11444968124061 ;
 	setAttr ".rst" -type "double3" -0.38826418586793282 7.1013445854187029 -0.013861397281288802 ;
 	setAttr ".rsrr" -type "double3" 180.00000000000003 1.5902773407317596e-14 -3.8166656177562195e-14 ;
 	setAttr ".int" 2;
@@ -6074,7 +6075,7 @@ createNode parentConstraint -n "Bony_rShoulderJFK_parentConstraint1" -p "Bony_rS
 	setAttr ".tg[0].tot" -type "double3" 0 8.8817841970012523e-16 1.7347234759768071e-18 ;
 	setAttr ".tg[0].tor" -type "double3" -3.9480624070202708e-14 7.765026077791789e-18 
 		-1.6421827479572904e-20 ;
-	setAttr ".lr" -type "double3" 370.62820565915717 -50.454364457245823 -347.10157717472902 ;
+	setAttr ".lr" -type "double3" 356.86416823705019 -27.19058095791922 -403.70156188415439 ;
 	setAttr ".rst" -type "double3" -0.32288491062102048 0 7.6327832942979512e-17 ;
 	setAttr ".rsrr" -type "double3" -2.2215917809844371e-24 -6.2120208622335622e-18 
 		1.2132853133553666e-20 ;
@@ -6084,14 +6085,14 @@ createNode joint -n "Bony_rShoulderJIK" -p "Bony_rArmIKFKG";
 	rename -uid "38955FBF-4084-E402-E28E-2CBA54A58D96";
 	setAttr ".v" no;
 	setAttr ".t" -type "double3" -0.32288491062102048 0 -1.5612511283791264e-17 ;
-	setAttr ".r" -type "double3" 68.272864057367755 145.63900017456967 13.019497223202041 ;
+	setAttr ".r" -type "double3" 37.390129429549624 132.37389703096648 18.66687920941073 ;
 	setAttr ".mnrl" -type "double3" -360 -360 -360 ;
 	setAttr ".mxrl" -type "double3" 360 360 360 ;
 	setAttr ".jo" -type "double3" 0 0.012012327393032799 -1.8440641810591509e-05 ;
 createNode joint -n "Bony_rElbowJIK" -p "Bony_rShoulderJIK";
 	rename -uid "CFFFEA67-461E-1579-2DD5-48B1A9902E2E";
 	setAttr ".t" -type "double3" -1.4815513221193399 0 5.4293548823469706e-13 ;
-	setAttr ".r" -type "double3" -1.2001770518439526e-22 0.024984681375595189 -2.4596746899621e-18 ;
+	setAttr ".r" -type "double3" -1.4853990615634746e-22 0.024984721049234652 -2.4611051862271082e-18 ;
 	setAttr ".mnrl" -type "double3" -360 -360 -360 ;
 	setAttr ".mxrl" -type "double3" 360 360 360 ;
 	setAttr ".jo" -type "double3" 0.0034966710015709086 -0.025019032238111135 -1.5268720080180395e-06 ;
@@ -6122,7 +6123,7 @@ createNode parentConstraint -n "Bony_rWristJIK_parentConstraint1" -p "Bony_rWris
 		-2.9173330418075238e-12 ;
 	setAttr ".tg[0].tor" -type "double3" -0.0034962637553492509 0.012671508324528806 
 		1.5064126893932292e-06 ;
-	setAttr ".lr" -type "double3" -53.761604256982096 37.695571418643318 -40.480440936936262 ;
+	setAttr ".lr" -type "double3" -10.091498660846662 19.334400751648356 -9.8278008662788441 ;
 	setAttr ".rst" -type "double3" -1.3682604188616372 -1.7763568394002505e-15 -1.7347234759768071e-18 ;
 	setAttr ".rsrr" -type "double3" 4.0240216783493364e-07 -1.0583150787667034e-14 8.8994022726116115e-11 ;
 	setAttr ".int" 2;
@@ -6158,7 +6159,7 @@ createNode parentConstraint -n "Bony_rLegIKFKG_parentConstraint1" -p "Bony_rLegI
 	setAttr -k off ".sy";
 	setAttr -k off ".sz";
 	setAttr ".erp" yes;
-	setAttr ".lr" -type "double3" 46.51039660876269 172.90184332613859 -35.99873894763985 ;
+	setAttr ".lr" -type "double3" 23.801577854353521 149.01192398176624 -4.8855503187593765 ;
 	setAttr ".rst" -type "double3" 0 4.7661149111754275 0.018608514219522476 ;
 	setAttr ".int" 2;
 	setAttr -k on ".w0";
@@ -6186,7 +6187,7 @@ createNode parentConstraint -n "Bony_rHipJFK_parentConstraint1" -p "Bony_rHipJFK
 	setAttr ".tg[0].tot" -type "double3" 8.8817841970012523e-16 0 5.5511151231257827e-17 ;
 	setAttr ".tg[0].tor" -type "double3" 3.1557065980145822e-15 1.2736721277000334e-14 
 		-6.3323787664392041e-15 ;
-	setAttr ".lr" -type "double3" -4.4527765540489235e-14 1.9083328088781097e-14 -6.3611093629270406e-15 ;
+	setAttr ".lr" -type "double3" -1.5902773407317584e-14 4.1347210859025721e-14 -5.7380781874652063e-30 ;
 	setAttr ".rst" -type "double3" -0.4593827128410341 -0.26156206998890319 -6.591949208711867e-17 ;
 	setAttr ".rsrr" -type "double3" -3.1805546814635152e-15 -9.5416640443905487e-15 
 		-6.361109362927032e-15 ;
@@ -6196,14 +6197,14 @@ createNode joint -n "Bony_rHipJIK" -p "Bony_rLegIKFKG";
 	rename -uid "F1CB81D1-44DD-7B19-E069-60ADBABDEE30";
 	setAttr ".v" no;
 	setAttr ".t" -type "double3" -0.45938271284103405 -0.26156206998890408 -6.2450045135165055e-17 ;
-	setAttr ".r" -type "double3" 21.08300002061377 -55.780804681390016 35.018745195615324 ;
+	setAttr ".r" -type "double3" -2.6152087721211013 16.633322831235727 71.718367101338558 ;
 	setAttr ".mnrl" -type "double3" -360 -360 -360 ;
 	setAttr ".mxrl" -type "double3" 360 360 360 ;
 	setAttr ".jo" -type "double3" -90.131821776391831 -0.0025388865985176705 89.993193031906827 ;
 createNode joint -n "Bony_rKneeJIK" -p "Bony_rHipJIK";
 	rename -uid "F9937290-47A2-D81C-3545-1191ED1F0739";
 	setAttr ".t" -type "double3" -1.9094404579790436 2.4633073358870661e-16 5.5511151231257827e-17 ;
-	setAttr ".r" -type "double3" -1.2338403843030802e-14 -0.00066500405321047429 -32.980864017381442 ;
+	setAttr ".r" -type "double3" -2.2145491269741227e-14 -0.0011900134421867407 -58.400585972913319 ;
 	setAttr ".mnrl" -type "double3" -360 -360 -360 ;
 	setAttr ".mxrl" -type "double3" 360 360 360 ;
 	setAttr ".jo" -type "double3" -0.038683484971674877 -0.0058311301185354231 -3.2282049034474274 ;
@@ -6211,14 +6212,14 @@ createNode joint -n "Bony_rKneeJIK" -p "Bony_rHipJIK";
 createNode joint -n "Bony_rAnkleJIK" -p "Bony_rKneeJIK";
 	rename -uid "B0275ED7-4A4B-D9C7-1E5B-739B3F6D7E37";
 	setAttr ".t" -type "double3" -2.0141322440132017 -6.0229599085914742e-15 7.7715611723760958e-16 ;
-	setAttr ".r" -type "double3" -5.0756548321979738 -7.1836301913568157 -13.619095940611185 ;
+	setAttr ".r" -type "double3" -7.7111065818483375 4.2031977337129893 5.4155564584677895 ;
 	setAttr ".mnrl" -type "double3" -360 -360 -360 ;
 	setAttr ".mxrl" -type "double3" 360 360 360 ;
 	setAttr ".jo" -type "double3" 0.12274728711993338 -0.11877034672191379 46.223509382176381 ;
 createNode joint -n "Bony_rBallJIK" -p "Bony_rAnkleJIK";
 	rename -uid "DBD89ABE-4545-8A91-6DAD-D0A44C39EB66";
 	setAttr ".t" -type "double3" -0.798674846228693 -2.7755575615628914e-16 0 ;
-	setAttr ".r" -type "double3" -6.4870810171514708e-05 2.4254358734558386e-20 3.6416168080615452e-19 ;
+	setAttr ".r" -type "double3" 8.7536498165111477e-10 -3.2728488777026161e-25 -4.9139881899644559e-24 ;
 	setAttr ".mnrl" -type "double3" -360 -360 -360 ;
 	setAttr ".mxrl" -type "double3" 360 360 360 ;
 	setAttr ".jo" -type "double3" 0 0 47.007094817172955 ;
@@ -6291,7 +6292,7 @@ createNode parentConstraint -n "Bony_rWristJFK_parentConstraint1" -p "Bony_rWris
 	setAttr -k off ".sz";
 	setAttr ".erp" yes;
 	setAttr ".tg[0].tot" -type "double3" 8.8817841970012523e-16 0 4.163336342344337e-17 ;
-	setAttr ".lr" -type "double3" 1.4033418597069752e-14 0 0 ;
+	setAttr ".lr" -type "double3" -5.0888874903416268e-14 0 0 ;
 	setAttr ".rst" -type "double3" -3.5609607696533194 7.1013436317443643 -0.013861402869224368 ;
 	setAttr ".int" 2;
 	setAttr -k on ".w0";
@@ -6330,7 +6331,7 @@ createNode parentConstraint -n "Bony_rWristJFKG2_parentConstraint1" -p "Bony_rWr
 	setAttr ".tg[0].tot" -type "double3" -1.3682604188616359 -2.042810365310288e-14 
 		1.7520707107365752e-16 ;
 	setAttr ".tg[0].tor" -type "double3" 179.99650333376127 0.013006706039441882 1.9173735579237411e-05 ;
-	setAttr ".lr" -type "double3" -46.489114777645057 -23.108239937584713 8.3481073075840388 ;
+	setAttr ".lr" -type "double3" -11.156020561089189 -149.29685553639575 -46.541152529078431 ;
 	setAttr ".rst" -type "double3" 0 -8.8817841970012523e-16 1.7347234759768071e-18 ;
 	setAttr ".rsrr" -type "double3" 1.7184002932312408e-15 -1.5530052155583578e-18 3.0332133116373946e-21 ;
 	setAttr ".int" 2;
@@ -6386,7 +6387,7 @@ createNode parentConstraint -n "Bony_rElbowJFK_parentConstraint1" -p "Bony_rElbo
 	setAttr ".tg[0].tot" -type "double3" -4.4408920985006262e-16 0 -4.3368086899420177e-17 ;
 	setAttr ".tg[0].tor" -type "double3" -2.5444437451708134e-14 6.2120208622334312e-18 
 		1.5365974273007192e-17 ;
-	setAttr ".lr" -type "double3" 4.3255543667903831e-12 -90.335992366429224 -4.3001099293386749e-12 ;
+	setAttr ".lr" -type "double3" -3.3979380647732107e-14 -41.524585470053424 4.34721570853885e-14 ;
 	setAttr ".rst" -type "double3" -2.1927003860473646 7.1013441085815447 -0.014172011423950815 ;
 	setAttr ".rsrr" -type "double3" 2.5444436037294699e-14 -9.3180312933501437e-18 -1.5366258636755161e-17 ;
 	setAttr ".int" 2;
@@ -6426,7 +6427,7 @@ createNode parentConstraint -n "Bony_rElbowJFKG2_parentConstraint1" -p "Bony_rEl
 	setAttr ".tg[0].tot" -type "double3" -1.4815513221193395 -8.8817841970012523e-16 
 		5.4294069240512499e-13 ;
 	setAttr ".tg[0].tor" -type "double3" 179.99999999613382 -0.012012327393032093 1.8440642215871333e-05 ;
-	setAttr ".lr" -type "double3" 419.2881448813136 -140.87755408768686 -420.84186603660152 ;
+	setAttr ".lr" -type "double3" 350.26823153086769 -190.19417274651639 -414.02713947128586 ;
 	setAttr ".rst" -type "double3" 0 8.8817841970012523e-16 -5.2041704279304213e-18 ;
 	setAttr ".rsrr" -type "double3" -1.3876673131384881e-14 4.6590156466750734e-18 -4.7799306967606107e-21 ;
 	setAttr ".int" 2;
@@ -6474,7 +6475,7 @@ createNode parentConstraint -n "Bony_rWristJIKDummy_parentConstraint1" -p "Bony_
 	setAttr ".tg[0].tot" -type "double3" 8.8817841970012523e-16 2.2204460492503131e-14 
 		-1.3530843112619095e-16 ;
 	setAttr ".tg[0].tor" -type "double3" -1.4033418597069752e-14 0 0 ;
-	setAttr ".lr" -type "double3" -53.757967613610894 37.68053899185108 -40.482579306245043 ;
+	setAttr ".lr" -type "double3" -10.088150678150464 19.321157750751979 -9.8289590882307127 ;
 	setAttr ".rst" -type "double3" -3.5609607696533194 7.1013436317443634 -0.013861402869224368 ;
 	setAttr ".rsrr" -type "double3" 1.4033418597069752e-14 0 0 ;
 	setAttr ".int" 2;
@@ -6513,7 +6514,7 @@ createNode parentConstraint -n "Bony_rWristJIKDummyG2_parentConstraint1" -p "Bon
 	setAttr ".erp" yes;
 	setAttr ".tg[0].tot" -type "double3" 0 0 1.7347234759768071e-18 ;
 	setAttr ".tg[0].tor" -type "double3" 179.99650333376127 0.013006706039441873 1.917373557923611e-05 ;
-	setAttr ".lr" -type "double3" 27.127882143375416 27.70537517714682 -47.162778057375732 ;
+	setAttr ".lr" -type "double3" 6.6629865615595287 19.026558538993182 -10.403117285672888 ;
 	setAttr ".rst" -type "double3" 0 0 -1.7347234759768071e-18 ;
 	setAttr ".rsrr" -type "double3" -3.8686169101041035e-15 -7.7650260777917859e-18 
 		-2.3901720895702843e-18 ;
@@ -7005,7 +7006,7 @@ createNode parentConstraint -n "Bony_rPalmCG_parentConstraint1" -p "Bony_rPalmCG
 		-7.0846716911426103e-20 ;
 	setAttr ".tg[0].tor" -type "double3" -2.8742757889010228e-18 -2.4848083448933725e-17 
 		3.0430125860683006e-33 ;
-	setAttr ".lr" -type "double3" 133.51088522235497 -23.108239937584717 8.3481073075840477 ;
+	setAttr ".lr" -type "double3" -11.156019369462774 -30.703144343017531 133.45884744326403 ;
 	setAttr ".rst" -type "double3" -3.5609607696533194 7.1013436317443634 -0.013861402869224366 ;
 	setAttr ".rsrr" -type "double3" -180 0 0 ;
 	setAttr ".int" 2;
@@ -7136,7 +7137,7 @@ createNode parentConstraint -n "Bony_rBallJFK_parentConstraint1" -p "Bony_rBallJ
 		-3.5527136788005009e-15 ;
 	setAttr ".tg[0].tor" -type "double3" -2.3882061119107345e-11 2.5641325351689881e-11 
 		3.8361546170713663e-15 ;
-	setAttr ".lr" -type "double3" 0 0 6.1575538633133681e-12 ;
+	setAttr ".lr" -type "double3" 0 0 6.1257483164987333e-12 ;
 	setAttr ".rst" -type "double3" -0.798674846228693 -3.3306690738754696e-16 -1.1102230246251565e-16 ;
 	setAttr ".int" 2;
 	setAttr -k on ".w0";
@@ -7158,7 +7159,7 @@ createNode parentConstraint -n "Bony_rAnkleJFK_parentConstraint1" -p "Bony_rAnkl
 	setAttr ".tg[0].tot" -type "double3" 0 -4.163336342344337e-17 1.7208456881689926e-15 ;
 	setAttr ".tg[0].tor" -type "double3" -3.5053735211777374e-11 1.1801231322535516e-14 
 		42.992905182826988 ;
-	setAttr ".lr" -type "double3" 3.5122865347401605e-11 6.3611093629319063e-15 -1.5902773407315631e-14 ;
+	setAttr ".lr" -type "double3" 3.5122865347401605e-11 1.2722218725856011e-14 -6.361109362923131e-15 ;
 	setAttr ".rst" -type "double3" -0.45938253402710105 0.58418124914169223 -0.094986259937274151 ;
 	setAttr ".rsrr" -type "double3" 3.5052893144409405e-11 -1.2722218725848226e-14 -1.9083328088784991e-14 ;
 	setAttr ".int" 2;
@@ -7197,7 +7198,7 @@ createNode parentConstraint -n "Bony_rAnkleJFKG2_parentConstraint1" -p "Bony_rAn
 	setAttr ".erp" yes;
 	setAttr ".tg[0].tot" -type "double3" 0 0 -7.7715611723760958e-16 ;
 	setAttr ".tg[0].tor" -type "double3" 178.93621566758955 89.829198155211202 92.166947090517766 ;
-	setAttr ".lr" -type "double3" 46.510396608768822 172.90184332613856 -35.99873894763985 ;
+	setAttr ".lr" -type "double3" 23.801577854359628 149.01192398176624 -4.8855503187593765 ;
 	setAttr ".rst" -type "double3" -5.5511151231257827e-17 0 3.4694469519536142e-18 ;
 	setAttr ".rsrr" -type "double3" 3.5590406885576754e-12 -3.1805546814637144e-15 6.3611093629269357e-15 ;
 	setAttr ".int" 2;
@@ -7244,7 +7245,7 @@ createNode parentConstraint -n "Bony_rKneeJFK_parentConstraint1" -p "Bony_rKneeJ
 		-1.6653345369377348e-15 ;
 	setAttr ".tg[0].tor" -type "double3" 0.00017705367723829026 7.4162211063773809e-14 
 		-1.9957152091689044e-08 ;
-	setAttr ".lr" -type "double3" 9.5416640571324036e-15 7.315275767199891e-14 1.995972357014901e-08 ;
+	setAttr ".lr" -type "double3" 1.2722218732501986e-14 3.8166656175346228e-14 1.9959710847930284e-08 ;
 	setAttr ".rst" -type "double3" -0.45960956201457587 2.5951123985574127 0.018523903226722305 ;
 	setAttr ".rsrr" -type "double3" 6.3611093601574234e-15 -1.5902773408425429e-14 1.9957147320857025e-08 ;
 	setAttr ".int" 2;
@@ -7282,7 +7283,7 @@ createNode parentConstraint -n "Bony_rKneeJFKG2_parentConstraint1" -p "Bony_rKne
 	setAttr ".erp" yes;
 	setAttr ".tg[0].tot" -type "double3" 8.8817841970012523e-16 0 5.5511151231257827e-17 ;
 	setAttr ".tg[0].tor" -type "double3" 177.04147855902212 89.868002291736786 87.044009615137099 ;
-	setAttr ".lr" -type "double3" 46.510396608765262 172.90184332613856 -35.99873894763985 ;
+	setAttr ".lr" -type "double3" 23.801577854356065 149.01192398176624 -4.8855503187593765 ;
 	setAttr ".rst" -type "double3" -5.5511151231257827e-17 8.8817841970012523e-16 0 ;
 	setAttr ".rsrr" -type "double3" 2.5539854092152043e-12 -1.5902773407317587e-14 -3.5443667573342796e-28 ;
 	setAttr ".int" 2;
@@ -7401,7 +7402,7 @@ createNode orientConstraint -n "Bony_rWristFKLctr_orientConstraint1" -p "Bony_rW
 	setAttr -k off ".sy";
 	setAttr -k off ".sz";
 	setAttr ".erp" yes;
-	setAttr ".lr" -type "double3" -94.947833237315749 32.805146612645906 -9.0057881733022267 ;
+	setAttr ".lr" -type "double3" -2.7243531567092574 169.41798216645336 65.820182279663754 ;
 	setAttr -k on ".w0";
 createNode transform -n "Bony_rAnkleFKLctrG" -p "Bony_Main_CNT";
 	rename -uid "E98D293F-4F7E-052C-E66D-D6969AF68E9F";
@@ -7432,7 +7433,7 @@ createNode parentConstraint -n "Bony_rAnkleFKLctr_parentConstraint1" -p "Bony_rA
 	setAttr ".tg[0].tot" -type "double3" 4.4408920985006262e-16 -4.163336342344337e-17 
 		0 ;
 	setAttr ".tg[0].tor" -type "double3" 0 90 89.999999999999986 ;
-	setAttr ".lr" -type "double3" -74.766564516128696 109.68654838673875 36.369664410536139 ;
+	setAttr ".lr" -type "double3" -46.467823578530677 -162.44121800981344 26.375510143073249 ;
 	setAttr ".rst" -type "double3" 0 0 -1.3877787807814457e-17 ;
 	setAttr ".rsrr" -type "double3" 2.5444437451708134e-14 1.272221872585407e-14 2.5444437451708122e-14 ;
 	setAttr ".int" 2;
@@ -7629,7 +7630,7 @@ createNode parentConstraint -n "Bony_rToeIKCG_parentConstraint1" -p "Bony_rToeIK
 	setAttr -k off ".sz";
 	setAttr ".erp" yes;
 	setAttr ".tg[0].tot" -type "double3" 0 0.58418124914169667 6.9388939039072284e-17 ;
-	setAttr ".lr" -type "double3" 47.958945151046059 -2.0264716919938905 80.60302712486137 ;
+	setAttr ".lr" -type "double3" 11.914494125258448 53.24724277103136 -172.62312488890834 ;
 	setAttr ".int" 2;
 	setAttr -k on ".w0";
 createNode transform -n "Bony_rShoulderIKLockLctr" -p "Bony_Main_CNT";
@@ -7769,7 +7770,7 @@ createNode parentConstraint -n "Bony_rAnkleIKLockLctr_parentConstraint1" -p "Bon
 	setAttr ".tg[0].tot" -type "double3" 3.8857805861880479e-16 0.58418124914169622 
 		-0.5446226015780774 ;
 	setAttr ".tg[0].tor" -type "double3" 45.905556467252147 39.30596228132395 -79.585204719760569 ;
-	setAttr ".lr" -type "double3" 52.750496052082788 -22.875871044812392 5.4752039723653034 ;
+	setAttr ".lr" -type "double3" -55.646941306938587 13.821729910199171 -7.9931458819186068 ;
 	setAttr ".rst" -type "double3" 2.8817334214390566 -0.59286769256965799 -0.092360958764210382 ;
 	setAttr ".rsrr" -type "double3" -2.0872390097104326e-15 -6.3611093629270335e-15 
 		-7.9265386202098582e-15 ;
@@ -7870,7 +7871,7 @@ createNode orientConstraint -n "Bony_rAnkleIKLctr_orientConstraint1" -p "Bony_rA
 	setAttr -k off ".sy";
 	setAttr -k off ".sz";
 	setAttr ".erp" yes;
-	setAttr ".lr" -type "double3" -1.4259727108117284 -18.342919440310126 -17.524089467897564 ;
+	setAttr ".lr" -type "double3" -44.521564697800684 383.26605652909279 5.9226485701583762 ;
 	setAttr ".int" 2;
 	setAttr -k on ".w0";
 createNode parentConstraint -n "Bony_rAnkleIKLctrG_parentConstraint1" -p "Bony_rAnkleIKLctrG";
@@ -7891,7 +7892,7 @@ createNode parentConstraint -n "Bony_rAnkleIKLctrG_parentConstraint1" -p "Bony_r
 	setAttr ".tg[0].tot" -type "double3" 2.0024071378799135e-06 -5.8013888790120482e-08 
 		8.6519680309038449e-13 ;
 	setAttr ".tg[0].tor" -type "double3" 0 90 89.999999999999986 ;
-	setAttr ".lr" -type "double3" 124.99963332966377 155.98931031048269 28.492535601557506 ;
+	setAttr ".lr" -type "double3" 158.84242735007967 206.98786320110671 16.555826795906288 ;
 	setAttr ".rst" -type "double3" -0.45938253402796458 0.58418325154882966 -0.094986201923385416 ;
 	setAttr ".rsrr" -type "double3" -179.99999999999997 6.3611093629270391e-15 2.5444437451708134e-14 ;
 	setAttr ".int" 2;
@@ -8367,7 +8368,7 @@ createNode parentConstraint -n "Bony_lLowerArmMidClstr_parentConstraint1" -p "Bo
 	setAttr -k off ".sy";
 	setAttr -k off ".sz";
 	setAttr ".erp" yes;
-	setAttr ".lr" -type "double3" -81.453088867600187 62.373084354381263 -75.663186403839859 ;
+	setAttr ".lr" -type "double3" -123.94875581078259 36.941647282832847 -92.861278656626553 ;
 	setAttr ".rst" -type "double3" -1.7763568394002505e-15 1.7763568394002505e-15 1.7347234759768071e-18 ;
 	setAttr ".rsrr" -type "double3" 0.0017483414689074567 -0.019510057271362579 -2.9951270470815197e-05 ;
 	setAttr ".int" 2;
@@ -8397,7 +8398,7 @@ createNode parentConstraint -n "Bony_lUpperArmMidClstr_parentConstraint1" -p "Bo
 	setAttr -k off ".sy";
 	setAttr -k off ".sz";
 	setAttr ".erp" yes;
-	setAttr ".lr" -type "double3" 56.272966089267847 123.45854642299143 56.042428230161661 ;
+	setAttr ".lr" -type "double3" 43.077690966534426 166.09969077001787 58.040341548222059 ;
 	setAttr ".rst" -type "double3" -9.8587804586713901e-14 9.3436369752453174e-13 4.7917984163925453e-10 ;
 	setAttr ".rsrr" -type "double3" 0 0.018018491130031233 -2.7660960804864227e-05 ;
 	setAttr ".int" 2;
@@ -9087,7 +9088,7 @@ createNode parentConstraint -n "Bony_rLowerArmMidClstr_parentConstraint1" -p "Bo
 	setAttr -k off ".sy";
 	setAttr -k off ".sz";
 	setAttr ".erp" yes;
-	setAttr ".lr" -type "double3" 133.51630754408831 -23.099264693356158 8.3378784060404492 ;
+	setAttr ".lr" -type "double3" -11.157175454571119 -30.715908912742549 133.46175549554917 ;
 	setAttr ".rst" -type "double3" 1.5035531042428829e-08 -1.100936231068772e-07 -7.1715543696745584e-05 ;
 	setAttr ".rsrr" -type "double3" 179.9513224081276 0.025516219688623758 2.0730948694290304e-05 ;
 	setAttr ".int" 2;
@@ -9117,7 +9118,7 @@ createNode parentConstraint -n "Bony_rUpperArmMidClstr_parentConstraint1" -p "Bo
 	setAttr -k off ".sy";
 	setAttr -k off ".sz";
 	setAttr ".erp" yes;
-	setAttr ".lr" -type "double3" 59.279755272082838 -39.116302637825449 119.17144242812077 ;
+	setAttr ".lr" -type "double3" -9.7321413434767496 10.206012320442456 125.97077798888465 ;
 	setAttr ".rst" -type "double3" -1.6280470749308051e-08 1.1920929043895967e-07 7.76535352643732e-05 ;
 	setAttr ".rsrr" -type "double3" -179.99999999999997 -0.012012327424340016 1.8440641505230904e-05 ;
 	setAttr ".int" 2;
@@ -9807,7 +9808,7 @@ createNode parentConstraint -n "Bony_lLowerLegMidClstr_parentConstraint1" -p "Bo
 	setAttr -k off ".sy";
 	setAttr -k off ".sz";
 	setAttr ".erp" yes;
-	setAttr ".lr" -type "double3" 101.76598310426075 -151.98954301775319 4.0211128884280276 ;
+	setAttr ".lr" -type "double3" -65.330679291450963 -3.2477853551537312 -101.45188134292574 ;
 	setAttr ".rst" -type "double3" -8.6199820431565044e-07 2.4072743798342344e-10 -1.0983040128462185e-05 ;
 	setAttr ".rsrr" -type "double3" 89.876737311328199 4.8444212927998596 -90.007076105680355 ;
 	setAttr ".int" 2;
@@ -9837,7 +9838,7 @@ createNode parentConstraint -n "Bony_lUpperLegMidClstr_parentConstraint1" -p "Bo
 	setAttr -k off ".sy";
 	setAttr -k off ".sz";
 	setAttr ".erp" yes;
-	setAttr ".lr" -type "double3" 118.62328613977245 93.991134122427212 33.558051361665072 ;
+	setAttr ".lr" -type "double3" -70.579668790293539 42.688519371534433 -87.225144825032928 ;
 	setAttr ".rst" -type "double3" 8.3728792846238242e-06 -2.2065460569820061e-10 5.9354994090925206e-06 ;
 	setAttr ".rsrr" -type "double3" 89.91949860244091 0.0018423995837196642 -89.992007561678662 ;
 	setAttr ".int" 2;
@@ -10526,7 +10527,7 @@ createNode parentConstraint -n "Bony_rLowerLegMidClstr_parentConstraint1" -p "Bo
 	setAttr -k off ".sy";
 	setAttr -k off ".sz";
 	setAttr ".erp" yes;
-	setAttr ".lr" -type "double3" 100.02722800519022 36.300691267035212 3.0376022798788611 ;
+	setAttr ".lr" -type "double3" 39.16274114479836 14.966762748672133 82.655315944459986 ;
 	setAttr ".rst" -type "double3" -6.4596853310838753e-08 2.3925661452040003e-10 -1.0982918163392197e-05 ;
 	setAttr ".rsrr" -type "double3" -90.123276907064039 -4.8444213165833299 90.007126191536301 ;
 	setAttr ".int" 2;
@@ -10556,7 +10557,7 @@ createNode parentConstraint -n "Bony_rUpperLegMidClstr_parentConstraint1" -p "Bo
 	setAttr -k off ".sy";
 	setAttr -k off ".sz";
 	setAttr ".erp" yes;
-	setAttr ".lr" -type "double3" 97.550930682962942 0.45242490574239691 -2.4565156878974523 ;
+	setAttr ".lr" -type "double3" 37.699837952383973 -27.426747952608434 128.79634444552912 ;
 	setAttr ".rst" -type "double3" -7.5027940176219943e-06 -1.9173773679881378e-10 5.9358248318229501e-06 ;
 	setAttr ".rsrr" -type "double3" -90.084212294859768 -0.0018423620112674149 89.992062679948987 ;
 	setAttr ".int" 2;
@@ -11135,7 +11136,7 @@ createNode parentConstraint -n "BonylElbowCurveLctr_parentConstraint1" -p "Bonyl
 	setAttr ".erp" yes;
 	setAttr ".tg[0].tot" -type "double3" -1.3682604188616376 -8.8817841970012523e-16 
 		2.5847379792054426e-16 ;
-	setAttr ".lr" -type "double3" -81.477766975394857 62.375029336005589 -75.69091198961884 ;
+	setAttr ".lr" -type "double3" -123.957116333027 36.934390214857793 -92.874785609456268 ;
 	setAttr ".rst" -type "double3" 2.1927003507916827 7.1013436317443839 -0.01386140286922454 ;
 	setAttr ".int" 2;
 	setAttr -k on ".w0";
@@ -11169,7 +11170,7 @@ createNode parentConstraint -n "Bony_lLowerArmTopClstrG_parentConstraint1" -p "B
 	setAttr -k off ".sy";
 	setAttr -k off ".sz";
 	setAttr ".erp" yes;
-	setAttr ".lr" -type "double3" -104.82842198074026 61.68384246954863 -102.02800563643711 ;
+	setAttr ".lr" -type "double3" -132.39108076826835 26.145707446172953 -108.85193948396582 ;
 	setAttr ".rst" -type "double3" 2.1927003860473628 7.1013441085815447 -0.014172011423951412 ;
 	setAttr ".int" 2;
 	setAttr -k on ".w0";
@@ -11254,7 +11255,7 @@ createNode parentConstraint -n "Bony_lLowerArmTopGuideClstrG_parentConstraint1" 
 	setAttr -k off ".sy";
 	setAttr -k off ".sz";
 	setAttr ".erp" yes;
-	setAttr ".lr" -type "double3" -104.82842198074026 61.68384246954863 -102.02800563643711 ;
+	setAttr ".lr" -type "double3" -132.39108076826835 26.145707446172953 -108.85193948396582 ;
 	setAttr ".rst" -type "double3" 2.1927003860473628 7.1013441085815447 -0.014172011423951412 ;
 	setAttr ".int" 2;
 	setAttr -k on ".w0";
@@ -11334,7 +11335,7 @@ createNode parentConstraint -n "Bony_lShoulderCurveLctr_parentConstraint1" -p "B
 		-6.591949208711867e-17 ;
 	setAttr ".tg[0].tor" -type "double3" 9.1068225840342121e-15 -6.3486853212025682e-15 
 		1.9081647972970204e-14 ;
-	setAttr ".lr" -type "double3" -81.449724027561587 62.373090687650951 -75.663185666984205 ;
+	setAttr ".lr" -type "double3" -123.94549830016238 36.941649944455797 -92.861283358974362 ;
 	setAttr ".rst" -type "double3" 0.7111491021028451 7.1013446249004746 -0.014508338126509651 ;
 	setAttr ".rsrr" -type "double3" 0.0034966705176039266 -0.01300670484507997 -1.9967513647430637e-05 ;
 	setAttr ".int" 2;
@@ -11361,7 +11362,7 @@ createNode parentConstraint -n "Bony_lElbowTopCurveLctr_parentConstraint1" -p "B
 	setAttr -k off ".sz";
 	setAttr ".erp" yes;
 	setAttr ".tg[0].tot" -type "double3" 1.8044362327403602 1.7763568394002505e-15 -2.4286128663675299e-17 ;
-	setAttr ".lr" -type "double3" 35.000551138413414 172.90184332613859 -35.99873894763985 ;
+	setAttr ".lr" -type "double3" 23.061788739713929 149.01192398176622 -4.8855503187593765 ;
 	setAttr ".rst" -type "double3" 2.1927004186082915 7.1013445854187038 -0.013861397281288971 ;
 	setAttr ".int" 2;
 	setAttr -k on ".w0";
@@ -11450,7 +11451,7 @@ createNode parentConstraint -n "Bony_lUpperArmBtmClstrG_parentConstraint1" -p "B
 	setAttr -k off ".sy";
 	setAttr -k off ".sz";
 	setAttr ".erp" yes;
-	setAttr ".lr" -type "double3" -104.82842198074026 61.68384246954863 -102.02800563643711 ;
+	setAttr ".lr" -type "double3" -132.39108076826835 26.145707446172953 -108.85193948396582 ;
 	setAttr ".rst" -type "double3" 2.1927003860473628 7.1013441085815447 -0.014172011423951412 ;
 	setAttr ".int" 2;
 	setAttr -k on ".w0";
@@ -11540,7 +11541,7 @@ createNode parentConstraint -n "Bony_lUpperArmBtmGuideClstrG_parentConstraint1" 
 	setAttr -k off ".sy";
 	setAttr -k off ".sz";
 	setAttr ".erp" yes;
-	setAttr ".lr" -type "double3" -104.82842198074026 61.68384246954863 -102.02800563643711 ;
+	setAttr ".lr" -type "double3" -132.39108076826835 26.145707446172953 -108.85193948396582 ;
 	setAttr ".rst" -type "double3" 2.1927003860473628 7.1013441085815447 -0.014172011423951412 ;
 	setAttr ".int" 2;
 	setAttr -k on ".w0";
@@ -11635,7 +11636,7 @@ createNode orientConstraint -n "Bony_lElbowCurveCG_orientConstraint1" -p "Bony_l
 	setAttr -k off ".sy";
 	setAttr -k off ".sz";
 	setAttr ".erp" yes;
-	setAttr ".lr" -type "double3" -104.82842198074026 61.68384246954863 -102.02800563643711 ;
+	setAttr ".lr" -type "double3" -132.39108076826835 26.145707446172953 -108.85193948396585 ;
 	setAttr ".rsrr" -type "double3" 3.8661666105519773e-09 -5.6196274772660196e-18 -2.0022724690877186e-18 ;
 	setAttr -k on ".w0";
 createNode transform -n "BonyrElbowCurveLctr" -p "Bony_curveNodesG";
@@ -11663,7 +11664,7 @@ createNode parentConstraint -n "BonyrElbowCurveLctr_parentConstraint1" -p "Bonyr
 		4.4929338027799304e-16 ;
 	setAttr ".tg[0].tor" -type "double3" -1.4023868831134189e-14 -2.4848083448933725e-17 
 		3.0430125860683006e-33 ;
-	setAttr ".lr" -type "double3" 133.51088522235497 -23.108239937584717 8.3481073075840477 ;
+	setAttr ".lr" -type "double3" -11.156019369462774 -30.703144343017531 133.45884744326403 ;
 	setAttr ".rst" -type "double3" -2.1927003507916831 7.1013436317443883 -0.013861402869224545 ;
 	setAttr ".rsrr" -type "double3" -180 0 0 ;
 	setAttr ".int" 2;
@@ -11699,7 +11700,7 @@ createNode parentConstraint -n "BonyrLowerArmTopClstrG_parentConstraint1" -p "Bo
 	setAttr -k off ".sy";
 	setAttr -k off ".sz";
 	setAttr ".erp" yes;
-	setAttr ".lr" -type "double3" 104.14804427438364 -46.539404798281325 56.734270738845282 ;
+	setAttr ".lr" -type "double3" -9.7343011064196876 -10.275636967574417 129.46422452953647 ;
 	setAttr ".rst" -type "double3" -2.1927003860473642 7.1013441085815465 -0.014172011423950517 ;
 	setAttr ".rsrr" -type "double3" 179.99999999226762 -0.024024654786051449 3.6881285204136039e-05 ;
 	setAttr ".int" 2;
@@ -11787,7 +11788,7 @@ createNode parentConstraint -n "BonyrLowerArmTopGuideClstrG_parentConstraint1" -
 	setAttr -k off ".sy";
 	setAttr -k off ".sz";
 	setAttr ".erp" yes;
-	setAttr ".lr" -type "double3" 104.14804427438364 -46.539404798281325 56.734270738845282 ;
+	setAttr ".lr" -type "double3" -9.7343011064196876 -10.275636967574417 129.46422452953647 ;
 	setAttr ".rst" -type "double3" -2.1927003860473642 7.1013441085815465 -0.014172011423950517 ;
 	setAttr ".rsrr" -type "double3" 179.99999999226762 -0.024024654786051449 3.6881285204136039e-05 ;
 	setAttr ".int" 2;
@@ -11868,7 +11869,7 @@ createNode parentConstraint -n "Bony_rShoulderCurveLctr_parentConstraint1" -p "B
 		1.3877787807814457e-16 ;
 	setAttr ".tg[0].tor" -type "double3" 2.4886908579322681e-16 6.3611093629270335e-15 
 		-1.9085778261621491e-14 ;
-	setAttr ".lr" -type "double3" 133.51841272273725 -23.099265902398578 8.3378737397562777 ;
+	setAttr ".lr" -type "double3" -11.154010315282903 -30.715907653832577 133.46176041807644 ;
 	setAttr ".rst" -type "double3" -0.71114910210284554 7.1013446249004781 -0.014508338126508953 ;
 	setAttr ".rsrr" -type "double3" -179.9965033293185 0.013006704845084803 1.9967513693311992e-05 ;
 	setAttr ".int" 2;
@@ -11896,7 +11897,7 @@ createNode parentConstraint -n "Bony_rElbowTopCurveLctr_parentConstraint1" -p "B
 	setAttr ".erp" yes;
 	setAttr ".tg[0].tot" -type "double3" 1.1586664114983192 -3.5527136788005009e-15 
 		-1.214306433183765e-17 ;
-	setAttr ".lr" -type "double3" 35.000551138413478 7.0981566738614008 144.00126105236015 ;
+	setAttr ".lr" -type "double3" 23.061788739714007 30.988076018233784 175.11444968124061 ;
 	setAttr ".rst" -type "double3" 0.77040222563038641 7.1013445854187056 -0.013861397281288788 ;
 	setAttr ".rsrr" -type "double3" -179.99999999999994 0 0 ;
 	setAttr ".int" 2;
@@ -11986,7 +11987,7 @@ createNode parentConstraint -n "Bony_rUpperArmBtmClstrG_parentConstraint1" -p "B
 	setAttr -k off ".sy";
 	setAttr -k off ".sz";
 	setAttr ".erp" yes;
-	setAttr ".lr" -type "double3" 104.14804427438364 -46.539404798281325 56.734270738845282 ;
+	setAttr ".lr" -type "double3" -9.7343011064196876 -10.275636967574417 129.46422452953647 ;
 	setAttr ".rst" -type "double3" -2.1927003860473642 7.1013441085815465 -0.014172011423950517 ;
 	setAttr ".rsrr" -type "double3" 179.99999999226762 -0.024024654786051449 3.6881285204136039e-05 ;
 	setAttr ".int" 2;
@@ -12078,7 +12079,7 @@ createNode parentConstraint -n "Bony_rUpperArmBtmGuideClstrG_parentConstraint1" 
 	setAttr -k off ".sy";
 	setAttr -k off ".sz";
 	setAttr ".erp" yes;
-	setAttr ".lr" -type "double3" 104.14804427438364 -46.539404798281325 56.734270738845282 ;
+	setAttr ".lr" -type "double3" -9.7343011064196876 -10.275636967574417 129.46422452953647 ;
 	setAttr ".rst" -type "double3" -2.1927003860473642 7.1013441085815465 -0.014172011423950517 ;
 	setAttr ".rsrr" -type "double3" 179.99999999226762 -0.024024654786051449 3.6881285204136039e-05 ;
 	setAttr ".int" 2;
@@ -12174,7 +12175,7 @@ createNode orientConstraint -n "Bony_rElbowCurveCG_orientConstraint1" -p "Bony_r
 	setAttr -k off ".sy";
 	setAttr -k off ".sz";
 	setAttr ".erp" yes;
-	setAttr ".lr" -type "double3" 464.14804427438366 -46.539404798281325 56.734270738845282 ;
+	setAttr ".lr" -type "double3" 350.26569889358035 -10.275636967574419 129.46422452953647 ;
 	setAttr ".rsrr" -type "double3" 539.99999999226759 -0.024024654786051449 3.6881285204136039e-05 ;
 	setAttr -k on ".w0";
 createNode transform -n "Bony_lKneeCurveLctr" -p "Bony_curveNodesG";
@@ -12201,7 +12202,7 @@ createNode parentConstraint -n "Bony_lKneeCurveLctr_parentConstraint1" -p "Bony_
 	setAttr ".tg[0].tot" -type "double3" -1.4732141512949752 1.3734484681362302 4.8390613738291677e-09 ;
 	setAttr ".tg[0].tor" -type "double3" 1.4992903224038205e-07 1.3784755374815958e-07 
 		-42.992804182983761 ;
-	setAttr ".lr" -type "double3" -64.78985787204924 -13.980566695369046 168.70002501512224 ;
+	setAttr ".lr" -type "double3" -54.582301780195984 0.60347664721983096 -92.111289434177863 ;
 	setAttr ".rst" -type "double3" 0.45938253402709794 2.5983134931548948 -0.094986259937287668 ;
 	setAttr ".rsrr" -type "double3" 89.999999850070978 -1.5902773407317584e-14 -90.000000137847536 ;
 	setAttr ".int" 2;
@@ -12238,7 +12239,7 @@ createNode parentConstraint -n "Bony_lLowerLegTopClstrG_parentConstraint1" -p "B
 	setAttr -k off ".sy";
 	setAttr -k off ".sz";
 	setAttr ".erp" yes;
-	setAttr ".lr" -type "double3" 92.186394977142541 149.17037736610234 6.1403498715217326 ;
+	setAttr ".lr" -type "double3" -74.819541952786949 21.4198228708409 -94.988132284662015 ;
 	setAttr ".rst" -type "double3" 0.45954911978930191 2.5951123910834322 0.018559666986659097 ;
 	setAttr ".rsrr" -type "double3" 89.877109650555497 0.0024978152135076946 -90.000196169468452 ;
 	setAttr ".int" 2;
@@ -12329,7 +12330,7 @@ createNode parentConstraint -n "Bony_lLowerLegTopGuideClstrG_parentConstraint1" 
 	setAttr -k off ".sy";
 	setAttr -k off ".sz";
 	setAttr ".erp" yes;
-	setAttr ".lr" -type "double3" 92.186394977142541 149.17037736610234 6.1403498715217326 ;
+	setAttr ".lr" -type "double3" -74.819541952786949 21.4198228708409 -94.988132284662015 ;
 	setAttr ".rst" -type "double3" 0.45954911978930191 2.5951123910834322 0.018559666986659097 ;
 	setAttr ".rsrr" -type "double3" 89.877109650555497 0.0024978152135076946 -90.000196169468452 ;
 	setAttr ".int" 2;
@@ -12414,7 +12415,7 @@ createNode parentConstraint -n "Bony_lHipCurveLctr_parentConstraint1" -p "Bony_l
 		-0.00011789212582441477 ;
 	setAttr ".tg[0].tor" -type "double3" -0.047812961646335174 -0.0017215733248888998 
 		0.0010136498629469306 ;
-	setAttr ".lr" -type "double3" -87.884069499464829 -28.009508985774879 -175.97689516689363 ;
+	setAttr ".lr" -type "double3" -75.906082104503369 -3.2472259865244331 -101.44995908828952 ;
 	setAttr ".rst" -type "double3" 0.459824789401793 4.5015181504108162 0.12613396569603336 ;
 	setAttr ".rsrr" -type "double3" 89.828778696625747 3.2307217631261418 -90.006468518498139 ;
 	setAttr ".int" 2;
@@ -12441,7 +12442,7 @@ createNode parentConstraint -n "Bony_lKneeTopCurveLctr_parentConstraint1" -p "Bo
 	setAttr -k off ".sz";
 	setAttr ".erp" yes;
 	setAttr ".tg[0].tot" -type "double3" 0.4593827128410341 -2.1710025279679468 2.4286128663675299e-17 ;
-	setAttr ".lr" -type "double3" 46.51039660876269 172.90184332613859 -35.99873894763985 ;
+	setAttr ".lr" -type "double3" 23.801577854353521 149.01192398176624 -4.8855503187593765 ;
 	setAttr ".rst" -type "double3" 0.4593827128410341 2.5951123832074807 0.0186085142195225 ;
 	setAttr ".int" 2;
 	setAttr -k on ".w0";
@@ -12527,7 +12528,7 @@ createNode parentConstraint -n "Bony_lUpperLegBtmClstrG_parentConstraint1" -p "B
 	setAttr -k off ".sy";
 	setAttr -k off ".sz";
 	setAttr ".erp" yes;
-	setAttr ".lr" -type "double3" 92.186394977142541 149.17037736610234 6.1403498715217326 ;
+	setAttr ".lr" -type "double3" -74.819541952786949 21.4198228708409 -94.988132284662015 ;
 	setAttr ".rst" -type "double3" 0.45954911978930191 2.5951123910834322 0.018559666986659097 ;
 	setAttr ".rsrr" -type "double3" 89.877109650555497 0.0024978152135076946 -90.000196169468452 ;
 	setAttr ".int" 2;
@@ -12618,7 +12619,7 @@ createNode parentConstraint -n "Bony_lUpperLegBtmGuideClstrG_parentConstraint1" 
 	setAttr -k off ".sy";
 	setAttr -k off ".sz";
 	setAttr ".erp" yes;
-	setAttr ".lr" -type "double3" 92.186394977142541 149.17037736610234 6.1403498715217326 ;
+	setAttr ".lr" -type "double3" -74.819541952786949 21.4198228708409 -94.988132284662015 ;
 	setAttr ".rst" -type "double3" 0.45954911978930191 2.5951123910834322 0.018559666986659097 ;
 	setAttr ".rsrr" -type "double3" 89.877109650555497 0.0024978152135076946 -90.000196169468452 ;
 	setAttr ".int" 2;
@@ -12714,7 +12715,7 @@ createNode orientConstraint -n "Bony_lKneeCurveCG_orientConstraint1" -p "Bony_lK
 	setAttr -k off ".sy";
 	setAttr -k off ".sz";
 	setAttr ".erp" yes;
-	setAttr ".lr" -type "double3" -87.813605022857445 30.829622633897657 -173.85965012847828 ;
+	setAttr ".lr" -type "double3" -74.819541952786949 21.419822870840882 -94.988132284662029 ;
 	setAttr ".rsrr" -type "double3" 89.877109650555497 0.0024978152135076946 -90.000196169468424 ;
 	setAttr -k on ".w0";
 createNode transform -n "Bony_rKneeCurveLctr" -p "Bony_curveNodesG";
@@ -12741,7 +12742,7 @@ createNode parentConstraint -n "Bony_rKneeCurveLctr_parentConstraint1" -p "Bony_
 	setAttr ".tg[0].tot" -type "double3" 1.473214151297197 -1.3734484681158525 4.8474053104818893e-09 ;
 	setAttr ".tg[0].tor" -type "double3" -1.5203347328008726e-07 -1.3791831472871283e-07 
 		-42.99280418221317 ;
-	setAttr ".lr" -type "double3" 93.024571046853353 47.919270344807046 -7.1511074257229703 ;
+	setAttr ".lr" -type "double3" 36.156418759494727 7.0959919840923265 87.781473864320418 ;
 	setAttr ".rst" -type "double3" -0.45938253402709883 2.5983134931548935 -0.094986259937273776 ;
 	setAttr ".rsrr" -type "double3" -89.999999847966549 -2.2263882770244617e-14 89.999999862081665 ;
 	setAttr ".int" 2;
@@ -12779,7 +12780,7 @@ createNode parentConstraint -n "Bony_rLowerLegTopClstrG_parentConstraint1" -p "B
 	setAttr -k off ".sy";
 	setAttr -k off ".sz";
 	setAttr ".erp" yes;
-	setAttr ".lr" -type "double3" 97.849058959261072 16.796045741229285 -0.22902182985516964 ;
+	setAttr ".lr" -type "double3" 44.808048829545946 -7.8938192644434215 105.85692275072635 ;
 	setAttr ".rst" -type "double3" -0.4595490553209709 2.5951123910778047 0.018559667387533396 ;
 	setAttr ".rsrr" -type "double3" -90.122895880070175 -0.0024977877498791744 89.999985299343678 ;
 	setAttr ".int" 2;
@@ -12871,7 +12872,7 @@ createNode parentConstraint -n "Bony_rLowerLegTopGuideClstrG_parentConstraint1" 
 	setAttr -k off ".sy";
 	setAttr -k off ".sz";
 	setAttr ".erp" yes;
-	setAttr ".lr" -type "double3" 97.849058959261072 16.796045741229285 -0.22902182985516964 ;
+	setAttr ".lr" -type "double3" 44.808048829545946 -7.8938192644434215 105.85692275072635 ;
 	setAttr ".rst" -type "double3" -0.4595490553209709 2.5951123910778047 0.018559667387533396 ;
 	setAttr ".rsrr" -type "double3" -90.122895880070175 -0.0024977877498791744 89.999985299343678 ;
 	setAttr ".int" 2;
@@ -12954,7 +12955,7 @@ createNode parentConstraint -n "Bony_rHipCurveLctr_parentConstraint1" -p "Bony_r
 	setAttr ".tg[0].tot" -type "double3" 1.9094384530969033 6.9358863181517849e-05 0.00011801771948782847 ;
 	setAttr ".tg[0].tor" -type "double3" -0.04781342696961171 -0.001723407476346732 
 		0.0010136576552587748 ;
-	setAttr ".lr" -type "double3" 99.285548319108784 36.29997159502414 3.0352882384200748 ;
+	setAttr ".lr" -type "double3" 43.290907505231587 14.964810787437571 82.654857204620541 ;
 	setAttr ".rst" -type "double3" -0.45982478940179278 4.501518150410817 0.12613396569602625 ;
 	setAttr ".rsrr" -type "double3" -90.17122130337431 -3.2307217631259184 90.006468518498139 ;
 	setAttr ".int" 2;
@@ -12981,7 +12982,7 @@ createNode parentConstraint -n "Bony_rKneeTopCurveLctr_parentConstraint1" -p "Bo
 	setAttr -k off ".sz";
 	setAttr ".erp" yes;
 	setAttr ".tg[0].tot" -type "double3" -0.45938271284103405 1.6478783879901391 -6.591949208711867e-17 ;
-	setAttr ".lr" -type "double3" 46.51039660876269 172.90184332613859 -35.99873894763985 ;
+	setAttr ".lr" -type "double3" 23.801577854353521 149.01192398176624 -4.8855503187593765 ;
 	setAttr ".rst" -type "double3" -0.45938271284103405 6.4139932991655666 0.01860851421952241 ;
 	setAttr ".int" 2;
 	setAttr -k on ".w0";
@@ -13067,7 +13068,7 @@ createNode parentConstraint -n "Bony_rUpperLegBtmClstrG_parentConstraint1" -p "B
 	setAttr -k off ".sy";
 	setAttr -k off ".sz";
 	setAttr ".erp" yes;
-	setAttr ".lr" -type "double3" 97.849058959261072 16.796045741229285 -0.22902182985516964 ;
+	setAttr ".lr" -type "double3" 44.808048829545946 -7.8938192644434215 105.85692275072635 ;
 	setAttr ".rst" -type "double3" -0.4595490553209709 2.5951123910778047 0.018559667387533396 ;
 	setAttr ".rsrr" -type "double3" -90.122895880070175 -0.0024977877498791744 89.999985299343678 ;
 	setAttr ".int" 2;
@@ -13158,7 +13159,7 @@ createNode parentConstraint -n "Bony_rUpperLegBtmGuideClstrG_parentConstraint1" 
 	setAttr -k off ".sy";
 	setAttr -k off ".sz";
 	setAttr ".erp" yes;
-	setAttr ".lr" -type "double3" 97.849058959261072 16.796045741229285 -0.22902182985516964 ;
+	setAttr ".lr" -type "double3" 44.808048829545946 -7.8938192644434215 105.85692275072635 ;
 	setAttr ".rst" -type "double3" -0.4595490553209709 2.5951123910778047 0.018559667387533396 ;
 	setAttr ".rsrr" -type "double3" -90.122895880070175 -0.0024977877498791744 89.999985299343678 ;
 	setAttr ".int" 2;
@@ -13254,7 +13255,7 @@ createNode orientConstraint -n "Bony_rKneeCurveCG_orientConstraint1" -p "Bony_rK
 	setAttr -k off ".sy";
 	setAttr -k off ".sz";
 	setAttr ".erp" yes;
-	setAttr ".lr" -type "double3" 97.849058959261072 16.796045741229285 -0.22902182985516972 ;
+	setAttr ".lr" -type "double3" 44.808048829545932 -7.8938192644434144 105.85692275072638 ;
 	setAttr ".rsrr" -type "double3" -90.122895880070175 -0.0024977877498696334 89.999985299343678 ;
 	setAttr -k on ".w0";
 createNode transform -n "Bony_Skeleton_Grp" -p "Bony_Main_CNT";
@@ -13297,7 +13298,7 @@ createNode parentConstraint -n "Bony_rLowerArmCurveJ1_parentConstraint1" -p "Bon
 	setAttr -k off ".sy";
 	setAttr -k off ".sz";
 	setAttr ".erp" yes;
-	setAttr ".lr" -type "double3" -46.482727826648393 23.099264368624091 -8.337884545907766 ;
+	setAttr ".lr" -type "double3" 168.84306627916359 30.715916995401901 -133.46175295583959 ;
 	setAttr ".rst" -type "double3" -2.5347654788768796 7.1013439193948837 -0.014198182525925498 ;
 	setAttr ".rsrr" -type "double3" -0.0026225210426154611 -0.011629461949324203 -2.7073612773961713e-05 ;
 	setAttr ".int" 2;
@@ -13327,7 +13328,7 @@ createNode parentConstraint -n "Bony_rLowerArmCurveJ2_parentConstraint1" -p "Bon
 	setAttr -k off ".sy";
 	setAttr -k off ".sz";
 	setAttr ".erp" yes;
-	setAttr ".lr" -type "double3" -46.483692455911736 23.099264693356155 -8.3378784060404527 ;
+	setAttr ".lr" -type "double3" 168.8428236943812 30.715915245002087 -133.46175716194645 ;
 	setAttr ".rst" -type "double3" -2.8768305653207316 7.1013437784182827 -0.014076470099300568 ;
 	setAttr ".rsrr" -type "double3" -0.050425925030372833 -0.025516219400294596 -2.0730948758167197e-05 ;
 	setAttr ".int" 2;
@@ -13357,7 +13358,7 @@ createNode parentConstraint -n "Bony_rLowerArmCurveJ3_parentConstraint1" -p "Bon
 	setAttr -k off ".sy";
 	setAttr -k off ".sz";
 	setAttr ".erp" yes;
-	setAttr ".lr" -type "double3" -46.484479618935502 23.099265173906325 -8.337869320038557 ;
+	setAttr ".lr" -type "double3" 168.84263006394985 30.715910607667595 -133.46176830518348 ;
 	setAttr ".rst" -type "double3" -3.2188956747829121 7.1013436741395495 -0.013930852486189166 ;
 	setAttr ".rsrr" -type "double3" 0.0026225066084555049 -0.020638705349841482 -1.3243131042495912e-05 ;
 	setAttr ".int" 2;
@@ -13388,7 +13389,7 @@ createNode parentConstraint -n "Bony_rElbowCurveJ_parentConstraint1" -p "Bony_rE
 	setAttr -k off ".sy";
 	setAttr -k off ".sz";
 	setAttr ".erp" yes;
-	setAttr ".lr" -type "double3" -75.851955725616378 46.539404798281325 -56.734270738845282 ;
+	setAttr ".lr" -type "double3" 170.26569889358032 10.275636967574412 -129.46422452953647 ;
 	setAttr ".rst" -type "double3" -2.1927003860473642 7.1013441085815465 -0.014172011423950517 ;
 	setAttr ".rsrr" -type "double3" -7.7324004639311513e-09 0.024024654786051449 -3.6881285204138973e-05 ;
 	setAttr ".int" 2;
@@ -13418,7 +13419,7 @@ createNode parentConstraint -n "Bony_rUpperArmCurveJ1_parentConstraint1" -p "Bon
 	setAttr -k off ".sy";
 	setAttr -k off ".sz";
 	setAttr ".erp" yes;
-	setAttr ".lr" -type "double3" 59.279747266091228 140.88369229481225 60.828544882016466 ;
+	setAttr ".lr" -type "double3" 170.26785970136581 -10.206011574132454 -125.97078388568569 ;
 	setAttr ".rst" -type "double3" -1.0815369269714818 7.1013445456822772 -0.013887281793397203 ;
 	setAttr ".rsrr" -type "double3" 9.0615275096762199e-10 0.0075077046115827085 -1.1525401473250094e-05 ;
 	setAttr ".int" 2;
@@ -13448,7 +13449,7 @@ createNode parentConstraint -n "Bony_rUpperArmCurveJ2_parentConstraint1" -p "Bon
 	setAttr -k off ".sy";
 	setAttr -k off ".sz";
 	setAttr ".erp" yes;
-	setAttr ".lr" -type "double3" 59.279752721824607 140.88369680120474 60.828553529603433 ;
+	setAttr ".lr" -type "double3" 170.26785882445614 -10.206012200491426 -125.97077893665096 ;
 	setAttr ".rst" -type "double3" -1.4519247548352145 7.1013444463411979 -0.013951993073657857 ;
 	setAttr ".rsrr" -type "double3" 2.5444437297042756e-14 0.012012327414006874 -1.8440641987876942e-05 ;
 	setAttr ".int" 2;
@@ -13478,7 +13479,7 @@ createNode parentConstraint -n "Bony_rUpperArmCurveJ3_parentConstraint1" -p "Bon
 	setAttr -k off ".sy";
 	setAttr -k off ".sz";
 	setAttr ".erp" yes;
-	setAttr ".lr" -type "double3" 59.27975767628481 140.88370061089068 60.828561382649475 ;
+	setAttr ".lr" -type "double3" 170.26785813182508 -10.206012695223659 -125.9707750276344 ;
 	setAttr ".rst" -type "double3" -1.8223125772721245 7.1013443072636928 -0.014042588865885535 ;
 	setAttr ".rsrr" -type "double3" -1.993458485572962e-09 0.016516950216438068 -2.5355882593191105e-05 ;
 	setAttr ".int" 2;
@@ -13552,7 +13553,7 @@ createNode parentConstraint -n "Bony_lLowerLegCurveJ1_parentConstraint1" -p "Bon
 	setAttr -k off ".sy";
 	setAttr -k off ".sz";
 	setAttr ".erp" yes;
-	setAttr ".lr" -type "double3" -83.054221610631643 -28.010463933082047 -175.97888552094989 ;
+	setAttr ".lr" -type "double3" -70.599281061160042 -3.2477853551537055 -101.45188134292573 ;
 	setAttr ".rst" -type "double3" 0.45952219286411855 2.0920799926045341 0.00080670102709654804 ;
 	setAttr ".rsrr" -type "double3" 89.907700983563331 3.6357164999659215 -90.005365320193249 ;
 	setAttr ".int" 2;
@@ -13581,7 +13582,7 @@ createNode parentConstraint -n "Bony_lLowerLegCurveJ2_parentConstraint1" -p "Bon
 	setAttr -k off ".sy";
 	setAttr -k off ".sz";
 	setAttr ".erp" yes;
-	setAttr ".lr" -type "double3" -78.234017345596271 -28.010456954327108 -175.9788861536689 ;
+	setAttr ".lr" -type "double3" -65.330679291450963 -3.2477853551537312 -101.45188134292574 ;
 	setAttr ".rst" -type "double3" 0.4594651085730066 1.5896478215106042 -0.038222419996411204 ;
 	setAttr ".rsrr" -type "double3" 89.938294827786549 4.8444212598492387 -90.007076105632621 ;
 	setAttr ".int" 2;
@@ -13610,7 +13611,7 @@ createNode parentConstraint -n "Bony_lLowerLegCurveJ3_parentConstraint1" -p "Bon
 	setAttr -k off ".sy";
 	setAttr -k off ".sz";
 	setAttr ".erp" yes;
-	setAttr ".lr" -type "double3" -73.413854492685061 -28.01044997557219 -175.97888678638787 ;
+	setAttr ".lr" -type "double3" -60.062413272479411 -3.2477853551536957 -101.45188134292573 ;
 	setAttr ".rst" -type "double3" 0.45940831164765894 1.087216005473969 -0.077247857443766124 ;
 	setAttr ".rsrr" -type "double3" 89.969074968802573 3.6347830045094933 -90.005291627331474 ;
 	setAttr ".int" 2;
@@ -13640,7 +13641,7 @@ createNode parentConstraint -n "Bony_lKneeCurveJ_parentConstraint1" -p "Bony_lKn
 	setAttr -k off ".sy";
 	setAttr -k off ".sz";
 	setAttr ".erp" yes;
-	setAttr ".lr" -type "double3" 92.186394977142541 149.17037736610234 6.1403498715217326 ;
+	setAttr ".lr" -type "double3" -74.819541952786949 21.4198228708409 -94.988132284662015 ;
 	setAttr ".rst" -type "double3" 0.45954911978930191 2.5951123910834322 0.018559666986659097 ;
 	setAttr ".rsrr" -type "double3" 89.877109650555497 0.0024978152135076946 -90.000196169468452 ;
 	setAttr ".int" 2;
@@ -13669,7 +13670,7 @@ createNode parentConstraint -n "Bony_lUpperLegCurveJ1_parentConstraint1" -p "Bon
 	setAttr -k off ".sy";
 	setAttr -k off ".sz";
 	setAttr ".erp" yes;
-	setAttr ".lr" -type "double3" 118.62213667643441 93.991122253847124 33.556899103750055 ;
+	setAttr ".lr" -type "double3" -70.579751174661467 42.688504608695986 -87.225266334079365 ;
 	setAttr ".rst" -type "double3" 0.45941115601645816 4.0271927277319479 0.01860261302693151 ;
 	setAttr ".rsrr" -type "double3" 89.919498531514506 0.001292747678623209 -89.993880050548242 ;
 	setAttr ".int" 2;
@@ -13698,7 +13699,7 @@ createNode parentConstraint -n "Bony_lUpperLegCurveJ2_parentConstraint1" -p "Bon
 	setAttr -k off ".sy";
 	setAttr -k off ".sz";
 	setAttr ".erp" yes;
-	setAttr ".lr" -type "double3" 118.62331818231503 93.99113560183622 33.558083482103974 ;
+	setAttr ".lr" -type "double3" -70.579669454478022 42.688521823339876 -87.225145804622002 ;
 	setAttr ".rst" -type "double3" 0.45947289371448619 3.5498326159510931 0.018589036852654686 ;
 	setAttr ".rsrr" -type "double3" 89.919498602440896 0.0018423995890343705 -89.992007561728101 ;
 	setAttr ".int" 2;
@@ -13727,7 +13728,7 @@ createNode parentConstraint -n "Bony_lUpperLegCurveJ3_parentConstraint1" -p "Bon
 	setAttr -k off ".sy";
 	setAttr -k off ".sz";
 	setAttr ".erp" yes;
-	setAttr ".lr" -type "double3" 118.62694671220501 93.991178941988323 33.561720833543419 ;
+	setAttr ".lr" -type "double3" -70.579415048170119 42.688567508616771 -87.224770580490357 ;
 	setAttr ".rst" -type "double3" 0.45953184045266443 3.0724725047029366 0.018573482178669949 ;
 	setAttr ".rsrr" -type "double3" 89.919498518001191 0.0018270597905752331 -89.994633774975838 ;
 	setAttr ".int" 2;
@@ -13802,7 +13803,7 @@ createNode parentConstraint -n "Bony_rLowerLegCurveJ1_parentConstraint1" -p "Bon
 	setAttr -k off ".sy";
 	setAttr -k off ".sz";
 	setAttr ".erp" yes;
-	setAttr ".lr" -type "double3" 99.678339745105347 36.30068986511646 3.0376019998715464 ;
+	setAttr ".lr" -type "double3" 41.243631096629798 14.966761522611051 82.655320092355836 ;
 	setAttr ".rst" -type "double3" -0.45952310367394578 2.0920799925766338 0.00080670148822402799 ;
 	setAttr ".rsrr" -type "double3" -90.09231023178441 -3.6357165099206576 90.005336847088017 ;
 	setAttr ".int" 2;
@@ -13831,7 +13832,7 @@ createNode parentConstraint -n "Bony_rLowerLegCurveJ2_parentConstraint1" -p "Bon
 	setAttr -k off ".sy";
 	setAttr -k off ".sz";
 	setAttr ".erp" yes;
-	setAttr ".lr" -type "double3" 100.02722784971766 36.3006912736844 3.0376020172626346 ;
+	setAttr ".lr" -type "double3" 39.162742044481114 14.966759584540322 82.655319425872449 ;
 	setAttr ".rst" -type "double3" -0.45946584850517863 1.589647821512695 -0.038222419699671245 ;
 	setAttr ".rsrr" -type "double3" -90.061719520990664 -4.8444212836327027 90.007126191487501 ;
 	setAttr ".int" 2;
@@ -13860,7 +13861,7 @@ createNode parentConstraint -n "Bony_rLowerLegCurveJ3_parentConstraint1" -p "Bon
 	setAttr -k off ".sy";
 	setAttr -k off ".sz";
 	setAttr ".erp" yes;
-	setAttr ".lr" -type "double3" 100.37592416043957 36.300692685900522 3.0376018905646722 ;
+	setAttr ".lr" -type "double3" 37.081413813291618 14.966759382526854 82.655316849250227 ;
 	setAttr ".rst" -type "double3" -0.45940857183721906 1.0872160054594717 -0.077247857355072558 ;
 	setAttr ".rsrr" -type "double3" -90.030931723508886 -3.6347830241680827 90.005342372226352 ;
 	setAttr ".int" 2;
@@ -13890,7 +13891,7 @@ createNode parentConstraint -n "Bony_rKneeCurveJ_parentConstraint1" -p "Bony_rKn
 	setAttr -k off ".sy";
 	setAttr -k off ".sz";
 	setAttr ".erp" yes;
-	setAttr ".lr" -type "double3" 97.849058959261072 16.796045741229285 -0.22902182985516964 ;
+	setAttr ".lr" -type "double3" 44.808048829545946 -7.8938192644434215 105.85692275072635 ;
 	setAttr ".rst" -type "double3" -0.4595490553209709 2.5951123910778047 0.018559667387533396 ;
 	setAttr ".rsrr" -type "double3" -90.122895880070175 -0.0024977877498791744 89.999985299343678 ;
 	setAttr ".int" 2;
@@ -13920,7 +13921,7 @@ createNode parentConstraint -n "Bony_rUpperLegCurveJ1_parentConstraint1" -p "Bon
 	setAttr -k off ".sy";
 	setAttr -k off ".sz";
 	setAttr ".erp" yes;
-	setAttr ".lr" -type "double3" 97.550931339341119 0.45245820120883201 -2.4564325986027469 ;
+	setAttr ".lr" -type "double3" 37.699829601183353 -27.426663747450963 128.79636257663188 ;
 	setAttr ".rst" -type "double3" -0.45941089216841657 4.0271927277093118 0.018602613184136314 ;
 	setAttr ".rsrr" -type "double3" -90.084212365256562 -0.0012927145884249057 89.993934443397592 ;
 	setAttr ".int" 2;
@@ -13949,7 +13950,7 @@ createNode parentConstraint -n "Bony_rUpperLegCurveJ2_parentConstraint1" -p "Bon
 	setAttr -k off ".sy";
 	setAttr -k off ".sz";
 	setAttr ".erp" yes;
-	setAttr ".lr" -type "double3" 97.550930682572783 0.45242489424045268 -2.4565157372944846 ;
+	setAttr ".lr" -type "double3" 37.699839308730319 -27.426747332924212 128.79634150090993 ;
 	setAttr ".rst" -type "double3" -0.45947213640928664 3.5498326159723841 0.018589037324157558 ;
 	setAttr ".rsrr" -type "double3" -90.084212294859782 -0.0018423619952151553 89.992062680002277 ;
 	setAttr ".int" 2;
@@ -13978,7 +13979,7 @@ createNode parentConstraint -n "Bony_rUpperLegCurveJ3_parentConstraint1" -p "Bon
 	setAttr -k off ".sy";
 	setAttr -k off ".sz";
 	setAttr ".erp" yes;
-	setAttr ".lr" -type "double3" 97.550928628398424 0.45232071829242937 -2.4567758586306603 ;
+	setAttr ".lr" -type "double3" 37.699865851064288 -27.427015385535825 128.79628387653912 ;
 	setAttr ".rst" -type "double3" -0.45953087971874557 3.0724725046981298 0.018573482855869905 ;
 	setAttr ".rsrr" -type "double3" -90.084212376761883 -0.0018270560179857401 89.994609842974924 ;
 	setAttr ".int" 2;
@@ -14097,7 +14098,7 @@ createNode parentConstraint -n "Bony_lUpperArmCurveJ3_parentConstraint1" -p "Bon
 	setAttr -k off ".sy";
 	setAttr -k off ".sz";
 	setAttr ".erp" yes;
-	setAttr ".lr" -type "double3" 56.272955384727929 123.45853517051692 56.042415399366305 ;
+	setAttr ".lr" -type "double3" 43.077690125193904 166.09968466153884 58.040338046041015 ;
 	setAttr ".rst" -type "double3" 1.8223125603132044 7.1013441830882984 -0.014123477484929694 ;
 	setAttr ".rsrr" -type "double3" -3.7026530712978848e-25 0.013513868326265622 -2.0745720057653523e-05 ;
 	setAttr ".int" 2;
@@ -14126,7 +14127,7 @@ createNode parentConstraint -n "Bony_lUpperArmCurveJ2_parentConstraint1" -p "Bon
 	setAttr -k off ".sy";
 	setAttr -k off ".sz";
 	setAttr ".erp" yes;
-	setAttr ".lr" -type "double3" 56.272964773787102 123.45854967636963 56.042426653385725 ;
+	setAttr ".lr" -type "double3" 43.077691871873213 166.09969283249117 58.040345316803645 ;
 	setAttr ".rst" -type "double3" 1.4519247412680576 7.1013443470010573 -0.014016703873440315 ;
 	setAttr ".rsrr" -type "double3" 0 0.018018490997510683 -2.766096080751521e-05 ;
 	setAttr ".int" 2;
@@ -14155,7 +14156,7 @@ createNode parentConstraint -n "Bony_lUpperArmCurveJ1_parentConstraint1" -p "Bon
 	setAttr -k off ".sy";
 	setAttr -k off ".sz";
 	setAttr ".erp" yes;
-	setAttr ".lr" -type "double3" 56.272974857319142 123.45855834607809 56.042438739823247 ;
+	setAttr ".lr" -type "double3" 43.077692425928689 166.0996988608361 58.040347623129819 ;
 	setAttr ".rst" -type "double3" 1.0815369222229103 7.1013445109138162 -0.013909930261950944 ;
 	setAttr ".rsrr" -type "double3" 0 0.013513868326263235 -2.074572005765356e-05 ;
 	setAttr ".int" 2;
@@ -14183,7 +14184,7 @@ createNode parentConstraint -n "Bony_lElbowCurveJ_parentConstraint1" -p "Bony_lE
 	setAttr -k off ".sy";
 	setAttr -k off ".sz";
 	setAttr ".erp" yes;
-	setAttr ".lr" -type "double3" -104.82842198074026 61.68384246954863 -102.02800563643711 ;
+	setAttr ".lr" -type "double3" -132.39108076826835 26.145707446172953 -108.85193948396582 ;
 	setAttr ".rst" -type "double3" 2.1927003860473628 7.1013441085815447 -0.014172011423951412 ;
 	setAttr ".int" 2;
 	setAttr -k on ".w0";
@@ -14211,7 +14212,7 @@ createNode parentConstraint -n "Bony_lLowerArmCurveJ3_parentConstraint1" -p "Bon
 	setAttr -k off ".sy";
 	setAttr -k off ".sz";
 	setAttr ".erp" yes;
-	setAttr ".lr" -type "double3" -81.453160110019027 62.373073496829868 -75.663192952195885 ;
+	setAttr ".lr" -type "double3" -123.94889023107594 36.94163290613244 -92.861271581667225 ;
 	setAttr ".rst" -type "double3" 3.2188956701650309 7.101343706250189 -0.013909935455900845 ;
 	setAttr ".rsrr" -type "double3" 3.7026530890546798e-25 -0.014632542935098521 -2.246345238919303e-05 ;
 	setAttr ".int" 2;
@@ -14240,7 +14241,7 @@ createNode parentConstraint -n "Bony_lLowerArmCurveJ2_parentConstraint1" -p "Bon
 	setAttr -k off ".sy";
 	setAttr -k off ".sz";
 	setAttr ".erp" yes;
-	setAttr ".lr" -type "double3" -81.453090770398376 62.373082297443197 -75.663188551493135 ;
+	setAttr ".lr" -type "double3" -123.94875581074776 36.941651272581488 -92.861278656626553 ;
 	setAttr ".rst" -type "double3" 2.8768305778503396 7.1013438701629656 -0.014016707146588104 ;
 	setAttr ".rsrr" -type "double3" -7.4053063659384758e-25 -0.019510057121467736 -2.9951270240701651e-05 ;
 	setAttr ".int" 2;
@@ -14269,7 +14270,7 @@ createNode parentConstraint -n "Bony_lLowerArmCurveJ1_parentConstraint1" -p "Bon
 	setAttr -k off ".sy";
 	setAttr -k off ".sz";
 	setAttr ".erp" yes;
-	setAttr ".lr" -type "double3" -81.452999212813708 62.373095818911182 -75.663181404496967 ;
+	setAttr ".lr" -type "double3" -123.94858436228195 36.94166959794623 -92.861287442866086 ;
 	setAttr ".rst" -type "double3" 2.5347654855356501 7.1013440340757397 -0.014123478837275365 ;
 	setAttr ".rsrr" -type "double3" 3.7026530890546798e-25 -0.014632542935097703 -2.2463452389193114e-05 ;
 	setAttr ".int" 2;
@@ -14310,7 +14311,7 @@ createNode parentConstraint -n "Bony_HeadJ_parentConstraint1" -p "Bony_HeadJ";
 	setAttr ".tg[0].tot" -type "double3" -1.9721522630525295e-31 -8.8817841970012523e-16 
 		0 ;
 	setAttr ".tg[0].tor" -type "double3" -89.999999999999986 0 89.999999999999986 ;
-	setAttr ".lr" -type "double3" -165.87163325052137 42.256028159863888 46.801585356914295 ;
+	setAttr ".lr" -type "double3" 144.89004317571994 25.300993339502746 15.416562843376115 ;
 	setAttr ".rst" -type "double3" -9.5100960567083698e-16 7.8324078323180926 0.066044886112574447 ;
 	setAttr ".rsrr" -type "double3" 6.361109362927032e-15 6.361109362927032e-15 6.361109362927032e-15 ;
 	setAttr ".int" 2;
@@ -14340,7 +14341,7 @@ createNode parentConstraint -n "Bony_Neck02J_parentConstraint1" -p "Bony_Neck02J
 	setAttr -k off ".sy";
 	setAttr -k off ".sz";
 	setAttr ".erp" yes;
-	setAttr ".lr" -type "double3" 43.883653782909093 173.3213274318575 -32.578904574291592 ;
+	setAttr ".lr" -type "double3" 33.594580876615389 148.76885793397514 -0.89981329911172159 ;
 	setAttr ".rst" -type "double3" -8.7381468849715355e-16 7.6133788620705491 0.033022443056286883 ;
 	setAttr ".rsrr" -type "double3" 8.5737657711556174 0 0 ;
 	setAttr ".int" 2;
@@ -14385,7 +14386,7 @@ createNode parentConstraint -n "Bony_Neck01J_parentConstraint1" -p "Bony_Neck01J
 	setAttr ".erp" yes;
 	setAttr ".tg[0].tot" -type "double3" -3.9443045261050599e-31 0 1.0712641279495374e-16 ;
 	setAttr ".tg[0].tor" -type "double3" -90 -8.5737657711556228 90 ;
-	setAttr ".lr" -type "double3" 8.07136276708493e-15 -1.8425260550485979e-14 2.385416011097638e-14 ;
+	setAttr ".lr" -type "double3" 1.4406077208939215e-14 -1.7846377775409091e-14 1.2722218725854064e-14 ;
 	setAttr ".rst" -type "double3" 0.43491038996994913 -0.014191192281884313 1.2077612764245592e-16 ;
 	setAttr ".rsrr" -type "double3" 1.2669428883708572e-14 1.1577655501537649e-15 1.113194138512231e-14 ;
 	setAttr ".int" 2;
@@ -14457,7 +14458,7 @@ createNode transform -n "BonylArmUpLctr" -p "Bony_lShoulderJ";
 	rename -uid "4BA4079C-4B1F-4CA4-EC3E-6B8BA27F78B4";
 	setAttr ".v" no;
 	setAttr ".t" -type "double3" 1.482180246636861 1.7763568394002505e-15 -2.9998116750530377 ;
-	setAttr ".r" -type "double3" -3.8661662110377837e-09 -12.298118175059011 1.8440642188109784e-05 ;
+	setAttr ".r" -type "double3" -3.8661662110377837e-09 -17.341622914634605 1.8440642188109784e-05 ;
 	setAttr ".s" -type "double3" 0.99999999999999978 0.99999999999999978 0.99999999999999967 ;
 createNode locator -n "BonylArmUpLctrShape" -p "BonylArmUpLctr";
 	rename -uid "E8CEA4C6-4A62-8FCD-6EA7-CB867B21C486";
@@ -14479,7 +14480,7 @@ createNode orientConstraint -n "BonylArmUpLctr_orientConstraint1" -p "BonylArmUp
 	setAttr -k off ".sz";
 	setAttr ".erp" yes;
 	setAttr -s 2 ".tg";
-	setAttr ".lr" -type "double3" 0.0017894007058202501 -12.298615363784101 -0.00056951952028211599 ;
+	setAttr ".lr" -type "double3" 0.0018315960728216495 -17.342120103346389 -0.00081258526145197314 ;
 	setAttr ".o" -type "double3" -0.0017483332008100959 0.00049718930012877284 1.8425470437955082e-05 ;
 	setAttr ".rsrr" -type "double3" 3.4619509802288307e-19 -0.012012327393057578 1.8440642188109788e-05 ;
 	setAttr ".int" 2;
@@ -14503,7 +14504,7 @@ createNode parentConstraint -n "Bony_lClavicleJ_parentConstraint1" -p "Bony_lCla
 	setAttr ".tg[0].tot" -type "double3" 0 8.8817841970012523e-16 1.0581813203458523e-16 ;
 	setAttr ".tg[0].tor" -type "double3" 9.144094709207615e-15 1.0369786409538434e-14 
 		3.1688285155968739e-14 ;
-	setAttr ".lr" -type "double3" -2.5444437451708134e-14 6.361109362927032e-15 -6.3611093629270351e-15 ;
+	setAttr ".lr" -type "double3" -1.2722218725854064e-14 6.3611093629270304e-15 -6.3611093629270335e-15 ;
 	setAttr ".rst" -type "double3" 0.14251300333149164 0.0092185536088837949 -0.38826418586793199 ;
 	setAttr ".rsrr" -type "double3" 0 0 -2.5444437451708128e-14 ;
 	setAttr ".int" 2;
@@ -14575,7 +14576,7 @@ createNode transform -n "BonyrArmUpLctr" -p "Bony_rShoulderJ";
 	rename -uid "08D26E09-450B-C8EA-076F-7A9441788EB2";
 	setAttr ".v" no;
 	setAttr ".t" -type "double3" -1.4821173502381675 1.7763568394002505e-15 2.6998116816463011 ;
-	setAttr ".r" -type "double3" 359.99999999613379 -45.180008863662465 -1.8440642196796849e-05 ;
+	setAttr ".r" -type "double3" 359.99999999613379 -20.77430523333301 -1.8440642196796849e-05 ;
 	setAttr ".s" -type "double3" 1 0.99999999999999978 0.99999999999999989 ;
 createNode locator -n "BonyrArmUpLctrShape" -p "BonyrArmUpLctr";
 	rename -uid "5AB25EC1-49EE-C62C-1A61-238A31802C89";
@@ -14597,7 +14598,7 @@ createNode orientConstraint -n "BonyrArmUpLctr_orientConstraint1" -p "BonyrArmUp
 	setAttr -k off ".sz";
 	setAttr ".erp" yes;
 	setAttr -s 2 ".tg";
-	setAttr ".lr" -type "double3" 0.0024803459810719308 -45.180506052167495 -0.0024867990133966974 ;
+	setAttr ".lr" -type "double3" 0.0018699138506514442 -20.774802422032682 -0.000983732811945498 ;
 	setAttr ".o" -type "double3" 179.99825166285106 0.00049718930014714627 1.8425470445929192e-05 ;
 	setAttr ".rsrr" -type "double3" 179.99999999613379 -0.012012327393025723 1.8440642196795379e-05 ;
 	setAttr ".int" 2;
@@ -14622,7 +14623,7 @@ createNode parentConstraint -n "Bony_rClavicleJ_parentConstraint1" -p "Bony_rCla
 		-1.0581813203458523e-16 ;
 	setAttr ".tg[0].tor" -type "double3" -1.0594833315181334e-14 -8.7101579591139213e-15 
 		1.9173519986417746e-14 ;
-	setAttr ".lr" -type "double3" -4.1347210859025721e-14 -6.3611093629270367e-15 -9.5416640443905471e-15 ;
+	setAttr ".lr" -type "double3" -1.2722218725854067e-14 0 0 ;
 	setAttr ".rst" -type "double3" 0.14251300333149164 0.0092185536088837672 0.3882641858679321 ;
 	setAttr ".rsrr" -type "double3" 9.5416640443905519e-15 -3.180554681463514e-15 -3.1805546814635168e-14 ;
 	setAttr ".int" 2;
@@ -14644,7 +14645,7 @@ createNode parentConstraint -n "Bony_Spine04J_parentConstraint1" -p "Bony_Spine0
 	setAttr ".erp" yes;
 	setAttr ".tg[0].tot" -type "double3" -2.9582283945787943e-31 0 1.0061396160665481e-16 ;
 	setAttr ".tg[0].tor" -type "double3" -90 1.8689069107722129 90 ;
-	setAttr ".lr" -type "double3" -163.51797068444986 33.150992111098546 38.508511498226078 ;
+	setAttr ".lr" -type "double3" 152.3492977654187 15.358386116941709 16.878080338995304 ;
 	setAttr ".rst" -type "double3" 0.54856508346006017 -2.7478019859472624e-15 2.1304696691865693e-16 ;
 	setAttr ".rsrr" -type "double3" 1.2722218725854067e-14 -7.0622500768802538e-31 6.3611093629270335e-15 ;
 	setAttr ".int" 2;
@@ -14672,7 +14673,7 @@ createNode parentConstraint -n "Bony_spine03J_parentConstraint1" -p "Bony_spine0
 	setAttr -k off ".sy";
 	setAttr -k off ".sz";
 	setAttr ".erp" yes;
-	setAttr ".lr" -type "double3" -148.2570705765124 7.0981566738613298 144.00126105236009 ;
+	setAttr ".lr" -type "double3" -160.1321576243885 30.988076018233784 175.11444968124076 ;
 	setAttr ".rst" -type "double3" -1.3877787807814457e-16 1.0000000000000002 0 ;
 	setAttr ".int" 2;
 	setAttr -k on ".w0";
@@ -14700,7 +14701,7 @@ createNode parentConstraint -n "Bony_spine02J_parentConstraint1" -p "Bony_spine0
 	setAttr -k off ".sy";
 	setAttr -k off ".sz";
 	setAttr ".erp" yes;
-	setAttr ".lr" -type "double3" -145.43609030821784 7.0981566738615243 144.00126105236015 ;
+	setAttr ".lr" -type "double3" -157.28186624830812 30.98807601823377 175.11444968124076 ;
 	setAttr ".rst" -type "double3" -1.3877787807814457e-16 -5.5511151231257827e-17 0 ;
 	setAttr ".int" 2;
 	setAttr -k on ".w0";
@@ -14728,7 +14729,7 @@ createNode parentConstraint -n "Bony_spine01J_parentConstraint1" -p "Bony_spine0
 	setAttr -k off ".sy";
 	setAttr -k off ".sz";
 	setAttr ".erp" yes;
-	setAttr ".lr" -type "double3" -138.71061082459923 7.0981566738613351 144.00126105236015 ;
+	setAttr ".lr" -type "double3" -154.82923268219733 30.988076018233738 175.11444968124076 ;
 	setAttr ".rst" -type "double3" -1.3877787807814457e-16 -1.0000000000000002 0 ;
 	setAttr ".int" 2;
 	setAttr -k on ".w0";
@@ -14808,7 +14809,7 @@ createNode transform -n "Bony_lLegUpLctr" -p "Bony_lHipJ";
 	rename -uid "3BB0255E-4781-679B-D2D2-66A4277AE090";
 	setAttr ".v" no;
 	setAttr ".t" -type "double3" 1.9094404579790436 -3.2612801348363973e-16 1.6653345369377348e-16 ;
-	setAttr ".r" -type "double3" -0.042388629001454556 -0.0051880178152410193 -55.646572113037109 ;
+	setAttr ".r" -type "double3" -0.042388629001454556 -0.0051880178152410193 -22.238386154174805 ;
 	setAttr ".s" -type "double3" 1 0.99999999999999989 0.99999999999999989 ;
 createNode locator -n "Bony_lLegUpLctrShape" -p "Bony_lLegUpLctr";
 	rename -uid "DB24A0B1-43E0-376C-F876-72A6B9BCEC99";
@@ -14880,7 +14881,7 @@ createNode transform -n "Bony_rLegUpLctr" -p "Bony_rHipJ";
 	rename -uid "7804CE1F-41FE-8B92-6209-AAA129BE818F";
 	setAttr ".v" no;
 	setAttr ".t" -type "double3" -1.9094404579790427 2.4633073358870661e-16 0 ;
-	setAttr ".r" -type "double3" -0.038683273332266788 -0.0049751461411050441 -16.490432739257812 ;
+	setAttr ".r" -type "double3" -0.038683273332266788 -0.0049751461411050441 -29.200290679931644 ;
 	setAttr ".s" -type "double3" 0.99999999999999978 0.99999999999999978 0.99999999999999956 ;
 createNode locator -n "Bony_rLegUpLctrShape" -p "Bony_rLegUpLctr";
 	rename -uid "A6244A57-46A8-29D6-4BA2-38B1632C3EA3";
@@ -14900,7 +14901,7 @@ createNode parentConstraint -n "Bony_ROOTJ_parentConstraint1" -p "Bony_ROOTJ";
 	setAttr -k off ".sy";
 	setAttr -k off ".sz";
 	setAttr ".erp" yes;
-	setAttr ".lr" -type "double3" 46.51039660876269 172.90184332613859 -35.99873894763985 ;
+	setAttr ".lr" -type "double3" 23.801577854353521 149.01192398176624 -4.8855503187593765 ;
 	setAttr ".rst" -type "double3" 0 4.7661149111754275 0.018608514219522476 ;
 	setAttr ".int" 2;
 	setAttr -k on ".w0";
@@ -15007,7 +15008,7 @@ createNode parentConstraint -n "Bony_lWristTwistLctr_parentConstraint1" -p "Bony
 		2.5673907444456745e-16 ;
 	setAttr ".tg[0].tor" -type "double3" 1.1647539116687683e-17 4.0378135604517306e-17 
 		-8.2213737788309671e-15 ;
-	setAttr ".lr" -type "double3" -0.0034775985799429749 0.013001958279217954 8.4030516762806615e-06 ;
+	setAttr ".lr" -type "double3" -0.0035038447959273842 0.013006705165891761 4.8596117558322899e-06 ;
 	setAttr ".rst" -type "double3" 1.3682604188616363 1.6875389974302379e-14 3.8684333514282798e-16 ;
 	setAttr ".rsrr" -type "double3" -0.0034966660748796548 0.013006706039443362 1.9173735551479352e-05 ;
 	setAttr ".int" 2;
@@ -15027,7 +15028,7 @@ createNode parentConstraint -n "Bony_lWristAimLctr_parentConstraint1" -p "Bony_l
 	setAttr -k off ".sy";
 	setAttr -k off ".sz";
 	setAttr ".erp" yes;
-	setAttr ".lr" -type "double3" -81.449724027561587 62.373090687650951 -75.663185666984205 ;
+	setAttr ".lr" -type "double3" -123.94549830016238 36.941649944455797 -92.861283358974362 ;
 	setAttr ".rst" -type "double3" 2.1927003860473628 7.1013441085815447 -0.014172011423951412 ;
 	setAttr ".rsrr" -type "double3" 0.0034966705176039266 -0.01300670484507997 -1.9967513647430637e-05 ;
 	setAttr -l on -k off ".int" 2;
@@ -15064,7 +15065,7 @@ createNode parentConstraint -n "Bony_lElbowTwist75Lctr_parentConstraint1" -p "Bo
 	setAttr -k off ".sz";
 	setAttr ".erp" yes;
 	setAttr -s 2 ".tg";
-	setAttr ".lr" -type "double3" -99.166428043593569 62.323641575380698 -95.618135623560192 ;
+	setAttr ".lr" -type "double3" -130.69397223086253 29.021800938651953 -105.19066462775893 ;
 	setAttr ".rst" -type "double3" 2.1927003860473628 7.1013441085815447 -0.014172011423951412 ;
 	setAttr ".rsrr" -type "double3" 0.0017483346809370171 -0.0065033525748631931 -9.8845344386344782e-06 ;
 	setAttr -l on -k off ".int" 2;
@@ -15102,7 +15103,7 @@ createNode parentConstraint -n "Bony_lElbowTwist50Lctr_parentConstraint1" -p "Bo
 	setAttr -k off ".sz";
 	setAttr ".erp" yes;
 	setAttr -s 2 ".tg";
-	setAttr ".lr" -type "double3" -93.292197016056917 62.657517122178426 -88.997601236459644 ;
+	setAttr ".lr" -type "double3" -128.73470517931273 31.792999886648829 -101.3234841955769 ;
 	setAttr ".rst" -type "double3" 2.1927003860473628 7.1013441085815447 -0.014172011423951412 ;
 	setAttr ".rsrr" -type "double3" 0.0017483346809370171 -0.0065033525748631931 -9.8845344386344782e-06 ;
 	setAttr -l on -k off ".int" 2;
@@ -15140,7 +15141,7 @@ createNode parentConstraint -n "Bony_lElbowTwist25Lctr_parentConstraint1" -p "Bo
 	setAttr -k off ".sz";
 	setAttr ".erp" yes;
 	setAttr -s 2 ".tg";
-	setAttr ".lr" -type "double3" -87.33877711959056 62.67419261162479 -82.298436459565565 ;
+	setAttr ".lr" -type "double3" -126.49222925201545 34.440176476523426 -97.222738211239232 ;
 	setAttr ".rst" -type "double3" 2.1927003860473628 7.1013441085815447 -0.014172011423951412 ;
 	setAttr ".rsrr" -type "double3" 0.0017483346809370171 -0.0065033525748631931 -9.8845344386344782e-06 ;
 	setAttr -l on -k off ".int" 2;
@@ -15235,7 +15236,7 @@ createNode parentConstraint -n "Bony_rWristTwistLctr_parentConstraint1" -p "Bony
 		4.4755865680201623e-16 ;
 	setAttr ".tg[0].tor" -type "double3" -1.4038778897343662e-14 -6.5226219053448208e-17 
 		2.3041558094120407e-14 ;
-	setAttr ".lr" -type "double3" -0.0035118723082622465 0.013005124850050519 2.6472574415251536e-05 ;
+	setAttr ".lr" -type "double3" -0.0034966679396209095 0.013006705582156405 1.168116560463335e-05 ;
 	setAttr ".rst" -type "double3" -1.3682604188616345 -1.9539925233402755e-14 6.2450045135165055e-16 ;
 	setAttr ".rsrr" -type "double3" -0.0034966662387618244 0.013006706039448255 1.9173735560155968e-05 ;
 	setAttr ".int" 2;
@@ -15255,7 +15256,7 @@ createNode parentConstraint -n "Bony_rWristAimLctr_parentConstraint1" -p "Bony_r
 	setAttr -k off ".sy";
 	setAttr -k off ".sz";
 	setAttr ".erp" yes;
-	setAttr ".lr" -type "double3" 133.51841272273725 -23.099265902398578 8.3378737397562777 ;
+	setAttr ".lr" -type "double3" -11.154010315282903 -30.715907653832577 133.46176041807644 ;
 	setAttr ".rst" -type "double3" -2.1927003860473642 7.1013441085815465 -0.014172011423950517 ;
 	setAttr ".rsrr" -type "double3" -179.9965033293185 0.013006704845084803 1.9967513693311992e-05 ;
 	setAttr -l on -k off ".int" 2;
@@ -15292,7 +15293,7 @@ createNode parentConstraint -n "Bony_rElbowTwist75Lctr_parentConstraint1" -p "Bo
 	setAttr -k off ".sz";
 	setAttr ".erp" yes;
 	setAttr -s 2 ".tg";
-	setAttr ".lr" -type "double3" 114.7184422721492 -42.753656219512912 41.744394627045715 ;
+	setAttr ".lr" -type "double3" -9.935703780974217 -15.393319108751381 130.37336492834655 ;
 	setAttr ".rst" -type "double3" -2.1927003860473642 7.1013441085815465 -0.014172011423950517 ;
 	setAttr ".rsrr" -type "double3" 0.052593384272466473 0.010310005424188575 169.21173859908276 ;
 	setAttr -l on -k off ".int" 0;
@@ -15330,7 +15331,7 @@ createNode parentConstraint -n "Bony_rElbowTwist50Lctr_parentConstraint1" -p "Bo
 	setAttr -k off ".sz";
 	setAttr ".erp" yes;
 	setAttr -s 2 ".tg";
-	setAttr ".lr" -type "double3" 123.05462451186786 -37.268391778066992 28.826071519910247 ;
+	setAttr ".lr" -type "double3" -10.229575242242955 -20.507134984860457 131.32838088323095 ;
 	setAttr ".rst" -type "double3" -2.1927003860473642 7.1013441085815465 -0.014172011423950517 ;
 	setAttr ".rsrr" -type "double3" 0.052593384272466473 0.010310005424188575 169.21173859908276 ;
 	setAttr -l on -k off ".int" 0;
@@ -15368,7 +15369,7 @@ createNode parentConstraint -n "Bony_rElbowTwist25Lctr_parentConstraint1" -p "Bo
 	setAttr -k off ".sz";
 	setAttr ".erp" yes;
 	setAttr -s 2 ".tg";
-	setAttr ".lr" -type "double3" 129.21360085984858 -30.583442310385131 17.833476924372018 ;
+	setAttr ".lr" -type "double3" -10.629186321652204 -25.6153787628106 132.34942781969517 ;
 	setAttr ".rst" -type "double3" -2.1927003860473642 7.1013441085815465 -0.014172011423950517 ;
 	setAttr ".rsrr" -type "double3" 0.052593384272466473 0.010310005424188575 169.21173859908276 ;
 	setAttr -l on -k off ".int" 0;
@@ -15463,7 +15464,7 @@ createNode parentConstraint -n "Bony_lAnkleTwistLctr_parentConstraint1" -p "Bony
 		-6.726952328506286e-12 ;
 	setAttr ".tg[0].tor" -type "double3" 1.4992904185659045e-07 1.3784756010655113e-07 
 		-42.992804182983747 ;
-	setAttr ".lr" -type "double3" 19.240935833508019 15.352883455017452 12.967215797100803 ;
+	setAttr ".lr" -type "double3" 21.063648390347492 -8.1143128107282632 6.0333406204594455 ;
 	setAttr ".rst" -type "double3" 2.0141342464947418 5.4952144390441049e-08 -5.4333648691340386e-11 ;
 	setAttr ".rsrr" -type "double3" 0.12311503465968449 -0.0022053723880087243 3.2317418471265831 ;
 	setAttr ".int" 2;
@@ -15483,7 +15484,7 @@ createNode parentConstraint -n "Bony_lAnkleAimLctr_parentConstraint1" -p "Bony_l
 	setAttr -k off ".sy";
 	setAttr -k off ".sz";
 	setAttr ".erp" yes;
-	setAttr ".lr" -type "double3" -87.835321082775408 -28.010456899744014 -175.97888711681611 ;
+	setAttr ".lr" -type "double3" -75.858160383393809 -3.247788298113405 -101.45187922848434 ;
 	setAttr ".rst" -type "double3" 0.45954911978930191 2.5951123910834322 0.018559666986659208 ;
 	setAttr ".rsrr" -type "double3" 89.876688711847166 3.2317391172443228 -90.00474639373256 ;
 	setAttr -l on -k off ".int" 2;
@@ -15520,7 +15521,7 @@ createNode parentConstraint -n "Bony_lKneeTwist75Lctr_parentConstraint1" -p "Bon
 	setAttr -k off ".sz";
 	setAttr ".erp" yes;
 	setAttr -s 2 ".tg";
-	setAttr ".lr" -type "double3" 91.964560939104075 163.87973617262872 5.56631747987797 ;
+	setAttr ".lr" -type "double3" -75.360310612247432 15.266145170928912 -96.709587297150279 ;
 	setAttr ".rst" -type "double3" 0.45954911978930191 2.5951123910834322 0.018559666986659153 ;
 	setAttr ".rsrr" -type "double3" 89.876931336661997 1.6171184704048422 -90.002467409588618 ;
 	setAttr -l on -k off ".int" 2;
@@ -15558,7 +15559,7 @@ createNode parentConstraint -n "Bony_lKneeTwist50Lctr_parentConstraint1" -p "Bon
 	setAttr -k off ".sz";
 	setAttr ".erp" yes;
 	setAttr -s 2 ".tg";
-	setAttr ".lr" -type "double3" -88.102808570720228 1.4096596955791605 -174.9289656677623 ;
+	setAttr ".lr" -type "double3" -75.701573804492654 9.1001311035221164 -98.332736882229625 ;
 	setAttr ".rst" -type "double3" 0.45954911978930191 2.5951123910834322 0.018559666986659153 ;
 	setAttr ".rsrr" -type "double3" 89.876931336661997 1.6171184704048422 -90.002467409588618 ;
 	setAttr -l on -k off ".int" 2;
@@ -15596,7 +15597,7 @@ createNode parentConstraint -n "Bony_lKneeTwist25Lctr_parentConstraint1" -p "Bon
 	setAttr -k off ".sz";
 	setAttr ".erp" yes;
 	setAttr -s 2 ".tg";
-	setAttr ".lr" -type "double3" -88.042775730838343 -13.300973738582064 -175.42016787979682 ;
+	setAttr ".lr" -type "double3" -75.864305911719612 2.9272293608466118 -99.900836225215343 ;
 	setAttr ".rst" -type "double3" 0.45954911978930191 2.5951123910834322 0.018559666986659153 ;
 	setAttr ".rsrr" -type "double3" 89.876931336661997 1.6171184704048422 -90.002467409588618 ;
 	setAttr -l on -k off ".int" 2;
@@ -15691,7 +15692,7 @@ createNode parentConstraint -n "Bony_rAnkleTwistLctr_parentConstraint1" -p "Bony
 		-8.7013729554996644e-13 ;
 	setAttr ".tg[0].tor" -type "double3" -1.5203347335463143e-07 -1.3791831313494119e-07 
 		-42.99280418221317 ;
-	setAttr ".lr" -type "double3" 1.3896878180037355 -8.6651705142367099 -10.825443190200771 ;
+	setAttr ".lr" -type "double3" -8.3392612252771485 -2.1777556331281529 9.0838615875655737 ;
 	setAttr ".rst" -type "double3" -2.0141342465063921 -5.4963476436853398e-08 4.6660453278946079e-11 ;
 	setAttr ".rsrr" -type "double3" 0.12311476867127696 -0.0022069016349704229 3.231741855519056 ;
 	setAttr ".int" 2;
@@ -15711,7 +15712,7 @@ createNode parentConstraint -n "Bony_rAnkleAimLctr_parentConstraint1" -p "Bony_r
 	setAttr -k off ".sy";
 	setAttr -k off ".sz";
 	setAttr ".erp" yes;
-	setAttr ".lr" -type "double3" 99.334731721810044 36.300692311538612 3.0376023425994521 ;
+	setAttr ".lr" -type "double3" 43.338840016976761 14.966759920349068 82.655318399676418 ;
 	setAttr ".rst" -type "double3" -0.4595490553209709 2.5951123910778047 0.018559667387533507 ;
 	setAttr ".rsrr" -type "double3" -90.123310719298573 -3.2317391289698536 90.004744556672364 ;
 	setAttr -l on -k off ".int" 2;
@@ -15748,7 +15749,7 @@ createNode parentConstraint -n "Bony_rKneeTwist75Lctr_parentConstraint1" -p "Bon
 	setAttr -k off ".sz";
 	setAttr ".erp" yes;
 	setAttr -s 2 ".tg";
-	setAttr ".lr" -type "double3" 98.087814828004937 21.678513431684781 0.49201164194211766 ;
+	setAttr ".lr" -type "double3" 45.315210368384299 -2.1530541124313567 100.10793777472202 ;
 	setAttr ".rst" -type "double3" -0.4595490553209709 2.5951123910778047 0.018559667387533452 ;
 	setAttr ".rsrr" -type "double3" -90.123069672090992 -1.6171184626643256 90.002361057409345 ;
 	setAttr -l on -k off ".int" 2;
@@ -15786,7 +15787,7 @@ createNode parentConstraint -n "Bony_rKneeTwist50Lctr_parentConstraint1" -p "Bon
 	setAttr -k off ".sz";
 	setAttr ".erp" yes;
 	setAttr -s 2 ".tg";
-	setAttr ".lr" -type "double3" 98.40444489578465 26.557635333228724 1.2638065353752104 ;
+	setAttr ".lr" -type "double3" 45.245257032658138 3.6094555958419905 94.402527400148756 ;
 	setAttr ".rst" -type "double3" -0.4595490553209709 2.5951123910778047 0.018559667387533452 ;
 	setAttr ".rsrr" -type "double3" -90.123069672090992 -1.6171184626643256 90.002361057409345 ;
 	setAttr -l on -k off ".int" 2;
@@ -15824,7 +15825,7 @@ createNode parentConstraint -n "Bony_rKneeTwist25Lctr_parentConstraint1" -p "Bon
 	setAttr -k off ".sz";
 	setAttr ".erp" yes;
 	setAttr -s 2 ".tg";
-	setAttr ".lr" -type "double3" 98.813281205694807 31.432216326903614 2.1044591065951064 ;
+	setAttr ".lr" -type "double3" 44.59525743785904 9.3361158157630015 88.624639542804999 ;
 	setAttr ".rst" -type "double3" -0.4595490553209709 2.5951123910778047 0.018559667387533452 ;
 	setAttr ".rsrr" -type "double3" -90.123069672090992 -1.6171184626643256 90.002361057409345 ;
 	setAttr -l on -k off ".int" 2;
@@ -15860,7 +15861,7 @@ createNode parentConstraint -n "Bony_lWristJG2_parentConstraint1" -p "Bony_lWris
 	setAttr ".tg[0].tot" -type "double3" 0 0 -1.7347234759768071e-18 ;
 	setAttr ".tg[0].tor" -type "double3" -0.0034966660748884165 0.013006706039449728 
 		1.9173735532393633e-05 ;
-	setAttr ".lr" -type "double3" -81.477791965947134 62.375040691537542 -75.690918672013709 ;
+	setAttr ".lr" -type "double3" -123.95711516823408 36.93440208779213 -92.874795612246757 ;
 	setAttr ".rst" -type "double3" 2.1927003860473628 7.1013441085815447 -0.014172011423951312 ;
 	setAttr ".rsrr" -type "double3" -8.7583634113041906e-15 7.7664355170515329e-18 -8.5877745172311411e-20 ;
 	setAttr ".int" 2;
@@ -15981,7 +15982,7 @@ createNode parentConstraint -n "Bony_lThumbJ3_parentConstraint1" -p "Bony_lThumb
 		0 ;
 	setAttr ".tg[0].tor" -type "double3" -25.265665254079114 -1.5584717939171227e-13 
 		7.8559700632148841e-13 ;
-	setAttr ".lr" -type "double3" 4.7708320221952748e-14 0 0 ;
+	setAttr ".lr" -type "double3" 3.8166656177562201e-14 0 0 ;
 	setAttr ".rst" -type "double3" 0.15947329087373818 -1.7763568394002505e-15 0 ;
 	setAttr ".rsrr" -type "double3" 6.3611093629270335e-15 0 0 ;
 	setAttr ".int" 2;
@@ -16028,7 +16029,7 @@ createNode parentConstraint -n "Bony_lThumbJ1_parentConstraint1" -p "Bony_lThumb
 	setAttr ".tg[0].tot" -type "double3" 0 -2.6645352591003757e-15 1.7763568394002505e-15 ;
 	setAttr ".tg[0].tor" -type "double3" -25.265665254079128 -1.5743745673244408e-13 
 		7.8877756100295213e-13 ;
-	setAttr ".lr" -type "double3" 1.5902773407314693e-14 5.0491305568233333e-13 -6.551942643814843e-13 ;
+	setAttr ".lr" -type "double3" -2.8268269767203429e-27 5.0232885500364408e-13 -6.4485746166672791e-13 ;
 	setAttr ".rst" -type "double3" 0.30867648188587449 -1.3322676295501878e-14 0.24970245756286688 ;
 	setAttr ".rsrr" -type "double3" -6.3611093629296944e-15 4.8145646490653975e-13 -6.3372552028160559e-13 ;
 	setAttr ".int" 2;
@@ -16405,7 +16406,7 @@ createNode parentConstraint -n "Bony_lThumbJ2CG_parentConstraint1" -p "Bony_lThu
 		1.3045120539345589e-15 ;
 	setAttr ".tg[0].tor" -type "double3" -7.9513867036587919e-15 -3.1805546814635168e-15 
 		6.3611093629270335e-15 ;
-	setAttr ".lr" -type "double3" 61.577128899199742 -60.97989586745026 -40.043452516933705 ;
+	setAttr ".lr" -type "double3" 61.577128899199735 -60.979895867450274 -40.043452516933698 ;
 	setAttr ".rst" -type "double3" 1.3322676295501878e-15 -6.106226635438361e-16 -7.7715611723760958e-16 ;
 	setAttr ".rsrr" -type "double3" 61.577128899199721 -60.979895867450288 -40.043452516933698 ;
 	setAttr ".int" 2;
@@ -16481,7 +16482,7 @@ createNode parentConstraint -n "Bony_lThumbJ3CG_parentConstraint1" -p "Bony_lThu
 		8.6042284408449632e-16 ;
 	setAttr ".tg[0].tor" -type "double3" 7.9513867036587919e-16 1.5902773407317587e-14 
 		9.5416640443905535e-15 ;
-	setAttr ".lr" -type "double3" 61.577128899199742 -60.979895867450253 -40.043452516933677 ;
+	setAttr ".lr" -type "double3" 61.577128899199735 -60.979895867450274 -40.043452516933691 ;
 	setAttr ".rst" -type "double3" 9.9920072216264089e-16 -3.4972025275692431e-15 -7.7715611723760958e-16 ;
 	setAttr ".rsrr" -type "double3" 61.577128899199735 -60.979895867450288 -40.043452516933705 ;
 	setAttr ".int" 2;
@@ -16503,7 +16504,7 @@ createNode orientConstraint -n "Bony_lWristJG1_orientConstraint1" -p "Bony_lWris
 	setAttr -k off ".sz";
 	setAttr ".erp" yes;
 	setAttr -s 2 ".tg";
-	setAttr ".lr" -type "double3" 1.9069940000657065e-05 -4.7471028980377878e-06 -1.0770973297533352e-05 ;
+	setAttr ".lr" -type "double3" -7.1754716270237235e-06 0 -1.4314123406930419e-05 ;
 	setAttr ".rsrr" -type "double3" 3.8825129521149655e-19 2.3603556340335604e-11 -9.478791590869735e-23 ;
 	setAttr ".int" 2;
 	setAttr -k on ".w0";
@@ -16536,7 +16537,7 @@ createNode parentConstraint -n "Bony_rWristJG2_parentConstraint1" -p "Bony_rWris
 	setAttr -k off ".sz";
 	setAttr ".erp" yes;
 	setAttr ".tg[0].tor" -type "double3" 179.99650333376124 0.013006706039441897 1.9173735579243462e-05 ;
-	setAttr ".lr" -type "double3" -46.489102203633976 -23.108235733163827 8.3481140182104259 ;
+	setAttr ".lr" -type "double3" -11.156023734706698 -149.29685710665495 -46.541144007326267 ;
 	setAttr ".rst" -type "double3" -2.1927003860473642 7.1013441085815447 -0.014172011423950815 ;
 	setAttr ".rsrr" -type "double3" 2.1577761306781427e-14 -7.7650260777917859e-18 8.9479792693303657e-19 ;
 	setAttr ".int" 2;
@@ -16657,7 +16658,7 @@ createNode parentConstraint -n "Bony_rThumbJ3_parentConstraint1" -p "Bony_rThumb
 	setAttr ".tg[0].tot" -type "double3" 2.2204460492503131e-16 2.6645352591003757e-15 
 		-4.4408920985006262e-15 ;
 	setAttr ".tg[0].tor" -type "double3" 25.265665254079266 2.1309716365805563e-13 -179.99999999999994 ;
-	setAttr ".lr" -type "double3" 1.5902773407317606e-14 2.4715030479500348e-14 1.1027183239834785e-13 ;
+	setAttr ".lr" -type "double3" -6.3611093629270099e-15 2.4715030479500367e-14 1.1027183239834785e-13 ;
 	setAttr ".rst" -type "double3" 0.15947329087373935 3.5527136788005009e-15 1.3322676295501878e-15 ;
 	setAttr ".rsrr" -type "double3" -9.5416640443905266e-15 2.471503047950036e-14 1.1027183239834785e-13 ;
 	setAttr ".int" 2;
@@ -16703,7 +16704,7 @@ createNode parentConstraint -n "Bony_rThumbJ1_parentConstraint1" -p "Bony_rThumb
 	setAttr ".tg[0].tot" -type "double3" 1.1102230246251565e-16 8.8817841970012523e-16 
 		-1.7763568394002505e-15 ;
 	setAttr ".tg[0].tor" -type "double3" 25.265665254079273 2.2263882770244609e-13 -179.99999999999997 ;
-	setAttr ".lr" -type "double3" -1.835302238729256e-28 -2.0991660897659211e-13 1.0018747246610078e-13 ;
+	setAttr ".lr" -type "double3" -2.0673605429513037e-14 -1.9719439025073798e-13 1.0495830448829608e-13 ;
 	setAttr ".rst" -type "double3" -0.30867648188587404 1.2434497875801753e-14 -0.24970245756286796 ;
 	setAttr ".rsrr" -type "double3" -1.7479068940278628e-28 -2.0991660897659211e-13 
 		9.5416640443905497e-14 ;
@@ -16776,6 +16777,7 @@ createNode parentConstraint -n "Bony_rFinger1J3_parentConstraint1" -p "Bony_rFin
 	setAttr ".tg[0].tot" -type "double3" 1.7763568394002505e-15 2.6645352591003757e-15 
 		8.3266726846886741e-17 ;
 	setAttr ".tg[0].tor" -type "double3" 180 0 0 ;
+	setAttr ".lr" -type "double3" 2.5444437451708134e-14 0 0 ;
 	setAttr ".rst" -type "double3" -0.18564389415091576 -8.8817841970012523e-16 -2.7755575615628914e-17 ;
 	setAttr ".int" 2;
 	setAttr -k on ".w0";
@@ -16797,6 +16799,7 @@ createNode parentConstraint -n "Bony_rFinger1J2_parentConstraint1" -p "Bony_rFin
 	setAttr ".tg[0].tot" -type "double3" 1.7763568394002505e-15 1.7763568394002505e-15 
 		0 ;
 	setAttr ".tg[0].tor" -type "double3" 180 0 0 ;
+	setAttr ".lr" -type "double3" 2.5444437451708134e-14 0 0 ;
 	setAttr ".rst" -type "double3" -0.18400288191407288 0 5.5511151231257827e-17 ;
 	setAttr ".int" 2;
 	setAttr -k on ".w0";
@@ -16876,6 +16879,7 @@ createNode parentConstraint -n "Bony_rFinger2J3_parentConstraint1" -p "Bony_rFin
 	setAttr ".tg[0].tot" -type "double3" 1.7763568394002505e-15 1.7763568394002505e-15 
 		-2.7755575615628914e-17 ;
 	setAttr ".tg[0].tor" -type "double3" 180 -1.987846675914698e-16 2.4344100688546408e-32 ;
+	setAttr ".lr" -type "double3" 2.5444437451708134e-14 0 0 ;
 	setAttr ".rst" -type "double3" -0.17853284112459811 0 1.1102230246251565e-16 ;
 	setAttr ".int" 2;
 	setAttr -k on ".w0";
@@ -16896,6 +16900,7 @@ createNode parentConstraint -n "Bony_rFinger2J2_parentConstraint1" -p "Bony_rFin
 	setAttr ".erp" yes;
 	setAttr ".tg[0].tot" -type "double3" 0 1.7763568394002505e-15 -2.7755575615628914e-17 ;
 	setAttr ".tg[0].tor" -type "double3" 180 -1.987846675914698e-16 2.4344100688546408e-32 ;
+	setAttr ".lr" -type "double3" 2.5444437451708134e-14 0 0 ;
 	setAttr ".rst" -type "double3" -0.18947292270355121 0 5.5511151231257827e-17 ;
 	setAttr ".int" 2;
 	setAttr -k on ".w0";
@@ -17080,7 +17085,7 @@ createNode parentConstraint -n "Bony_rThumbJ2CG_parentConstraint1" -p "Bony_rThu
 		9.1593399531575415e-16 ;
 	setAttr ".tg[0].tor" -type "double3" 7.9513867036587939e-16 -6.3611093629270304e-15 
 		3.1805546814635152e-15 ;
-	setAttr ".lr" -type "double3" 61.577128899199373 -60.979895867450416 -40.043452516933236 ;
+	setAttr ".lr" -type "double3" 61.577128899199387 -60.979895867450416 -40.043452516933236 ;
 	setAttr ".rst" -type "double3" -7.7715611723760958e-16 -3.1780134079895106e-15 -4.9960036108132044e-16 ;
 	setAttr ".rsrr" -type "double3" 61.577128899199373 -60.979895867450416 -40.043452516933236 ;
 	setAttr ".int" 2;
@@ -17156,7 +17161,7 @@ createNode parentConstraint -n "Bony_rThumbJ3CG_parentConstraint1" -p "Bony_rThu
 		3.1086244689504383e-15 ;
 	setAttr ".tg[0].tor" -type "double3" -5.5659706925611543e-15 -3.180554681463516e-15 
 		-9.5416640443905487e-15 ;
-	setAttr ".lr" -type "double3" 61.577128899199373 -60.979895867450416 -40.043452516933264 ;
+	setAttr ".lr" -type "double3" 61.577128899199387 -60.979895867450402 -40.04345251693325 ;
 	setAttr ".rst" -type "double3" -1.3322676295501878e-15 -3.858025010572419e-15 -6.6613381477509392e-16 ;
 	setAttr ".rsrr" -type "double3" 61.577128899199387 -60.979895867450402 -40.04345251693325 ;
 	setAttr ".int" 2;
@@ -17178,7 +17183,7 @@ createNode orientConstraint -n "Bony_rWristJG1_orientConstraint1" -p "Bony_rWris
 	setAttr -k off ".sz";
 	setAttr ".erp" yes;
 	setAttr -s 2 ".tg";
-	setAttr ".lr" -type "double3" 179.99998479227355 1.5816348194958171e-06 -7.2987421309377242e-06 ;
+	setAttr ".lr" -type "double3" 180 0 7.4925698150026016e-06 ;
 	setAttr ".o" -type "double3" -360 0 0 ;
 	setAttr ".rsrr" -type "double3" -180 0 0 ;
 	setAttr ".int" 2;
@@ -127147,138 +127152,152 @@ createNode animCurveTL -n "Bony_lKneeIKC_translateZ";
 	rename -uid "BE9B5A6E-714F-3150-6C7A-99944EA7AAFF";
 	setAttr ".tan" 18;
 	setAttr ".wgt" no;
-	setAttr -s 7 ".ktv[0:6]"  1 0.05420125819187184 6 0.20000673547301112
+	setAttr -s 10 ".ktv[0:9]"  1 0.05420125819187184 6 0.20000673547301112
 		 12 1.7153099203169411 18 -1.281111418027131 24 -5.735296265790379 30 -7.6614672643381656
-		 36 -9.5452947719394103;
+		 36 -9.5452947719394103 48 -4.4279154392027689 54 -12.128768043884563 66 -12.660815669832475;
 createNode animCurveTL -n "Bony_lKneeIKC_translateY";
 	rename -uid "D6C69497-9A45-1EFB-E9F8-1EAA83DE85CA";
 	setAttr ".tan" 18;
 	setAttr ".wgt" no;
-	setAttr -s 7 ".ktv[0:6]"  1 0.001659449104490957 6 2.5474187193573554
+	setAttr -s 10 ".ktv[0:9]"  1 0.001659449104490957 6 2.5474187193573554
 		 12 2.8719540501971847 18 5.0045466649663597 24 1.5321313462205384 30 0.44425417766301589
-		 36 -2.2773849849670063;
+		 36 -2.2773849849670063 48 -8.0098580555879195 54 -7.0130728254283854 66 -0.2926995328301128;
 createNode animCurveTL -n "Bony_lKneeIKC_translateX";
 	rename -uid "62610978-584C-000D-D1B9-62B05AB9B283";
 	setAttr ".tan" 18;
 	setAttr ".wgt" no;
-	setAttr -s 7 ".ktv[0:6]"  1 -1.0299586781129346 6 -1.0575424154277204
+	setAttr -s 10 ".ktv[0:9]"  1 -1.0299586781129346 6 -1.0575424154277204
 		 12 -0.052743875219237193 18 -0.23086460230476794 24 0.43610085142801436 30 -0.4784310132160346
-		 36 -0.61582548835837259;
+		 36 -0.61582548835837259 48 2.1857954726581359 54 -0.10973256642018325 66 0.92171742281177638;
 createNode animCurveTA -n "Bony_rFootIKC_rotateZ";
 	rename -uid "690D880A-1D45-3643-FE62-5DAFDD40CFB3";
 	setAttr ".tan" 18;
 	setAttr ".wgt" no;
-	setAttr -s 8 ".ktv[0:7]"  1 0 6 -10.212110325030768 12 27.607061621726793
+	setAttr -s 12 ".ktv[0:11]"  1 0 6 -10.212110325030768 12 27.607061621726793
 		 18 53.806679578738638 24 37.996646697269718 30 32.262684349199901 36 41.679594773771612
-		 42 41.679594773771612;
+		 42 41.679594773771612 48 41.679594773771598 54 51.453827109227703 60 2.2016083495333061
+		 66 2.2016083495333061;
 createNode animCurveTA -n "Bony_rFootIKC_rotateY";
 	rename -uid "148BC1D5-5041-BF28-0245-4CA1CE7667AD";
 	setAttr ".tan" 18;
 	setAttr ".wgt" no;
-	setAttr -s 8 ".ktv[0:7]"  1 18.903623835083181 6 15.993381103256926
+	setAttr -s 12 ".ktv[0:11]"  1 18.903623835083181 6 15.993381103256926
 		 12 50.183729351044256 18 -16.074424948754764 24 -43.942315825111613 30 49.015049151829011
-		 36 77.380663335762293 42 77.380663335762293;
+		 36 77.380663335762293 42 77.380663335762293 48 140.38859335481359 54 197.77117322431371
+		 60 233.56938367780307 66 233.56938367780307;
 createNode animCurveTA -n "Bony_rFootIKC_rotateX";
 	rename -uid "22E7E2A1-C04E-E6F5-9706-1E9AE2FF7B2A";
 	setAttr ".tan" 18;
 	setAttr ".wgt" no;
-	setAttr -s 8 ".ktv[0:7]"  1 0 6 31.739402560590687 12 -24.53645913116382
+	setAttr -s 12 ".ktv[0:11]"  1 0 6 31.739402560590687 12 -24.53645913116382
 		 18 -113.06325598304691 24 -150.84464348311886 30 -112.4357955363826 36 -96.413580961677454
-		 42 -96.413580961677454;
+		 42 -96.413580961677454 48 -96.413580961676956 54 -73.193176839849727 60 -7.101320868970979
+		 66 -7.101320868970979;
 createNode animCurveTL -n "Bony_rFootIKC_translateZ";
 	rename -uid "C2251A75-9A41-3857-9310-39BB9F4D2EF5";
 	setAttr ".tan" 18;
 	setAttr ".wgt" no;
-	setAttr -s 8 ".ktv[0:7]"  1 1.1711745667064362 6 0.27085461683973916
+	setAttr -s 12 ".ktv[0:11]"  1 1.1711745667064362 6 0.27085461683973916
 		 12 -1.358164481717048 18 1.0864175025306397 24 2.0898637075871864 30 1.9574130695322265
-		 36 2.4100422777321366 42 1.1810846077563761;
+		 36 2.4100422777321366 42 1.1810846077563761 48 -0.12263675501813243 54 0.36548743970563069
+		 60 1.4384878925831073 66 1.1466630953425989;
 createNode animCurveTL -n "Bony_rFootIKC_translateY";
 	rename -uid "FF5CB975-CA4D-2BE2-BD58-7C8491EEBE0E";
 	setAttr ".tan" 18;
 	setAttr ".wgt" no;
-	setAttr -s 8 ".ktv[0:7]"  1 -1.4342751843598253e-16 6 -2.4902573427377446
+	setAttr -s 12 ".ktv[0:11]"  1 -1.4342751843598253e-16 6 -2.4902573427377446
 		 12 -4.0128622749734912 18 -4.6911874198662797 24 -3.9374820266579142 30 -0.9911198549562118
-		 36 0.47080455445195446 42 0.4708045544520949;
+		 36 0.47080455445195446 42 0.4708045544520949 48 -0.0030705655648060742 54 -0.81193766263872591
+		 60 -0.14142435836690689 66 -0.10593345812760221;
 createNode animCurveTL -n "Bony_rFootIKC_translateX";
 	rename -uid "4937E22A-AE41-4CFB-BEFE-2CAA93936129";
 	setAttr ".tan" 18;
 	setAttr ".wgt" no;
-	setAttr -s 8 ".ktv[0:7]"  1 -2.8725868589627859 6 -2.9032727809301333
+	setAttr -s 12 ".ktv[0:11]"  1 -2.8725868589627859 6 -2.9032727809301333
 		 12 -3.5534520006897972 18 -1.4554401325877926 24 -1.3396822986204882 30 -3.2789933243275371
-		 36 -3.1965161399450803 42 -2.9974684310918018;
+		 36 -3.1965161399450803 42 -2.9974684310918018 48 -2.4553968911743933 54 -1.0969409926317386
+		 60 0.73796538544530854 66 1.3222987650200384;
 createNode animCurveTA -n "Bony_rShoulderFKC_rotateZ";
 	rename -uid "60CF590A-D847-800E-939D-89A07259E7D5";
 	setAttr ".tan" 18;
 	setAttr ".wgt" no;
-	setAttr -s 8 ".ktv[0:7]"  1 -50.324037822475333 6 32.396256892417306
+	setAttr -s 12 ".ktv[0:11]"  1 -50.324037822475333 6 32.396256892417306
 		 12 32.549109706823884 18 33.078128402140877 24 -2.2977004776372727 30 -22.349187953477788
-		 36 -371.09272179132557 42 -347.10157717472902;
+		 36 -371.09272179132557 42 -347.10157717472902 48 -412.42359937513794 54 -411.59566896356336
+		 60 -412.48349712777986 66 -403.70156188415439;
 createNode animCurveTA -n "Bony_rShoulderFKC_rotateY";
 	rename -uid "947CC9C2-794E-F990-2B5D-E5A06794B274";
 	setAttr ".tan" 18;
 	setAttr ".wgt" no;
-	setAttr -s 8 ".ktv[0:7]"  1 0 6 -37.749571440160707 12 -25.856864080829428
+	setAttr -s 12 ".ktv[0:11]"  1 0 6 -37.749571440160707 12 -25.856864080829428
 		 18 27.373272446402545 24 41.468982114784623 30 -11.099188660215901 36 -64.827176767799926
-		 42 -50.454364457245823;
+		 42 -50.454364457245823 48 -37.78304330857285 54 -18.811430772111173 60 -38.890997870776921
+		 66 -27.190580957919217;
 createNode animCurveTA -n "Bony_rShoulderFKC_rotateX";
 	rename -uid "AC9180E9-1A47-9721-5586-9CA5B28A1BE5";
 	setAttr ".tan" 18;
 	setAttr ".wgt" no;
-	setAttr -s 8 ".ktv[0:7]"  1 0 6 0.66743657812561763 12 0.58644679243716291
+	setAttr -s 12 ".ktv[0:11]"  1 0 6 0.66743657812561763 12 0.58644679243716291
 		 18 0.59427693641502843 24 19.588922481602491 30 49.022332798849447 36 412.52697914131562
-		 42 370.62820565915717;
+		 42 370.62820565915717 48 362.40960887204676 54 362.01168570869498 60 362.44676434649153
+		 66 356.86416823705019;
 createNode animCurveTA -n "Bony_rElbowFKC_rotateY";
 	rename -uid "1C75BB1F-4543-CBFA-99F6-918A6E7C3957";
 	setAttr ".tan" 18;
 	setAttr ".wgt" no;
-	setAttr -s 8 ".ktv[0:7]"  1 -100.5539364191514 6 -79.334215225817758
+	setAttr -s 11 ".ktv[0:10]"  1 -100.5539364191514 6 -79.334215225817758
 		 12 -126.92770943524081 18 -91.667982987652621 24 -114.27595312309008 30 -140.51507645092644
-		 36 -49.528146251166035 42 -90.335992366429267;
+		 36 -49.528146251166035 42 -90.335992366429267 54 -38.883002610808624 60 -32.889863498199212
+		 66 -41.524585470053403;
 createNode animCurveTA -n "Bony_Spine01FKC_rotateZ";
 	rename -uid "C2E43ABA-A843-93CE-3011-68A163942711";
 	setAttr ".tan" 18;
 	setAttr ".wgt" no;
-	setAttr -s 8 ".ktv[0:7]"  1 0 6 0 12 0 18 0 24 0 30 0 36 0 42 0;
+	setAttr -s 9 ".ktv[0:8]"  1 0 6 0 12 0 18 0 24 0 30 0 36 0 42 0 66 0;
 createNode animCurveTA -n "Bony_Spine01FKC_rotateY";
 	rename -uid "E0C1009C-D741-419B-F8F2-B985EBA8E853";
 	setAttr ".tan" 18;
 	setAttr ".wgt" no;
-	setAttr -s 8 ".ktv[0:7]"  1 0 6 0 12 0 18 0 24 0 30 0 36 0 42 0;
+	setAttr -s 9 ".ktv[0:8]"  1 0 6 0 12 0 18 0 24 0 30 0 36 0 42 0 66 0;
 createNode animCurveTA -n "Bony_Spine01FKC_rotateX";
 	rename -uid "DA9A7DF7-4F42-A316-8E7D-4F8D176931E7";
 	setAttr ".tan" 18;
 	setAttr ".wgt" no;
-	setAttr -s 8 ".ktv[0:7]"  1 9.2437300884688316 6 -7.286168403824095
+	setAttr -s 9 ".ktv[0:8]"  1 9.2437300884688316 6 -7.286168403824095
 		 12 -15.962735106032028 18 -0.64654017474512138 24 -31.1892807755926 30 -31.1892807755926
-		 36 -4.6731090014317367 42 -11.509845470349305;
+		 36 -4.6731090014317367 42 -11.509845470349305 66 -0.73978911463956776;
 createNode animCurveTA -n "Bony_lElbowFKC_rotateY";
 	rename -uid "A0738720-FC49-53F3-ABEC-5BAC14D9F92C";
 	setAttr ".tan" 18;
 	setAttr ".wgt" no;
-	setAttr -s 8 ".ktv[0:7]"  1 -67.101188315006965 6 -21.868367615163692
+	setAttr -s 11 ".ktv[0:10]"  1 -67.101188315006965 6 -21.868367615163692
 		 12 -46.286828003610907 18 -86.352607738739778 24 -103.70907056527729 30 -130.89421137681387
-		 36 -54.002451507501789 42 -24.572212481305979;
+		 36 -54.002451507501789 42 -24.572212481305979 48 -34.240118114841515 60 -26.876585184444494
+		 66 -34.659221296425166;
 createNode animCurveTA -n "Bony_lShoulderFKC_rotateZ";
 	rename -uid "698B8361-8D49-AC4A-069C-EE92ADEAFF8E";
 	setAttr ".tan" 18;
 	setAttr ".wgt" no;
-	setAttr -s 8 ".ktv[0:7]"  1 -55.441089347506953 6 -69.163826879214952
+	setAttr -s 12 ".ktv[0:11]"  1 -55.441089347506953 6 -69.163826879214952
 		 12 -33.991292882293465 18 -38.100929931620172 24 -29.66192346567065 30 -43.937034446691051
-		 36 282.02257564062398 42 376.63733868043801;
+		 36 282.02257564062398 42 376.63733868043801 48 273.14029211475514 54 295.15877072602171
+		 60 300.12351482799852 66 302.00862731373866;
 createNode animCurveTA -n "Bony_lShoulderFKC_rotateY";
 	rename -uid "58E7E0BE-7B4B-37CE-9199-7AA3A2247C7F";
 	setAttr ".tan" 18;
 	setAttr ".wgt" no;
-	setAttr -s 8 ".ktv[0:7]"  1 0 6 -12.23667779105948 12 -41.212208954192135
+	setAttr -s 12 ".ktv[0:11]"  1 0 6 -12.23667779105948 12 -41.212208954192135
 		 18 9.3144524912273496 24 32.603501302517451 30 -9.5139316957878144 36 -56.799809022463506
-		 42 -85.006625726182932;
+		 42 -85.006625726182932 48 -63.121674352589707 54 -21.124289527586143 60 -40.622398299941374
+		 66 -18.595382419763851;
 createNode animCurveTA -n "Bony_lShoulderFKC_rotateX";
 	rename -uid "80D4A0F9-2A47-91FB-7CE1-0CA1530391C1";
 	setAttr ".tan" 18;
 	setAttr ".wgt" no;
-	setAttr -s 8 ".ktv[0:7]"  1 0 6 2.9628178103243474 12 -5.2458974163696581
+	setAttr -s 12 ".ktv[0:11]"  1 0 6 2.9628178103243474 12 -5.2458974163696581
 		 18 -3.9967388060571563 24 20.390408983929866 30 17.313818374038149 36 -324.44725196467311
-		 42 -416.04611491568926;
+		 42 -416.04611491568926 48 -360.56365291882946 54 -371.10030411882997 60 -373.68643189267493
+		 66 -356.19252715420612;
 createNode animCurveTA -n "Bony_HeadC_rotateZ";
 	rename -uid "F5F9EFF5-3541-9F10-A28D-D78F5E680DE7";
 	setAttr ".tan" 18;
@@ -127299,112 +127318,142 @@ createNode animCurveTA -n "Bony_lFootIKC_rotateZ";
 	rename -uid "8283EA35-774F-D108-8047-EAA23200FA3E";
 	setAttr ".tan" 18;
 	setAttr ".wgt" no;
-	setAttr -s 8 ".ktv[0:7]"  1 0 6 0 12 0 18 0 24 0 30 0 36 -72.094734010641503
-		 42 -72.094734010641503;
+	setAttr -s 12 ".ktv[0:11]"  1 0 6 0 12 0 18 0 24 0 30 0 36 -72.094734010641503
+		 42 -72.094734010641503 48 -43.864758934221783 54 -11.048380172109297 60 -2.1112203015655719
+		 66 -2.1112203015655719;
 createNode animCurveTA -n "Bony_lFootIKC_rotateY";
 	rename -uid "44ABDB62-CE41-126D-81CB-E8945226D5DC";
 	setAttr ".tan" 18;
 	setAttr ".wgt" no;
-	setAttr -s 8 ".ktv[0:7]"  1 0 6 0 12 0 18 0 24 0 30 0 36 -75.616369344349906
-		 42 -75.616369344349906;
+	setAttr -s 12 ".ktv[0:11]"  1 0 6 0 12 0 18 0 24 0 30 0 36 -75.616369344349906
+		 42 -75.616369344349906 48 -112.14995176460774 54 -200.70975217651184 60 -215.43994730982371
+		 66 -215.43994730982371;
 createNode animCurveTA -n "Bony_lFootIKC_rotateX";
 	rename -uid "081BF30D-1B4B-A756-2E24-C2BD69908256";
 	setAttr ".tan" 18;
 	setAttr ".wgt" no;
-	setAttr -s 8 ".ktv[0:7]"  1 0 6 46.39652452308674 12 -28.659381857561179
+	setAttr -s 12 ".ktv[0:11]"  1 0 6 46.39652452308674 12 -28.659381857561179
 		 18 -85.146769547655339 24 -114.96783045391774 30 -128.20381698458405 36 -128.20381698458513
-		 42 -128.20381698458513;
+		 42 -128.20381698458513 48 -173.40866344238836 54 -12.323322710556347 60 0.60380946584354944
+		 66 0.60380946584354944;
 createNode animCurveTL -n "Bony_lFootIKC_translateZ";
 	rename -uid "860D98AB-6942-AB21-A593-BFB5B825E12F";
 	setAttr ".tan" 18;
 	setAttr ".wgt" no;
-	setAttr -s 8 ".ktv[0:7]"  1 0 6 -0.012301263166045739 12 2.9040067256685336
+	setAttr -s 12 ".ktv[0:11]"  1 0 6 -0.012301263166045739 12 2.9040067256685336
 		 18 0.96509190271112022 24 -0.60320117227827819 30 -2.4285192484772913 36 -2.2829193175820164
-		 42 -3.4610114825041927;
+		 42 -3.4610114825041927 48 -1.9176499167213632 54 -2.1933701394817837 60 -2.8271243496362
+		 66 -2.4408565914218232;
 createNode animCurveTL -n "Bony_lFootIKC_translateY";
 	rename -uid "E6942EA5-724E-833F-9B76-5D963ECC7AD7";
 	setAttr ".tan" 18;
 	setAttr ".wgt" no;
-	setAttr -s 8 ".ktv[0:7]"  1 0 6 1.3946143272696725 12 3.3453192241686893
+	setAttr -s 12 ".ktv[0:11]"  1 0 6 1.3946143272696725 12 3.3453192241686893
 		 18 3.8348820819056293 24 3.5138417840318432 30 2.923194923817964 36 0.66990633119118126
-		 42 -0.12892439105199838;
+		 42 -0.12892439105199838 48 -0.52918638014553476 54 0.10318217282048955 60 -0.1150416064261247
+		 66 0.051002904964930429;
 createNode animCurveTL -n "Bony_lFootIKC_translateX";
 	rename -uid "9CE78364-9045-6BD1-4AEB-D7BC26A1B608";
 	setAttr ".tan" 18;
 	setAttr ".wgt" no;
-	setAttr -s 8 ".ktv[0:7]"  1 0 6 -0.17807673982597905 12 -0.24151676766289754
+	setAttr -s 12 ".ktv[0:11]"  1 0 6 -0.17807673982597905 12 -0.24151676766289754
 		 18 0.14393560101710004 24 1.1236261004695258 30 -1.0695934194379921 36 -3.5632340445859527
-		 42 -3.009829397752688;
+		 42 -3.009829397752688 48 -3.5438622475810462 54 -1.6262055702455607 60 -1.2270660259650099
+		 66 -1.5256774648502129;
 createNode animCurveTL -n "Bony_rKneeIKC_translateZ";
 	rename -uid "4D373255-834F-7150-192B-A09BE7842344";
 	setAttr ".tan" 18;
 	setAttr ".wgt" no;
-	setAttr -s 7 ".ktv[0:6]"  1 -1.3396395290838039 6 -1.2326708493070773
+	setAttr -s 10 ".ktv[0:9]"  1 -1.3396395290838039 6 -1.2326708493070773
 		 12 1.1537616850424424 18 -3.2148315383522186 24 -7.2326927214258214 30 -8.4265245129607802
-		 36 -5.826756081063249;
+		 36 -5.826756081063249 48 -1.6185053930655886 60 -5.7133686043942031 66 -5.1817036432018444;
 createNode animCurveTL -n "Bony_rKneeIKC_translateY";
 	rename -uid "96DC5FD4-2147-5C44-E594-B3AB22257F5A";
 	setAttr ".tan" 18;
 	setAttr ".wgt" no;
-	setAttr -s 7 ".ktv[0:6]"  1 -0.039282813871243112 6 3.3763766854393085
+	setAttr -s 10 ".ktv[0:9]"  1 -0.039282813871243112 6 3.3763766854393085
 		 12 3.4456569163010342 18 6.6494843760921762 24 3.6875732619363686 30 -0.82727465647752696
-		 36 -2.2265765651567921;
+		 36 -2.2265765651567921 48 -7.9021575477501083 60 1.027142035923261 66 0.70613692978547671;
 createNode animCurveTL -n "Bony_rKneeIKC_translateX";
 	rename -uid "CFDCC2DA-E740-BBF1-A0CE-41A19AAF2663";
 	setAttr ".tan" 18;
 	setAttr ".wgt" no;
-	setAttr -s 7 ".ktv[0:6]"  1 -5.3988755508214954 6 -5.798233958246187
+	setAttr -s 10 ".ktv[0:9]"  1 -5.3988755508214954 6 -5.798233958246187
 		 12 -4.2647236115809877 18 -1.2879765529516511 24 -0.90133480088592421 30 -2.150145507308165
-		 36 -3.8028866317105257;
+		 36 -3.8028866317105257 48 -1.5728744401885419 60 1.6019309950635718 66 2.7329804903660975;
 createNode animCurveTA -n "Bony_ROOTC_rotateZ";
 	rename -uid "CB2C487F-CC4A-5D25-2E3F-48A4EDCA67EF";
 	setAttr ".tan" 18;
 	setAttr ".wgt" no;
-	setAttr -s 8 ".ktv[0:7]"  1 0 6 1.8188305791222955e-15 12 1.8188305791222951e-15
+	setAttr -s 12 ".ktv[0:11]"  1 0 6 1.8188305791222955e-15 12 1.8188305791222951e-15
 		 18 1.8188305791222951e-15 24 1.8188305791222951e-15 30 31.341516869463138 36 117.74907832859715
-		 42 144.00126105236018;
+		 42 144.00126105236018 48 175.11444968124064 54 175.11444968124064 60 175.11444968124064
+		 66 175.11444968124064;
 createNode animCurveTA -n "Bony_ROOTC_rotateY";
 	rename -uid "0968BAA4-6D41-B4D2-7CBE-1283DEAFD423";
 	setAttr ".tan" 18;
 	setAttr ".wgt" no;
-	setAttr -s 8 ".ktv[0:7]"  1 -29.032973470788587 6 -29.032973470788605
+	setAttr -s 12 ".ktv[0:11]"  1 -29.032973470788587 6 -29.032973470788605
 		 12 -29.032973470788598 18 -29.032973470788598 24 -29.032973470788598 30 -37.321741878761124
-		 36 -17.28388809864547 42 7.0981566738613973;
+		 36 -17.28388809864547 42 7.0981566738613973 48 30.988076018233738 54 30.988076018233745
+		 60 30.988076018233745 66 30.988076018233738;
 createNode animCurveTA -n "Bony_ROOTC_rotateX";
 	rename -uid "9258FB2D-9D41-8DDD-1F09-0C963736C015";
 	setAttr ".tan" 18;
 	setAttr ".wgt" no;
-	setAttr -s 8 ".ktv[0:7]"  1 0 6 -52.640738341136725 12 -64.141827756938582
+	setAttr -s 12 ".ktv[0:11]"  1 0 6 -52.640738341136725 12 -64.141827756938582
 		 18 -64.141827756938582 24 -64.141827756938582 30 -81.642564146113287 36 -131.0631821084431
-		 42 -133.4896033912373;
+		 42 -133.4896033912373 48 -101.47443692739193 54 -130.74215614164353 60 -130.74215614164353
+		 66 -156.19842214564648;
 createNode animCurveTL -n "Bony_ROOTC_translateZ";
 	rename -uid "E56F0FB4-F54A-405F-EDDA-7BA88A5F0FCD";
 	setAttr ".tan" 18;
 	setAttr ".wgt" no;
-	setAttr -s 8 ".ktv[0:7]"  1 -0.63763898839907829 6 -0.63763898839907829
+	setAttr -s 12 ".ktv[0:11]"  1 -0.63763898839907829 6 -0.63763898839907829
 		 12 -1.1673981929975812 18 -2.4206730428784859 24 -2.6115859258284204 30 -2.7472421774567484
-		 36 -2.7472421774567484 42 -2.7472421774567484;
+		 36 -2.7472421774567484 42 -2.7472421774567484 48 -2.2076226449690579 54 -1.3693397017067617
+		 60 -1.2279099924942094 66 -1.2279099924942165;
 createNode animCurveTL -n "Bony_ROOTC_translateY";
 	rename -uid "107A378F-FD43-6125-45E4-49915FD0A3B2";
 	setAttr ".tan" 18;
 	setAttr ".wgt" no;
-	setAttr -s 8 ".ktv[0:7]"  1 -0.93394008798527484 6 0.98189860833683795
+	setAttr -s 12 ".ktv[0:11]"  1 -0.93394008798527484 6 0.98189860833683795
 		 12 0.84970935389080182 18 -2.6765940916478099 24 -3.668414497043146 30 -4.2487757873753882
-		 36 -4.2487757873753882 42 -4.2487757873753882;
+		 36 -4.2487757873753882 42 -4.2487757873753882 48 -3.0054032457040916 54 -1.9707843132487981
+		 60 -1.1585471426132696 66 -0.55790077343190703;
 createNode animCurveTL -n "Bony_ROOTC_translateX";
 	rename -uid "C4422579-8946-58A8-92FC-249DB875907F";
 	setAttr ".tan" 18;
 	setAttr ".wgt" no;
-	setAttr -s 8 ".ktv[0:7]"  1 -1.1487715476348619 6 -1.1487715476348619
+	setAttr -s 12 ".ktv[0:11]"  1 -1.1487715476348619 6 -1.1487715476348619
 		 12 -0.8547225489364203 18 -0.15907778901059938 24 -0.17074996119488123 30 -0.17229519713072466
-		 36 -0.17229519713072466 42 -0.17229519713072466;
+		 36 -0.17229519713072466 42 -0.17229519713072466 48 -0.33818697207917753 54 -0.49372169334381782
+		 60 -0.26808174369856902 66 -0.2680817436985708;
+createNode animCurveTA -n "Bony_lWristFKC_rotateX";
+	rename -uid "9C913E26-CA4B-31EC-9350-818D4B61068C";
+	setAttr ".tan" 18;
+	setAttr ".wgt" no;
+	setAttr -s 3 ".ktv[0:2]"  48 86.10483924364901 60 88.2414803593051
+		 66 0;
+createNode animCurveTA -n "Bony_lWristFKC_rotateY";
+	rename -uid "E04A1EF6-3D4A-51E3-9CA8-7B9DB59ADDD1";
+	setAttr ".tan" 18;
+	setAttr ".wgt" no;
+	setAttr -s 3 ".ktv[0:2]"  48 -63.970030027504322 60 13.724645123433515
+		 66 0;
+createNode animCurveTA -n "Bony_lWristFKC_rotateZ";
+	rename -uid "810A4A29-CE41-53C6-E836-6F87898AC8B6";
+	setAttr ".tan" 18;
+	setAttr ".wgt" no;
+	setAttr -s 3 ".ktv[0:2]"  48 3.5010916706221389 60 -0.41734305423675361
+		 66 0;
 select -ne :time1;
 	setAttr -av -k on ".cch";
 	setAttr -cb on ".ihi";
 	setAttr -k on ".nds";
 	setAttr -cb on ".bnm";
-	setAttr ".o" 42;
-	setAttr ".unw" 42;
+	setAttr ".o" 66;
+	setAttr ".unw" 66;
 select -ne :hardwareRenderingGlobals;
 	setAttr ".vac" 2;
 	setAttr ".etmr" no;
@@ -128813,6 +128862,9 @@ connectAttr "JolanlArmFKViz.ocr" "Bony_lWristFKC.v" -l on;
 connectAttr "Bony_lWristFKC.sx" "Bony_lWristFKC.sy" -l on;
 connectAttr "Bony_lWristFKC.sx" "Bony_lWristFKC.sz" -l on;
 connectAttr "Bony_Arms.di" "Bony_lWristFKC.do";
+connectAttr "Bony_lWristFKC_rotateX.o" "Bony_lWristFKC.rx";
+connectAttr "Bony_lWristFKC_rotateY.o" "Bony_lWristFKC.ry";
+connectAttr "Bony_lWristFKC_rotateZ.o" "Bony_lWristFKC.rz";
 connectAttr "Bony_lWristFKCG.ro" "Bony_lWristFKCG_parentConstraint1.cro";
 connectAttr "Bony_lWristFKCG.pim" "Bony_lWristFKCG_parentConstraint1.cpim";
 connectAttr "Bony_lWristFKCG.rp" "Bony_lWristFKCG_parentConstraint1.crp";

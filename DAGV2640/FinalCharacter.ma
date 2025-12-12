@@ -1,6 +1,6 @@
 //Maya ASCII 2025ff03 scene
 //Name: FinalCharacter.ma
-//Last modified: Fri, Dec 12, 2025 11:40:31 AM
+//Last modified: Fri, Dec 12, 2025 11:42:37 AM
 //Codeset: UTF-8
 requires maya "2025ff03";
 requires -nodeType "aiOptions" -nodeType "aiAOVDriver" -nodeType "aiAOVFilter" -nodeType "aiAreaLight"
@@ -13,7 +13,7 @@ fileInfo "product" "Maya 2025";
 fileInfo "version" "2025";
 fileInfo "cutIdentifier" "202407121012-8ed02f4c99";
 fileInfo "osv" "Mac OS X 12.7.6";
-fileInfo "UUID" "5F33A131-1843-FFCB-B107-C0A7D3E43372";
+fileInfo "UUID" "FCB44271-7041-F9AA-5888-66BBC032A43F";
 createNode transform -s -n "persp";
 	rename -uid "50A247D5-C042-AED7-01B4-DCB89E9990C4";
 	setAttr ".v" no;
@@ -155,19 +155,19 @@ createNode camera -n "persp1Shape" -p "persp1";
 	setAttr ".hc" -type "string" "viewSet -p %camera";
 createNode transform -n "persp2";
 	rename -uid "F02E3CCE-4D44-5E0A-BC5B-B288EAC13ACB";
-	setAttr ".t" -type "double3" 262.07276274989584 223.75720977342525 294.23505430984312 ;
-	setAttr ".r" -type "double3" -16.800000000000225 43.200000000000259 -1.0907721408787303e-15 ;
+	setAttr ".t" -type "double3" 183.00958425527574 233.78251389088641 162.11627281900314 ;
+	setAttr ".r" -type "double3" -24.000000000000178 48.800000000000949 0 ;
 	setAttr ".rp" -type "double3" 1.7763568394002505e-14 0 -2.8421709430404007e-14 ;
 	setAttr ".rpt" -type "double3" -5.4403481766981146e-14 4.3326552068013296e-14 -5.3763138757787793e-14 ;
 createNode camera -n "persp2Shape" -p "persp2";
 	rename -uid "46CC2639-3D4D-5002-DABA-EBB0859EB7AD";
 	setAttr -k off ".v";
 	setAttr ".fl" 34.999999999999979;
-	setAttr ".coi" 429.86513713388138;
+	setAttr ".coi" 265.1631179039731;
 	setAttr ".imn" -type "string" "persp";
 	setAttr ".den" -type "string" "persp_depth";
 	setAttr ".man" -type "string" "persp_mask";
-	setAttr ".tp" -type "double3" -30.568711638450662 142.99291992187497 2.9884142875670969 ;
+	setAttr ".tp" -type "double3" 0 91.710523389279842 6.22021484375 ;
 	setAttr ".hc" -type "string" "viewSet -p %camera";
 createNode transform -n "pPlane1";
 	rename -uid "FD8EDD9F-B64B-3281-664E-C59D8CC16FEF";
@@ -12105,12 +12105,11 @@ createNode lambert -n "Background";
 createNode shadingEngine -n "lambert6SG";
 	rename -uid "C9FDA93A-2B40-E8A9-D7D4-3288E01B54BE";
 	setAttr ".ihi" 0;
-	setAttr -s 2 ".dsm";
 	setAttr ".ro" yes;
 createNode materialInfo -n "materialInfo8";
 	rename -uid "370E22E6-6A46-3BB1-5085-B1A8B342BDA3";
 createNode nodeGraphEditorInfo -n "hyperShadePrimaryNodeEditorSavedTabsInfo";
-	rename -uid "3983FACB-7443-9EBC-CA11-A69D3F32BC41";
+	rename -uid "90C3296C-4746-8F5A-B1C3-088B374F6809";
 	setAttr ".tgi[0].tn" -type "string" "Untitled_1";
 	setAttr ".tgi[0].vl" -type "double2" -8488.3662593412846 -36863.408899325397 ;
 	setAttr ".tgi[0].vh" -type "double2" 8331.5385344806218 23989.092184014025 ;

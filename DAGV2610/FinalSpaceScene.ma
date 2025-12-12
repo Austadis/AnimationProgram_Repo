@@ -1,6 +1,6 @@
 //Maya ASCII 2025ff03 scene
 //Name: FinalSpaceScene.ma
-//Last modified: Fri, Dec 12, 2025 01:16:36 PM
+//Last modified: Fri, Dec 12, 2025 01:21:00 PM
 //Codeset: UTF-8
 requires maya "2025ff03";
 requires -nodeType "aiOptions" -nodeType "aiAOVDriver" -nodeType "aiAOVFilter" -nodeType "aiAreaLight"
@@ -11,18 +11,18 @@ fileInfo "product" "Maya 2025";
 fileInfo "version" "2025";
 fileInfo "cutIdentifier" "202407121012-8ed02f4c99";
 fileInfo "osv" "Mac OS X 12.7.6";
-fileInfo "UUID" "5B352D47-944B-46C4-E455-C88DCC69CB6F";
+fileInfo "UUID" "E899FF71-AD4D-1498-BA55-3193B99E7752";
 createNode transform -s -n "persp";
 	rename -uid "C279432C-CE46-EE57-1E6B-588B0A989003";
 	setAttr ".v" no;
-	setAttr ".t" -type "double3" 1409.2724136331942 2098.531673576068 1717.0856277845769 ;
-	setAttr ".r" -type "double3" -401.9999999985788 391.9999999993351 -1.8752206955333986e-15 ;
+	setAttr ".t" -type "double3" 151.95437979049967 174.93977857936562 195.02099174203303 ;
+	setAttr ".r" -type "double3" -361.19999999857453 407.99999999933374 7.4269756046061526e-17 ;
 	setAttr ".rpt" -type "double3" -7.9971863857284594e-15 -1.1038008351756465e-14 1.027631212221047e-14 ;
 createNode camera -s -n "perspShape" -p "persp";
 	rename -uid "0BCAFC5F-8C46-2E66-424F-BEA16DC81F65";
 	setAttr -k off ".v" no;
 	setAttr ".fl" 34.999999999999979;
-	setAttr ".coi" 2924.6734814127112;
+	setAttr ".coi" 331.64574790112579;
 	setAttr ".imn" -type "string" "persp";
 	setAttr ".den" -type "string" "persp_depth";
 	setAttr ".man" -type "string" "persp_mask";
@@ -26249,8 +26249,8 @@ createNode mesh -n "pCubeShape10" -p "pCube10";
 	setAttr ".hfd" -type "dataPolyComponent" Index_Data Face 0 ;
 createNode transform -n "persp1";
 	rename -uid "F08963BC-3F4F-65E5-674C-9DBFD9AED843";
-	setAttr ".t" -type "double3" -84.481382534421925 430.49140762226921 1499.7164334137346 ;
-	setAttr ".r" -type "double3" -16.800000000000448 2.399999999999987 0 ;
+	setAttr ".t" -type "double3" -52.619092982438701 237.24137330399174 973.63661621392066 ;
+	setAttr ".r" -type "double3" -4.8000000000005043 -2.4000000000000741 -3.7304847863112779e-17 ;
 	setAttr ".s" -type "double3" 1 0.99999999999999989 1 ;
 	setAttr ".rp" -type "double3" -1.0658141036401503e-14 3.4638958368304878e-14 0 ;
 	setAttr ".rpt" -type "double3" -5.608572065177332e-15 -3.6124359949957558e-15 -9.2845226846863804e-15 ;
@@ -26260,7 +26260,7 @@ createNode camera -n "persp1Shape" -p "persp1";
 	rename -uid "4104F8F3-F54F-8508-236E-7EBD621AA24D";
 	setAttr -k off ".v";
 	setAttr ".fl" 34.999999999999979;
-	setAttr ".coi" 1589.8930163683428;
+	setAttr ".coi" 1057.0726780880827;
 	setAttr ".imn" -type "string" "persp";
 	setAttr ".den" -type "string" "persp_depth";
 	setAttr ".man" -type "string" "persp_mask";
@@ -26585,14 +26585,14 @@ createNode mesh -n "pPlaneShape3" -p "pPlane3";
 	setAttr ".hfd" -type "dataPolyComponent" Index_Data Face 0 ;
 createNode transform -n "persp2";
 	rename -uid "70B0AC1D-0447-BBBD-7913-CC93B8B890F3";
-	setAttr ".t" -type "double3" 84.206428070928069 293.43695559952107 -89.075838297736567 ;
-	setAttr ".r" -type "double3" -18.338352729601109 15.399999999998469 -1.2371265336507988e-15 ;
+	setAttr ".t" -type "double3" 107.02735043411138 232.55356660728026 -32.446162340230195 ;
+	setAttr ".r" -type "double3" -7.5383527296012289 18.599999999998467 0 ;
 createNode camera -n "perspShape2" -p "persp2";
 	rename -uid "C600FFA0-064F-8153-F789-45A00D856417";
 	setAttr -k off ".v";
 	setAttr ".rnd" no;
 	setAttr ".fl" 34.999999999999993;
-	setAttr ".coi" 18.525531941346422;
+	setAttr ".coi" 63.031820203214949;
 	setAttr ".imn" -type "string" "persp2";
 	setAttr ".den" -type "string" "persp2_depth";
 	setAttr ".man" -type "string" "persp2_mask";
@@ -60000,7 +60000,7 @@ createNode aiOptions -s -n "defaultArnoldRenderOptions";
 	rename -uid "A4E1220F-6E40-3AF9-40C7-F89FBFB1AA2A";
 	addAttr -ci true -sn "ARV_options" -ln "ARV_options" -dt "string";
 	setAttr ".version" -type "string" "5.4.2.1";
-	setAttr ".ARV_options" -type "string" "Test Resolution=100%;Camera=FinalCameraShape;Snapshots Folder=/Users/isaac/Desktop/UVU/AnimationProgram/AnimationProgram_Repo/images/snapshots/SpaceBed;Color Management.Gamma=1;Color Management.Exposure=0;Background.BG=BG Color;Background.Color=0 0 0;Background.Image=;Background.Scale=1  1;Background.Offset=0  0;Background.Apply Color Management=1;Foreground.Enable FG=0;Foreground.Image=;Foreground.Scale=1  1;Foreground.Offset=0  0;Foreground.Apply Color Management=1;";
+	setAttr ".ARV_options" -type "string" "Test Resolution=100%;Camera=perspShape;Snapshots Folder=/Users/isaac/Desktop/UVU/AnimationProgram/AnimationProgram_Repo/images/snapshots/SpaceBed;Color Management.Gamma=1;Color Management.Exposure=0;Background.BG=BG Color;Background.Color=0 0 0;Background.Image=;Background.Scale=1  1;Background.Offset=0  0;Background.Apply Color Management=1;Foreground.Enable FG=0;Foreground.Image=;Foreground.Scale=1  1;Foreground.Offset=0  0;Foreground.Apply Color Management=1;";
 createNode aiAOVFilter -s -n "defaultArnoldFilter";
 	rename -uid "730C8371-214E-B599-1F27-77BE883031C0";
 	setAttr ".ai_translator" -type "string" "gaussian";
